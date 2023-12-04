@@ -56,6 +56,8 @@ cat(100*ORIGINAL_N/7166416,'\n')
 # EXTRA:
 vnr <- fread(VNR_codes_file)
 
+cluster_migraine_events <- fread(cluster_migraine_events_file) 
+
 COV_OF_INTEREST = c(
 "FINREGISTRYID",                  
 "INDEX_PERSON",                   
@@ -73,6 +75,7 @@ COV_OF_INTEREST = c(
 cov <- fread(covariates_file) %>%
   select(all_of(COV_OF_INTEREST))
 
+
 # merge extra information:
 cohort <- cohort %>% 
   left_join(cov, by="FINREGISTRYID") %>%
@@ -83,14 +86,40 @@ cohort <- cohort %>%
   ) %>%
   mutate(
     PURCH_DATE = lubridate::as_date(PVM),
+    EVENT_DAY = lubridate::as_date(PVM),
     BIRTH_DATE = lubridate::as_date(DATE_OF_BIRTH),
-    DEATH_DATE = lubridate::as_date(DEATH_DATE)
+    DEATH_DATE = lubridate::as_date(DEATH_DATE),
+    VNR_CODE = as.integer(VNR_CODE)
   ) %>%
-  select(-c(PVM,DATE_OF_BIRTH))
+  left_join(cluster_migraine_events, by="FINREGISTRYID")
 
 ###############
 ####   2   ####
 ###############
+
+#remove cluster migraine patients
+N0 = length(unique(cohort$FINREGISTRYID))
+to_keep <- cohort %>% 
+  filter(G6_CLUSTHEADACHE_WIDE==0 |  is.na(G6_CLUSTHEADACHE_WIDE)) %>% 
+  pull(FINREGISTRYID) %>% 
+  unique()
+cohort <- cohort[cohort$FINREGISTRYID %in% to_keep]
+N1 = length(unique(cohort$FINREGISTRYID))
+print(paste(N0-N1,'Cluster migraine patients'))
+
+# remove zolmitriptan users (only nasal spray, see the pkokok or vahvuus)  
+N0 = length(unique(cohort$FINREGISTRYID))
+to_keep <- cohort %>% 
+  filter(
+    !grepl("NASAL", valmiste, ignore.case = TRUE) &
+    !grepl("N02CC03", ATC_CODE, ignore.case = TRUE) &
+    !grepl("ML", pkoko, ignore.case = TRUE)
+    ) %>% 
+  pull(FINREGISTRYID) %>% 
+  unique()
+cohort <- cohort[cohort$FINREGISTRYID %in% to_keep]
+N1 = length(unique(cohort$FINREGISTRYID))
+print(paste(N0-N1,'zolmitriptan nasal spray users'))
 
 # remove non indexed people
 N0 = length(unique(cohort$FINREGISTRYID))
@@ -99,7 +128,6 @@ cohort <- cohort[cohort$FINREGISTRYID %in% to_keep]
 N1 = length(unique(cohort$FINREGISTRYID))
 cat(paste(N0-N1,'non indexed people, eliminating',
           100*(N0-N1)/ORIGINAL_N,'% of original people \n'))
-
 
 # remove patients with first purchase:
 # before 2000 (prevalent users) 
@@ -144,6 +172,69 @@ N1 = length(unique(cohort$FINREGISTRYID))
 cat(paste(N0-N1,'people with 1 purchase (after other inclusion criteria), eliminating',
           100*(N0-N1)/ORIGINAL_N,'% of original people \n'))
 
+#remove patients with N02CC 
+N0 = length(unique(cohort$FINREGISTRYID))
+to_drop <- cohort %>% filter(ATC_CODE=="N02CC") %>% pull(FINREGISTRYID) %>% unique()
+cohort <- cohort%>% filter(!(FINREGISTRYID %in% to_drop))
+N1 = length(unique(cohort$FINREGISTRYID))
+print(paste(N0-N1,'Patients with N02CC purchases'))
+
+# Keep only first 2 years from 1° purchase
+N0 = length(unique(cohort$FINREGISTRYID))
+
+date_first_purch <- cohort %>% 
+  group_by(FINREGISTRYID) %>% 
+  summarize(DATE_FIRST_PURCH = min(PURCH_DATE)) %>%
+  ungroup() %>%
+  pull(c(FINREGISTRYID,DATE_FIRST_PURCH))
+
+cohort <- cohort %>%
+  left_join(date_first_purch, by = "FINREGISTRYID")%>%
+  group_by(FINREGISTRYID) %>%
+  arrange(FINREGISTRYID,PURCH_DATE) %>% 
+  mutate(IS_WITHIN_2YEARS = PURCH_DATE <= (DATE_FIRST_PURCH + 365 * 2)) %>% 
+  ungroup() %>% 
+  filter(IS_WITHIN_2YEARS==TRUE) 
+
+# QC: check that all ATC codes are correct
+# table(cohort$ATC_CODE)
+
+# keep only patients with >=5 purch (within first 2 yrs from 1° purch)
+to_keep <- cohort %>%
+  group_by(FINREGISTRYID) %>%
+  summarize(TOT_PURCH=n()) %>%  
+  filter(TOT_PURCH>=5) %>%
+  pull(FINREGISTRYID)
+
+cohort <- cohort[cohort$FINREGISTRYID %in% to_keep,]
+N1 = length(unique(cohort$FINREGISTRYID))
+cat(paste(N0-N1,'people with <=5 triptan purchase within 2 years from 1° purchase \n eliminating',
+          100*(N0-N1)/ORIGINAL_N,'% of original people \n'))
+
+#merge NSAID purchases info (after 1° triptan purchase and within 2yrs from it)
+nsaid_cohort <- fread(nsaid_users_file) %>% 
+  filter (FINREGISTRYID %in% cohort$FINREGISTRYID) %>%
+  mutate(EVENT_DAY_NSAID = as.Date(PVM)) %>%
+  select(FINREGISTRYID, EVENT_DAY_NSAID)
+
+date_first_purch <- cohort %>% 
+  arrange(FINREGISTRYID, PURCH_DATE) %>% 
+  group_by(FINREGISTRYID) %>% 
+  slice(1) %>% 
+  select(FINNGFINREGISTRYIDENID, DATE_FIRST_PURCH)
+
+merged_trpt_nsaid <- left_join(nsaid_cohort,date_first_purch, by="FINREGISTRYID") %>% 
+  filter( 
+    (EVENT_DAY_NSAID > DATE_FIRST_PURCH) & 
+    (EVENT_DAY_NSAID <= (DATE_FIRST_PURCH + 365 * 2))
+    ) %>% 
+    group_by(FINREGISTRYID) %>% 
+    summarise(N_PURCH_NSAID=n())
+
+cohort <- cohort %>%
+  left_join(merged_trpt_nsaid, by="FINREGISTRYID") %>% 
+  mutate(N_PURCH_NSAID=ifelse(is.na(N_PURCH_NSAID), 0, N_PURCH_NSAID))
+
 ###############
 ####   3   ####
 ###############
@@ -155,3 +246,7 @@ FINAL_N = length(unique(cohort$FINREGISTRYID))
 cat(FINAL_N,'\n')
 cat('percentage of the original population: ')
 cat(100*FINAL_N/ORIGINAL_N)
+
+# clean up memory
+rm(list=ls())
+gc()

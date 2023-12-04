@@ -1,16 +1,32 @@
 
+# define file paths
+
+detailed_longitudinal = /data/processed_data/detailed_longitudinal/R10/detailed_longitudinal_DF10_2022-11-11.csv
+endpointer = /data/processed_data/endpointer/longitudinal_endpoints_no_omits_DF10_2022_09_29.csv
+
+cluster_migraine_events_file = /data/projects/project_mferro/project_migraine/data/endpoint_migraine.csv
+triptan_users_file = /data/projects/project_mferro/project_migraine/data/triptan_users.csv
+nsaid_users_file = /data/projects/project_mferro/project_migraine/data/nsaid_users.csv
+
 # execute this script in order to generate the study population 
 
 echo "start triptane users filtering"
 time0=$(date +%s)
-awk -F ',' 'NR == 1 || (($6 == "PURCH") && (index($9, "N02CC") != 0)) {print $0}' /data/processed_data/detailed_longitudinal/R10/detailed_longitudinal_2023-09-11.csv > /data/projects/project_mferro/project_migraine/data/migraine_diagnosis.csv
+awk -F ',' 'NR == 1 || (($6 == "PURCH") && (index($9, "N02CC") != 0)) {print $0}' ${detailed_longitudinal} > ${triptan_users_file}
 time1=$(date +%s)
 execution_time=$((time1 - time0))
 echo "Execution time: $execution_time seconds"
 
-echo "start migraine diagnosis filtering"
+echo "start cluster headache endpoint filtering"
 time0=$(date +%s)
-awk -F ',' 'NR == 1 || ((index($9, "G43") != 0) || (index($10, "G43") != 0)) {print $0}' /data/processed_data/detailed_longitudinal/R10/detailed_longitudinal_2023-09-11.csv > /data/projects/project_mferro/project_migraine/data/triptan_users.csv
+awk -F '\t' 'NR == 1 || {print $1 $2  $3  $4  $15766  $15767  $15768  $15769  $15770  $15771  $15772  $15773}' ${endpointer}> ${cluster_migraine_events_file}
+time1=$(date +%s)
+execution_time=$((time1 - time0))
+echo "Execution time: $execution_time seconds"
+
+echo "start NSAID users filtering"
+time0=$(date +%s)
+awk -F '\t' 'NR == 1 || (($2 == "PURCH") && (index($5, "M01A") != 0)) {print $0}' ${detailed_longitudinal} > ${nsaid_users_file}
 time1=$(date +%s)
 execution_time=$((time1 - time0))
 echo "Execution time: $execution_time seconds"
