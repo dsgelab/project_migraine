@@ -10,10 +10,12 @@
 # 2) apply inclusion / exclusion criteria
 # 
 # RULES:
-# - remove zolmtriptan users
+# - remove zolmtriptan users (only in nasal spray form)
+# - remove cluster migraine patients
 # - is indexed person (alive and living in finland on 01.01.2010) 
 # - only first purchase between 2000 and 2021 (remove prevalent users + time window bias) 
-# - remove purchase made before 18 yo and after 75 yo
+# - remove people with 1° purchase made before 18 yo and after 75 yo
+# - remove people with only 1 purchase and with ATC=N02CC
 # - remove people with < 5 purchases within 2 years of follow up 
 #
 # 3) export study cohort
