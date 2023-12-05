@@ -19,8 +19,7 @@ echo "Execution time: $execution_time seconds"
 
 echo "start cluster headache endpoint filtering"
 time0=$(date +%s)
-awk -F '\t' 'NR == 1 || {print $1 $2  $3  $4  $15766  $15767  $15768  $15769  $15770  $15771  $15772  $15773}' ${endpointer}> ${cluster_migraine_events_file}
-time1=$(date +%s)
+awk -F '\t' 'NR == 1 || ($6 == "G6_CLUSTHEADACHE_WIDE") {print $0}' ${endpointer}> ${cluster_migraine_events_file}time1=$(date +%s)
 execution_time=$((time1 - time0))
 echo "Execution time: $execution_time seconds"
 
