@@ -54,7 +54,8 @@ cat('percentage of triptan users in finregistry: ')
 cat(100*ORIGINAL_N/7166416,'\n')
 
 # EXTRA:
-vnr <- fread(VNR_codes_file)
+vnr <- fread(VNR_dictionary_file,sep='\t') %>%
+  select(c(vnr,ATC,valmiste,pkoko))
 
 cluster_migraine_events <- fread(cluster_migraine_events_file) 
 
@@ -79,7 +80,7 @@ cov <- fread(covariates_file) %>%
 # merge extra information:
 cohort <- cohort %>% 
   left_join(cov, by="FINREGISTRYID") %>%
-  left_join(vnr, by=c("CODE3"="VNRO")) %>%
+  left_join(vnr, by=c("CODE3"="vnr")) %>%
   rename(
     "VNR_CODE"="CODE3",
     "ATC_CODE"="CODE1"
