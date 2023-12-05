@@ -90,8 +90,7 @@ cohort <- cohort %>%
     BIRTH_DATE = lubridate::as_date(DATE_OF_BIRTH),
     DEATH_DATE = lubridate::as_date(DEATH_DATE),
     VNR_CODE = as.integer(VNR_CODE)
-  ) %>%
-  left_join(cluster_migraine_events, by="FINREGISTRYID")
+  ) 
 
 ###############
 ####   2   ####
@@ -99,13 +98,10 @@ cohort <- cohort %>%
 
 #remove cluster migraine patients
 N0 = length(unique(cohort$FINREGISTRYID))
-to_keep <- cohort %>% 
-  filter(G6_CLUSTHEADACHE_WIDE==0 |  is.na(G6_CLUSTHEADACHE_WIDE)) %>% 
-  pull(FINREGISTRYID) %>% 
-  unique()
-cohort <- cohort[cohort$FINREGISTRYID %in% to_keep]
+to_remove <- cluster_migraine_events %>% pull(FINREGISTRYID) %>% unique()
+cohort <- cohort[!(cohort$FINREGISTRYID %in% to_remove)]
 N1 = length(unique(cohort$FINREGISTRYID))
-print(paste(N0-N1,'Cluster migraine patients'))
+print(paste(N0-N1,'cluster migraine patients'))
 
 # remove zolmitriptan users (only nasal spray, see the pkokok or vahvuus)  
 N0 = length(unique(cohort$FINREGISTRYID))
