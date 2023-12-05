@@ -2,7 +2,7 @@
 # define file paths
 
 detailed_longitudinal=/data/processed_data/detailed_longitudinal/R10/detailed_longitudinal_DF10_2022-11-11.csv
-endpointer=/data/processed_data/endpointer/longitudinal_endpoints_no_omits_DF10_2022_09_29.csv
+endpointer=/data/processed_data/endpointer/R10/longitudinal_endpoints_no_omits_DF10_2022_09_29.csv
 
 cluster_migraine_events_file=/data/projects/project_mferro/project_migraine/data/endpoint_migraine.csv
 triptan_users_file=/data/projects/project_mferro/project_migraine/data/triptan_users.csv
