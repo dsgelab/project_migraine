@@ -43,7 +43,7 @@ cohort <- cohort %>% arrange(FINNGENID, APPROX_EVENT_DAY) %>%
 
 mutate(VISIT_NUMBER = row_number()) %>%
   
-  mutate(F1 = ifelse(row_number() == 2 & ATC_CODE != lag(ATC_CODE) & ATC_CODE == lead(ATC_CODE) & ATC_CODE == lead(ATC_CODE, 2), 1, 0))  %>% 
+  mutate(F1 = ifelse(row_number() == 1 & ATC_CODE != lead(ATC_CODE) & lead(ATC_CODE) == lead(ATC_CODE,2) & lead(ATC_CODE,2) == lead(ATC_CODE, 3), 1, 0))  %>% 
   mutate(F2 = ifelse(row_number() == 1 & ATC_CODE != lead(ATC_CODE)
                      & lead(ATC_CODE) != lead(ATC_CODE, 2) & lead(ATC_CODE, 2) == lead(ATC_CODE, 3) & lead(ATC_CODE, 3) == lead(ATC_CODE, 4), 1, 0)) %>%
   mutate(F3 = ifelse ((row_number() == 1 & ATC_CODE != lead(ATC_CODE) & 
