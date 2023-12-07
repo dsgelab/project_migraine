@@ -60,17 +60,17 @@ vnr <- fread(VNR_dictionary_file,sep='\t') %>%
 cluster_migraine_events <- fread(cluster_migraine_events_file) 
 
 COV_OF_INTEREST = c(
-"FINREGISTRYID",                  
-"INDEX_PERSON",                   
-"DATE_OF_BIRTH",                  
-"SEX",                            
-"DEATH_DATE",                     
-"MOTHER_TONGUE",                  
-"EVER_MARRIED",                   
-"EVER_DIVORCED",                  
-"EMIGRATION_DATE",                
-"EMIGRATED",                      
-"NUMBER_OF_CHILDREN"
+  "FINREGISTRYID",                  
+  "INDEX_PERSON",                   
+  "DATE_OF_BIRTH",                  
+  "SEX",                            
+  "DEATH_DATE",                     
+  "MOTHER_TONGUE",                  
+  "EVER_MARRIED",                   
+  "EVER_DIVORCED",                  
+  "EMIGRATION_DATE",                
+  "EMIGRATED",                      
+  "NUMBER_OF_CHILDREN"
 )
 
 cov <- fread(covariates_file) %>%
@@ -109,9 +109,9 @@ N0 = length(unique(cohort$FINREGISTRYID))
 to_keep <- cohort %>% 
   filter(
     !grepl("NASAL", valmiste, ignore.case = TRUE) &
-    !grepl("N02CC03", ATC_CODE, ignore.case = TRUE) &
-    !grepl("ML", pkoko, ignore.case = TRUE)
-    ) %>% 
+      !grepl("N02CC03", ATC_CODE, ignore.case = TRUE) &
+      !grepl("ML", pkoko, ignore.case = TRUE)
+  ) %>% 
   pull(FINREGISTRYID) %>% 
   unique()
 cohort <- cohort[cohort$FINREGISTRYID %in% to_keep]
@@ -136,7 +136,7 @@ cohort <- cohort %>%
   mutate(
     PURCH_N = row_number(),
     IS_FIRST_PURCH = ifelse(PURCH_N==1, 1, 0)
-    ) %>% 
+  ) %>% 
   ungroup() %>%
   mutate(YEAR_FIRST_PURCH = ifelse(IS_FIRST_PURCH==1, lubridate::year(PURCH_DATE), NaN)) 
 
@@ -183,7 +183,7 @@ date_first_purch <- cohort %>%
   group_by(FINREGISTRYID) %>% 
   summarize(DATE_FIRST_PURCH = min(PURCH_DATE)) %>%
   ungroup() %>%
-  pull(c(FINREGISTRYID,DATE_FIRST_PURCH))
+  select(FINREGISTRYID,DATE_FIRST_PURCH)
 
 cohort <- cohort %>%
   left_join(date_first_purch, by = "FINREGISTRYID")%>%
@@ -218,15 +218,15 @@ date_first_purch <- cohort %>%
   arrange(FINREGISTRYID, PURCH_DATE) %>% 
   group_by(FINREGISTRYID) %>% 
   slice(1) %>% 
-  select(FINNGFINREGISTRYIDENID, DATE_FIRST_PURCH)
+  select(FINREGISTRYID, DATE_FIRST_PURCH)
 
 merged_trpt_nsaid <- left_join(nsaid_cohort,date_first_purch, by="FINREGISTRYID") %>% 
   filter( 
     (EVENT_DAY_NSAID > DATE_FIRST_PURCH) & 
     (EVENT_DAY_NSAID <= (DATE_FIRST_PURCH + 365 * 2))
-    ) %>% 
-    group_by(FINREGISTRYID) %>% 
-    summarise(N_PURCH_NSAID=n())
+  ) %>% 
+  group_by(FINREGISTRYID) %>% 
+  summarise(N_PURCH_NSAID=n())
 
 cohort <- cohort %>%
   left_join(merged_trpt_nsaid, by="FINREGISTRYID") %>% 

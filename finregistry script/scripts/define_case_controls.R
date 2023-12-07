@@ -40,11 +40,11 @@ cohort <- cohort %>%
   group_by(FINREGISTRYID) %>%
   arrange(FINREGISTRYID, PVM) %>%
   mutate(SWITCH = ifelse(ATC_CODE != lag(ATC_CODE),1,0)) %>%
-  mutate(SWITCH = ifelse(is.na(SWITCH),0,SWITCH))
+  mutate(SWITCH = ifelse(is.na(SWITCH),0,SWITCH)) %>%
   mutate(VISIT_NUMBER = row_number()) %>%  
-  mutate(F1 = ifelse(row_number() == 2 & ATC_CODE != lag(ATC_CODE) & ATC_CODE == lead(ATC_CODE) & ATC_CODE == lead(ATC_CODE, 2), 1, 0))  %>% 
+  mutate(F1 = ifelse(row_number() == 1 & ATC_CODE != lead(ATC_CODE) & lead(ATC_CODE) == lead(ATC_CODE,2) & lead(ATC_CODE,2) == lead(ATC_CODE, 3), 1, 0))  %>% 
   mutate(F2 = ifelse(row_number() == 1 & ATC_CODE != lead(ATC_CODE)& lead(ATC_CODE) != lead(ATC_CODE, 2) & lead(ATC_CODE, 2) == lead(ATC_CODE, 3) & lead(ATC_CODE, 3) == lead(ATC_CODE, 4), 1, 0)) %>%
-  mutate(F3 = ifelse ((row_number() == 1 & ATC_CODE != lead(ATC_CODE) & lead(ATC_CODE) != lead(ATC_CODE, 2) & lead(ATC_CODE, 2) != lead(ATC_CODE, 3)), 1, 0)) %>%  
+  mutate(F3 = ifelse((row_number() == 1 & ATC_CODE != lead(ATC_CODE) & lead(ATC_CODE) != lead(ATC_CODE, 2) & lead(ATC_CODE, 2) != lead(ATC_CODE, 3)), 1, 0)) %>%  
   mutate(control_e = ifelse((row_number() == 1 & ATC_CODE == lead(ATC_CODE) & ATC_CODE == lead(ATC_CODE,2) & ATC_CODE == lead(ATC_CODE,3)), 1, 0))
 
 # QC:
@@ -54,6 +54,10 @@ cohort <- cohort %>%
 TRPT_FAIL_1 <- cohort %>% summarise(TOT_SWITCH=sum(SWITCH)) %>% filter(TOT_SWITCH==1) %>% pull(FINREGISTRYID)
 TRPT_FAIL_2 <- cohort %>% summarise(TOT_SWITCH=sum(SWITCH)) %>% filter(TOT_SWITCH==2) %>% pull(FINREGISTRYID)
 TRPT_FAIL_3 <- cohort %>% summarise(TOT_SWITCH=sum(SWITCH)) %>% filter(TOT_SWITCH>=3) %>% pull(FINREGISTRYID)
+
+F1 <- cohort %>% filter(F1==1) %>% pull(FINREGISTRYID)
+F2 <- cohort %>% filter(F2==1) %>% pull(FINREGISTRYID)
+F3 <- cohort %>% filter(F3==1) %>% pull(FINREGISTRYID)
 
 cat( ' ----- naive definition ----- \n',
   'number of failures to 1 triptan: ', length(TRPT_FAIL_1), 
