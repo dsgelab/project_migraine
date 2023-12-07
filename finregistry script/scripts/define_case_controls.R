@@ -104,7 +104,9 @@ if( nrow(cohort) != SC ){
 # overwrite the file to add the case-control results
 fwrite(cohort, file=study_population_file, append = FALSE)
 
-
+# clean up memory
+rm(list=ls())
+gc()
 
 
 
