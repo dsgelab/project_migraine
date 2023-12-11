@@ -155,7 +155,7 @@ N1 = length(unique(cohort$FINNGENID))
 cat(paste(N0-N1,'patients with first purchase outside of [2000,2021], eliminating',
           100*(N0-N1)/ORIGINAL_N,'% of original people \n'))
 
-# remove purchases made before turning 18 or after turning 75
+# remove people with 1° purchase made before turning 18 or after turning 75
 N0 = length(unique(cohort$FINNGENID))
 
 to_keep <- cohort %>%
