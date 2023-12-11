@@ -4,7 +4,8 @@
 # 1. fetch data 
 # 2. define cases
 # 3. define controls
-# 4. save results
+# 4. excluding patients that doesn't fit our definition of cases and controls
+# 5. save results
 # 
 ####################################################
 
@@ -97,15 +98,24 @@ cat('****naive definition*** \n',
 )  
 
 ###############
-####   4   ####
+####  3.1  ####
 ###############
 
-# sanity-check
+# sanity-check 
 if( nrow(cohort) != SC ){ 
   print('failed sanity check: something is wrong!') 
 }
 
+###############
+####   4   ####
+###############
+to_keep<- cohort %>% filter(F1==1 | F2==1 | F3==1 | control_e==1) %>% pull(FINNGENID) %>% unique()
+cohort <- cohort %>% filter(FINNGENID %in% to_keep)
+length(unique(cohort$FINNGENID))
 
+###############
+####   5   ####
+###############
 
 # overwrite the file to add the case-control results
 fwrite(cohort, file=study_population_file, append = FALSE)
