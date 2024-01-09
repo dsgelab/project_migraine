@@ -1,0 +1,85 @@
+# Install and load the necessary packages if not already installed
+suppressPackageStartupMessages({
+  
+  library(data.table)
+  library(dplyr)
+  library(lubridate)
+  
+})
+library(dplyr)
+
+source('/home/ivm/project_migraine/file_paths.R')
+
+cohort <- fread(study_population_file) %>% group_by(FINNGENID) %>% slice(1) %>% select(FINNGENID, F1,F2,F3,control_e, DATE_FIRST_PURCH, EVENT_AGE, SEX)
+
+#this is get from MakeEndptFile.c by Zhyu
+endpoint  = fread('/home/ivm/project_migraine/MakeEndpFile/output_core_ep') 
+
+#merge to retrieve informations about triptan failure type
+ep_trpt_fail <- endpoint %>%
+  left_join(cohort, by = "FINNGENID")  %>%
+  mutate(SEX_binary=  as.numeric(SEX == "female"), #Recode (1 for Female, 0 for Male)
+         year_purch=as.numeric(format(as.Date(DATE_FIRST_PURCH, format="%d/%m/%Y"),"%Y"))) %>% 
+  select(-date_of_birth, -start_of_followup, -end_of_followup, -DATE_FIRST_PURCH, -V5, -SEX)
+
+
+association_analysis_logistic <- function(dataset, response_variable) {
+  # Create a matrix for results
+  results <- matrix(NA, nrow=length(dataset), ncol = 2, 
+                    dimnames = list(colnames(ep_F1), c( "Beta", "P-value")))
+  
+# Loop through the columns of the dataset
+for (column in colnames(dataset)) {
+
+  if (column != response_variable & (column != "FINNGENID") & column != "SEX_binary" & column != "EVENT_AGE" & column != "year_purch") 
+    { 
+    #Check if there is at least 1% cases in 2x2 matrix
+      contingency_table <- table(dataset[[response_variable]], dataset[[column]])
+      percentage_contingency_table <- prop.table(contingency_table,1) * 100
+      if (!is.na(percentage_contingency_table[4]) & percentage_contingency_table[4]>=1)
+      { 
+        #Perform the regression only if |correlation| between response and endpoint is >0.01
+        correlation <- cor(as.numeric(dataset[[response_variable]]), as.numeric(dataset[[column]])) 
+        if (abs(correlation) >= 0.01 &  !is.na(correlation) & correlation!="NA")
+       {
+     #Fit a logistic regression model
+         model <- lm(as.formula(paste(response_variable, "~ SEX_binary + EVENT_AGE +", column)), data = dataset) 
+  
+     #Get Beta and p-value
+         beta <- coef(model)
+         p_value <- summary(model)$coefficients[, "Pr(>|t|)"]
+  
+    # Save the results in the matrix
+         results[column, "Beta"] <- beta[4] 
+         results[column, "P-value"] <- p_value[4] 
+        }
+      }
+   }
+}  
+  # Remove rows with NA values in both 'Beta' and 'P_Value'
+  results <- as.data.frame(results)
+  results <- results[complete.cases(results$Beta, results$P_Value), ]
+  
+  # Return the matrix of results
+  return(results)
+}
+
+# Get estimates for F1, F2, F3, and controls
+ep_F1 <- ep_trpt_fail %>% select(-F2,-F3,-control_e)
+response_variable <- "F1"
+results_association_F1 <- association_analysis_logistic(ep_F1, response_variable) %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH"))
+
+
+ep_F2 <- ep_trpt_fail %>% select(-F1,-F3,-control_e)
+response_variable <- "F2"
+results_association_F2 <- association_analysis_logistic(ep_F2, response_variable) %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH"))
+
+
+ep_F3 <- ep_trpt_fail %>% select(-F1,-F2,-control_e)
+response_variable <- "F3"
+results_association_F3 <- association_analysis_logistic(ep_F3, response_variable)  %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH"))
+
+ep_CTRL <- ep_trpt_fail %>% select(-F1,-F2,-F3)
+response_variable <- "control_e"
+results_association_CTRL <- association_analysis_logistic(ep_CTRL, response_variable) %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH"))
+
