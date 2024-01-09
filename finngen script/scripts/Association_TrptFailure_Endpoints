@@ -26,7 +26,7 @@ ep_trpt_fail <- endpoint %>%
 association_analysis_logistic <- function(dataset, response_variable) {
   # Create a matrix for results
   results <- matrix(NA, nrow=length(dataset), ncol = 2, 
-                    dimnames = list(colnames(ep_F1), c( "Beta", "P-value")))
+                    dimnames = list(colnames(dataset), c( "Beta", "P-value")))
   
 # Loop through the columns of the dataset
 for (column in colnames(dataset)) {
