@@ -7,3 +7,6 @@ triptan_users_file              = '/data/projects/project_mferro/project_migrain
 nsaid_users_file                = '/data/projects/project_mferro/project_migraine/data/nsaid_users.csv'
 
 study_population_file           = '/data/projects/project_mferro/project_migraine/data/study_population.csv'
+
+sample_endpoint_file            = '/data/projects/project_mferro/project_migraine/data/sample_endpoint.csv'
+core_endpoints_file             = '/data/projects/project_mferro/project_migraine/core_endpoints_list.csv'
