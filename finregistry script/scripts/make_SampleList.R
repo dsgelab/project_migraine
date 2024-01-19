@@ -29,7 +29,7 @@ sample_file <- cohort %>%
     select(FINREGISTRYID,date_of_birth, start_of_followup, end_of_followup) %>%
     distinct(FINREGISTRYID, .keep_all = TRUE)
 
-fwrite(sample_file, file=sample_endpoint_file, append = FALSE)
+fwrite(sample_file, file=SampleList, append = FALSE)
 
 
 
