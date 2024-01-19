@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 })
 
 source('/data/projects/project_mferro/project_migraine/file_paths.R')
-PREVALENCE_CUTOFF = 0.05
+PREVALENCE_CUTOFF = 0.01
 
 # define function for evaluationg all the associations
 association_analysis_logistic <- function(dataset, response_variable) {
