@@ -49,7 +49,7 @@ for (column in colnames(dataset)) {
     else 
         {
         # If PREVALENCE is FALSE, perform regression without prevalence and correlation checks
-        model <- lm(as.formula(paste(response_variable, "~ SEX_binary + year_purch +", column)), data = dataset) 
+        model <- lm(as.formula(paste(response_variable, "~ SEX_binary + EVENT_AGE +", column)), data = dataset) 
        
         beta <- coef(model)
         p_value <- summary(model)$coefficients[, "Pr(>|t|)"]
