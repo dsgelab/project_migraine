@@ -11,3 +11,4 @@ study_population_file           = '/data/projects/project_mferro/project_migrain
 SampleList                      = '/data/projects/project_mferro/project_migraine/data/SampleList'
 endpoint_file                   = '/data/projects/project_mferro/project_migraine/data/endpoint.csv'
 medication_file                 = '/data/projects/project_mferro/project_migraine/data/medication.csv'
+SES_file                        = '/data/projects/project_mferro/project_migraine/data/SES.csv'
