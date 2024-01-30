@@ -107,7 +107,7 @@ for( i in c(1,2,3,4) ){
  
    # Get estimates for F1, F2, F3, and controls
   #F1
-  ep_F1 <- DB %>% select(-F2,-F3,-control_e)
+  ep_F1 <- DB %>% filter(F1==1|control_e==1) %>% select(-F2,-F3,-control_e)
   response_variable <- "F1"
   if (name!="SES") {  results_association_F1 <- association_analysis_logistic(ep_F1, response_variable) }
   else {  results_association_F1 <- association_analysis_logistic(ep_F1, response_variable,FALSE)  }
@@ -120,7 +120,7 @@ for( i in c(1,2,3,4) ){
   
   #F2
   my_matrix <- data.frame()
-  ep_F2 <- DB %>% select(-F1,-F3,-control_e)
+  ep_F2 <- DB %>% filter(F2==1|control_e==1) %>% select(-F1,-F3,-control_e)
   response_variable <- "F2"
   if (name!="SES") {  results_association_F2 <- association_analysis_logistic(ep_F2, response_variable) }
   else {results_association_F2 <- association_analysis_logistic(ep_F2, response_variable,FALSE)  }
@@ -131,7 +131,7 @@ for( i in c(1,2,3,4) ){
   save_results(results_association_F2,filename)
   
   #F3
-  ep_F3 <- DB %>% select(-F1,-F2,-control_e)
+  ep_F3 <- DB %>% filter(F3==1|control_e==1) %>% select(-F1,-F2,-control_e)
   response_variable <- "F3"
   if (name!="SES") {  results_association_F3 <- association_analysis_logistic(ep_F3, response_variable) }
   else {results_association_F3 <- association_analysis_logistic(ep_F3, response_variable,FALSE)  }
