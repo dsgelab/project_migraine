@@ -169,23 +169,43 @@ Beta_F2 <- F2_association %>% rename(Beta_F2=Beta)
 Beta_F3 <- F3_association %>% rename(Beta_F3=Beta)
 Beta_CTRL <- CTRL_association %>% rename(Beta_CTRL=Beta)
 
-my_data <- Beta_F1 %>% full_join(Beta_F2, by="ENDPOINT") %>% full_join(Beta_F3, by="ENDPOINT") %>% full_join(Beta_CTRL, by="ENDPOINT")%>% select(ENDPOINT, Beta_F1, Beta_F2, Beta_F3, Beta_CTRL)
+mydata <- Beta_F1 %>% full_join(Beta_F2, by="ENDPOINT") %>% full_join(Beta_F3, by="ENDPOINT") %>% full_join(Beta_CTRL, by="ENDPOINT")%>% select(ENDPOINT, Beta_F1, Beta_F2, Beta_F3, Beta_CTRL)
 library(ggplot2)
 ### F1 vs F2 ###
-ggplot(mydata, aes(x=Beta_F1, y=Beta_F2,label=endpoint))+ 
+ggplot(mydata, aes(x=Beta_F1, y=Beta_F2,label=ENDPOINT))+ 
   geom_point() +geom_text(hjust=0, vjust=0) +
   geom_abline(linetype="dashed",intercept = 0, slope = 1) 
 
 ### F1 vs F3 ###
-ggplot(mydata, aes(x=Beta_F1, y=Beta_F3,label=endpoint))+ 
+ggplot(mydata, aes(x=Beta_F1, y=Beta_F3,label=ENDPOINT))+ 
   geom_point() +geom_text(hjust=0, vjust=0) +
   geom_abline(linetype="dashed",intercept = 0, slope = 1) 
 
 ### F2 vs F3 ###
-ggplot(mydata, aes(x=Beta_F2, y=Beta_F3,label=endpoint))+ 
+ggplot(mydata, aes(x=Beta_F2, y=Beta_F3,label=ENDPOINT))+ 
   geom_point() +geom_text(hjust=0, vjust=0) +
   geom_abline(linetype="dashed",intercept = 0, slope = 1) 
 
+### PLOT BETAS by Type of Switching ###
+betas <- bind_rows(F1_association,
+                   F2_association,
+                   F3_association,
+                   CTRL_association,
+                   .id="Model"
+                   ) %>% mutate( type_failure= as.factor(case_when(
+                     Model==1 ~ "F1",
+                     Model==2 ~ "F2",
+                     Model==3 ~ "F3",
+                     Model==4 ~ "CTRL",
+                     TRUE~"None"
+                   )))
+
+ggplot(betas, aes(x= reorder((ENDPOINT,-Beta), y= Beta, color=type_failure))+
+         geom_point(position=position_dodge(width=0.2), size=3)+
+         labs(x="Variable",
+              y="Beta")+
+         theme_minimal()+
+         theme(axis.text.x= element_text(angle=45,hjust=1)))
 
 
 
