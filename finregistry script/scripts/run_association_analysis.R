@@ -4,6 +4,8 @@ suppressPackageStartupMessages({
   library(data.table)
   library(dplyr)
   library(lubridate)
+  library(ggplot2)
+  library(tibble)
   
 })
 
@@ -110,14 +112,14 @@ for( i in seq(1,length(name_list)) ){
       rename( 
         psychiatric_residential_care='247_psychiatric_residential_care', 
         residential_care_housing_under_65yo='247_residential_care_housing_under_65yo'
-        ) %>%
+      ) %>%
       left_join(cohort, by = "FINREGISTRYID") %>%
       select(-DATE_FIRST_PURCH)
   }
   
   # Get estimates for F1, F2, F3, and controls
   #F1
-  ep_F1 <- DB %>% select(-F2,-F3,-control_e)
+  ep_F1 <- DB %>% filter(F1==1|control_e==1) %>% select(-F2,-F3,-control_e)
   response_variable <- "F1"
   if (name!="SES") {  results_association_F1 <- association_analysis_logistic(ep_F1, response_variable) }
   else {  results_association_F1 <- association_analysis_logistic(ep_F1, response_variable,PREVALENCE=FALSE)  }
@@ -130,7 +132,7 @@ for( i in seq(1,length(name_list)) ){
   
   #F2
   my_matrix <- data.frame()
-  ep_F2 <- DB %>% select(-F1,-F3,-control_e)
+  ep_F2 <- DB %>% filter(F2==1|control_e==1) %>% select(-F1,-F3,-control_e)
   response_variable <- "F2"
   if (name!="SES") {  results_association_F2 <- association_analysis_logistic(ep_F2, response_variable) }
   else {results_association_F2 <- association_analysis_logistic(ep_F2, response_variable,PREVALENCE=FALSE)  }
@@ -141,7 +143,7 @@ for( i in seq(1,length(name_list)) ){
   save_results(results_association_F2,filename)
   
   #F3
-  ep_F3 <- DB %>% select(-F1,-F2,-control_e)
+  ep_F3 <- DB %>% filter(F3==1|control_e==1) %>% select(-F1,-F2,-control_e)
   response_variable <- "F3"
   if (name!="SES") {  results_association_F3 <- association_analysis_logistic(ep_F3, response_variable) }
   else {results_association_F3 <- association_analysis_logistic(ep_F3, response_variable,PREVALENCE=FALSE)  }
@@ -163,36 +165,48 @@ for( i in seq(1,length(name_list)) ){
   save_results(results_association_CTRL,filename)
 }
 
-rm(list=ls())
-gc()
-
-
 #------------------------#
 ##### FDR calculation ####
 #------------------------#
 
-# Set the directory path where your CSV files are located
-directory_path <- "/data/projects/project_mferro/project_migraine/output"
-
-csv_files <- list.files(path = directory_path, pattern = "F1\\.csv$", full.names = TRUE)
-F1_association <- do.call(rbind, lapply(csv_files, read.csv))
 # FDR, arrange by p-values , select only statistically significative factors
-F1_association <- F1_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05)
+F1_association <- F1_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05) %>% rownames_to_column("ENDPOINT")
+F2_association <- F2_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05) %>% rownames_to_column("ENDPOINT")
+F3_association <- F3_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05) %>% rownames_to_column("ENDPOINT")
+CTRL_association <- CTRL_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05) %>% rownames_to_column("ENDPOINT")
+
+#------------------------#
+#####    Plotting     ####
+#------------------------#
+
+# PLOTS coefficients
+Beta_F1 <- F1_association %>% rename(Beta_F1=Beta)
+Beta_F2 <- F2_association %>% rename(Beta_F2=Beta)
+Beta_F3 <- F3_association %>% rename(Beta_F3=Beta)
+Beta_CTRL <- CTRL_association %>% rename(Beta_CTRL=Beta)
+
+mydata <- Beta_F1 %>% 
+  full_join(Beta_F2, by="ENDPOINT") %>% 
+  full_join(Beta_F3, by="ENDPOINT") %>% 
+  full_join(Beta_CTRL, by="ENDPOINT")%>% 
+  select(ENDPOINT, Beta_F1, Beta_F2, Beta_F3, Beta_CTRL)
+
+### F1 vs F2 ###
+ggplot(mydata, aes(x=Beta_F1, y=Beta_F2,label=ENDPOINT))+ 
+  geom_point() +geom_text(hjust=0, vjust=0) +
+  geom_abline(linetype="dashed",intercept = 0, slope = 1) 
+
+### F1 vs F3 ###
+ggplot(mydata, aes(x=Beta_F1, y=Beta_F3,label=ENDPOINT))+ 
+  geom_point() +geom_text(hjust=0, vjust=0) +
+  geom_abline(linetype="dashed",intercept = 0, slope = 1) 
+
+### F2 vs F3 ###
+ggplot(mydata, aes(x=Beta_F2, y=Beta_F3,label=ENDPOINT))+ 
+  geom_point() +geom_text(hjust=0, vjust=0) + 
+  geom_abline(linetype="dashed",intercept = 0, slope = 1)
 
 
-csv_files <- list.files(path = directory_path, pattern = "F2\\.csv$", full.names = TRUE)
-all_data <- do.call(rbind, lapply(csv_files, read.csv))
-# FDR, arrange by p-values , select only statistically significative factors
-F2_association <- F2_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05)
-
-
-csv_files <- list.files(path = directory_path, pattern = "F3\\.csv$", full.names = TRUE)
-all_data <- do.call(rbind, lapply(csv_files, read.csv))
-# FDR, arrange by p-values , select only statistically significative factors
-F3_association <- F3_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05)
-
-csv_files <- list.files(path = directory_path, pattern = "control_e\\.csv$", full.names = TRUE)
-all_data <- do.call(rbind, lapply(csv_files, read.csv))
-# FDR, arrange by p-values , select only statistically significative factors
-CTRL_association <- CTRL_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05) 
+rm(list=ls())
+gc()
 
