@@ -34,11 +34,11 @@ for (column in colnames(dataset)) {
             if (abs(correlation) >= 0.01 &  !is.na(correlation) & correlation!="NA")
            {
          #Fit a logistic regression model
-             model <- lm(as.formula(paste(response_variable, "~ SEX_binary + EVENT_AGE  +", column)), data = dataset) 
+             model <- glm(as.formula(paste(response_variable, "~ SEX_binary + EVENT_AGE  +", column)), data = dataset, family="binomial") 
       
          #Get Beta and p-value
              beta <- coef(model)
-             p_value <- summary(model)$coefficients[, "Pr(>|t|)"]
+             p_value <- summary(model)$coefficients[, "Pr(>|z|)"]
       
         # Save the results in the matrix
              results[column, "Beta"] <- beta[4] 
@@ -49,10 +49,10 @@ for (column in colnames(dataset)) {
     else 
         {
         # If PREVALENCE is FALSE, perform regression without prevalence and correlation checks
-        model <- lm(as.formula(paste(response_variable, "~ SEX_binary + EVENT_AGE +", column)), data = dataset) 
+        model <- glm(as.formula(paste(response_variable, "~ SEX_binary + EVENT_AGE +", column)), data = dataset, family="binomial") 
        
         beta <- coef(model)
-        p_value <- summary(model)$coefficients[, "Pr(>|t|)"]
+        p_value <- summary(model)$coefficients[, "Pr(>|z|)"]
         
         results[column, "Beta"] <- beta[4] 
         results[column, "P-value"] <- p_value[4] 
@@ -171,20 +171,6 @@ Beta_CTRL <- CTRL_association %>% rename(Beta_CTRL=Beta)
 
 mydata <- Beta_F1 %>% full_join(Beta_F2, by="ENDPOINT") %>% full_join(Beta_F3, by="ENDPOINT") %>% full_join(Beta_CTRL, by="ENDPOINT")%>% select(ENDPOINT, Beta_F1, Beta_F2, Beta_F3, Beta_CTRL)
 library(ggplot2)
-### F1 vs F2 ###
-ggplot(mydata, aes(x=Beta_F1, y=Beta_F2,label=ENDPOINT))+ 
-  geom_point() +geom_text(hjust=0, vjust=0) +
-  geom_abline(linetype="dashed",intercept = 0, slope = 1) 
-
-### F1 vs F3 ###
-ggplot(mydata, aes(x=Beta_F1, y=Beta_F3,label=ENDPOINT))+ 
-  geom_point() +geom_text(hjust=0, vjust=0) +
-  geom_abline(linetype="dashed",intercept = 0, slope = 1) 
-
-### F2 vs F3 ###
-ggplot(mydata, aes(x=Beta_F2, y=Beta_F3,label=ENDPOINT))+ 
-  geom_point() +geom_text(hjust=0, vjust=0) +
-  geom_abline(linetype="dashed",intercept = 0, slope = 1) 
 
 ### PLOT BETAS by Type of Switching ###
 betas <- bind_rows(F1_association,
