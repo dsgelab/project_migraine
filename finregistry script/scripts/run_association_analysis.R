@@ -35,11 +35,11 @@ association_analysis_logistic <- function(dataset, response_variable, PREVALENCE
           if (abs(correlation) >= 0.01 &  !is.na(correlation) & correlation!="NA")
           {
             #Fit a logistic regression model
-            model <- lm(as.formula(paste(response_variable, "~ SEX + EVENT_AGE +", column)), data = dataset) 
+            model <- glm(as.formula(paste(response_variable, "~ SEX + EVENT_AGE +", column)), data = dataset, family="binomial") 
             
             #Get Beta and p-value
             beta <- coef(model)
-            p_value <- summary(model)$coefficients[, "Pr(>|t|)"]
+            p_value <- summary(model)$coefficients[, "Pr(>|z|)"]
             
             # Save the results in the matrix
             results[column, "Beta"] <- beta[4] 
@@ -50,10 +50,10 @@ association_analysis_logistic <- function(dataset, response_variable, PREVALENCE
       else 
       {
         # If PREVALENCE is FALSE, perform regression without prevalence and correlation checks
-        model <- lm(as.formula(paste(response_variable, "~ SEX + EVENT_AGE +", column)), data = dataset) 
+        model <- glm(as.formula(paste(response_variable, "~ SEX + EVENT_AGE +", column)), data = dataset, family="binomial") 
         
         beta <- coef(model)
-        p_value <- summary(model)$coefficients[, "Pr(>|t|)"]
+        p_value <- summary(model)$coefficients[, "Pr(>|z|)"]
         
         results[column, "Beta"] <- beta[4] 
         results[column, "P-value"] <- p_value[4] 
@@ -207,6 +207,24 @@ ggplot(mydata, aes(x=Beta_F2, y=Beta_F3,label=ENDPOINT))+
   geom_abline(linetype="dashed",intercept = 0, slope = 1)
 
 
+### PLOT BETAS by Type of Switching ###
+betas <- bind_rows(F1_association,F2_association,F3_association,.id="Model") %>% 
+  mutate(type_failure= as.factor(
+    case_when(
+      Model==1 ~ "F1",
+      Model==2 ~ "F2",
+      Model==3 ~ "F3",
+      TRUE~"None")
+    )) 
+
+ggplot(betas, aes(x=reorder(ENDPOINT,-Beta), y=Beta, color=type_failure))+
+        geom_point(position=position_dodge(width=0.4), size=3)+
+        labs(x="Variable",y="Beta")+
+        geom_hline(yintercept = 0)+
+        theme_minimal()+
+        theme(axis.text.x= element_text(angle=45,hjust=1))
+
 rm(list=ls())
 gc()
+
 
