@@ -155,28 +155,54 @@ for( i in c(1,2,3,4) ){
 
 rm(results_association_CTRL,results_association_F1,results_association_F2,results_association_F3,my_matrix)
 
-# FDR, arrange by p-values , select only statistically significative factors
-F1_association <- F1_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05)%>% rownames_to_column("ENDPOINT")
-F2_association <- F2_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05) %>% rownames_to_column("ENDPOINT")
-F3_association <- F3_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05)%>% rownames_to_column("ENDPOINT")
-CTRL_association <- CTRL_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% filter(FDR_p_values < 0.05)%>% rownames_to_column("ENDPOINT")
+# Adjust for FDR
+F1_association <- F1_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% rownames_to_column("ENDPOINT")
+F2_association <- F2_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% rownames_to_column("ENDPOINT")
+F3_association <- F3_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% rownames_to_column("ENDPOINT")
+CTRL_association <- CTRL_association %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>% rownames_to_column("ENDPOINT")
+
+# PLOT Betas F1 vs F2, etc
+Beta_F1 <- F1_association %>% rename(Beta_F1=Beta, pval_F1=FDR_p_values) %>% mutate(sign_F1= ifelse(pval_F1<0.05,1,0))
+Beta_F2 <- F2_association %>% rename(Beta_F2=Beta, pval_F2=FDR_p_values) %>% mutate(sign_F2= ifelse(pval_F2<0.05,1,0))
+Beta_F3 <- F3_association %>% rename(Beta_F3=Beta, pval_F3=FDR_p_values) %>% mutate(sign_F3= ifelse(pval_F3<0.05,1,0))
+
+my_betas <- Beta_F1 %>% full_join(Beta_F2, by="ENDPOINT") %>% full_join(Beta_F3, by="ENDPOINT") %>% full_join(Beta_CTRL, by="ENDPOINT")
+ # F1 vs F2  
+  ggplot(my_betas, aes(x = Beta_F1, y = Beta_F2, color = interaction(sign_F1, sign_F2), shape = interaction(sign_F1, sign_F2))) +
+  geom_point(size = 3, fill = "white") +  
+  geom_text(aes(label = endpoint), vjust = 1.5, hjust = 0.5) +
+  geom_abline(linetype="dashed",intercept = 0, slope = 1) +
+  geom_hline(yintercept = 0,  color = "black") +  
+  geom_vline(xintercept = 0,  color = "black") +   
+  scale_color_manual(
+    values = c("0.0" = "lightgray", "1.0" = "yellow", "0.1" = "blue", "1.1" = "green"),
+    labels = c("Both n.s.", "Only F1", "Only F2", "Both F1 F2")
+  ) +
+  scale_shape_manual(
+    values = c("0.0" = 16, "1.0" = 17, "0.1" = 15, "1.1" = 18),
+    labels = c("Both n.s.", "Only F1", "Only F2", "Both F1 F2")
+  ) +
+  labs(title = "",
+       x = "Beta F1",
+       y = "Beta F2",
+       color = "Significance",
+       shape = "Significance") +
+  theme_minimal()
 
 
+# PLOTS ONLY SIGNIFICATIVE COEFFICIENTS
 
 # PLOTS coefficients
-Beta_F1 <- F1_association %>% rename(Beta_F1=Beta)
-Beta_F2 <- F2_association %>% rename(Beta_F2=Beta)
-Beta_F3 <- F3_association %>% rename(Beta_F3=Beta)
-Beta_CTRL <- CTRL_association %>% rename(Beta_CTRL=Beta)
-
-mydata <- Beta_F1 %>% full_join(Beta_F2, by="ENDPOINT") %>% full_join(Beta_F3, by="ENDPOINT") %>% full_join(Beta_CTRL, by="ENDPOINT")%>% select(ENDPOINT, Beta_F1, Beta_F2, Beta_F3, Beta_CTRL)
-library(ggplot2)
+Beta_F1_sign <- F1_association %>% filter(FDR_p_values < 0.05)
+Beta_F2_sign <- F2_association %>% filter(FDR_p_values < 0.05)
+Beta_F3_sign <- F3_association %>% filter(FDR_p_values < 0.05)
+Beta_CTRL_sign <- CTRL_association %>% filter(FDR_p_values < 0.05)
 
 ### PLOT BETAS by Type of Switching ###
-betas <- bind_rows(F1_association,
-                   F2_association,
-                   F3_association,
-                   CTRL_association,
+betas <- bind_rows(Beta_F1_sign,
+                   Beta_F2_sign,
+                   Beta_F3_sign,
+                   Beta_CTRL_sign,
                    .id="Model"
                    ) %>% mutate( type_failure= as.factor(case_when(
                      Model==1 ~ "F1",
@@ -186,12 +212,12 @@ betas <- bind_rows(F1_association,
                      TRUE~"None"
                    )))
 
-ggplot(betas, aes(x= reorder((ENDPOINT,-Beta), y= Beta, color=type_failure))+
+ggplot(betas, aes(x= reorder(ENDPOINT,-Beta), y= Beta, color=type_failure))+
          geom_point(position=position_dodge(width=0.2), size=3)+
          labs(x="Variable",
               y="Beta")+
          theme_minimal()+
-         theme(axis.text.x= element_text(angle=45,hjust=1)))
+         theme(axis.text.x= element_text(angle=45,hjust=1))
 
 
 
