@@ -35,28 +35,28 @@ association_analysis_logistic <- function(dataset, response_variable, PREVALENCE
           if (abs(correlation) >= 0.01 &  !is.na(correlation) & correlation!="NA")
           {
             #Fit a logistic regression model
-            model <- glm(as.formula(paste(response_variable, "~ SEX + EVENT_AGE +", column)), data = dataset, family="binomial") 
+            model <- glm(as.formula(paste(response_variable, "~ SEX + year_birth + year_purch + ", column)), data = dataset, family="binomial") 
             
             #Get Beta and p-value
             beta <- coef(model)
             p_value <- summary(model)$coefficients[, "Pr(>|z|)"]
             
             # Save the results in the matrix
-            results[column, "Beta"] <- beta[4] 
-            results[column, "P-value"] <- p_value[4] 
+            results[column, "Beta"] <- beta[5] 
+            results[column, "P-value"] <- p_value[5] 
           }
         }
       }
       else 
       {
         # If PREVALENCE is FALSE, perform regression without prevalence and correlation checks
-        model <- glm(as.formula(paste(response_variable, "~ SEX + EVENT_AGE +", column)), data = dataset, family="binomial") 
+        model <- glm(as.formula(paste(response_variable, "~ SEX + year_birth + year_purch +", column)), data = dataset, family="binomial") 
         
         beta <- coef(model)
         p_value <- summary(model)$coefficients[, "Pr(>|z|)"]
         
-        results[column, "Beta"] <- beta[4] 
-        results[column, "P-value"] <- p_value[4] 
+        results[column, "Beta"] <- beta[5] 
+        results[column, "P-value"] <- p_value[5] 
       }
     }
   }  
