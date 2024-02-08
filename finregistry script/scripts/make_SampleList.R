@@ -19,8 +19,8 @@ sample_file <- cohort %>%
     arrange(FINREGISTRYID, EVENT_DAY) %>% 
     group_by(FINREGISTRYID) %>% 
     mutate(date_of_birth= as.Date(BIRTH_DATE),
-        # start 2 years before first purchase (+ washout)
-        start_of_followup=as.Date(DATE_FIRST_PURCH)- WASHOUT_TIME - (365*2) 
+        # start 10 years before first purchase (+ washout)
+        start_of_followup=as.Date(DATE_FIRST_PURCH)- WASHOUT_TIME - (365*10),
         # end before first triptan purchase
         # NB: triptan avarage pack size is 28 
         end_of_followup=as.Date(DATE_FIRST_PURCH)- WASHOUT_TIME
