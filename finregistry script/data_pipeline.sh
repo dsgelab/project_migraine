@@ -46,11 +46,3 @@ execution_time=$((time1 - time0))
 echo "Execution time: $execution_time seconds"
 
 echo 'study cohort have been created'
-
-time0=$(date +%s)
-/opt/R-4.1.1/bin/Rscript scripts/make_endpoint_file.R > logs/log_make_endpoint.txt
-time1=$(date +%s)
-execution_time=$((time1 - time0))
-echo "Execution time: $execution_time seconds"
-
-echo 'endpoint file have been created'
