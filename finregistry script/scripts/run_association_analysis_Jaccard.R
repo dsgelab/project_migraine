@@ -7,15 +7,15 @@ suppressPackageStartupMessages({
   library(tibble)
 })
 
-source('/home/ivm/project_migraine/file_paths.R')
-agg_logistic <- function(dataset, response_variable, PREVALENCE = TRUE) {
+source('/data/projects/project_mferro/project_migraine/file_paths.R')
+
+association_analysis_logistic <- function(dataset, response_variable, PREVALENCE = TRUE) {
   # Create a matrix for results
-  results <- matrix(NA, nrow = length(colnames(dataset)), ncol = 3,
-                    dimnames = list(colnames(dataset), c("Beta", "P-value", "se")))
+  results <- matrix(NA, nrow = length(colnames(dataset)), ncol = 3, dimnames = list(colnames(dataset), c("Beta", "P-value", "se")))
   
   # Loop through the columns of the dataset
   for (column in colnames(dataset)) {
-    if (column != response_variable & (column != "FINNGENID") & column != "SEX_binary" & column != "EVENT_AGE" & column != "year_purch") {
+    if (column != response_variable & (column != "FINREGISTRYID") & column != "SEX" & column != "EVENT_AGE" & column != "year_purch") {
       if (PREVALENCE) {
         # Check if there is at least 1% cases in 2x2 matrix
         contingency_table <- table(dataset[[response_variable]], dataset[[column]])
@@ -25,7 +25,7 @@ agg_logistic <- function(dataset, response_variable, PREVALENCE = TRUE) {
           correlation <- cor(as.numeric(dataset[[response_variable]]), as.numeric(dataset[[column]]))
           if (abs(correlation) >= 0.01 & !is.na(correlation) & correlation != "NA") {
             # Fit a logistic regression model
-            model <- glm(as.formula(paste(response_variable, "~ SEX_binary + year_birth + year_purch +", column)), data = dataset, family = "binomial")
+            model <- glm(as.formula(paste(response_variable, "~ SEX + year_birth + year_purch +", column)), data = dataset, family = "binomial")
             
             # Get Beta, p-value, se
             beta <- coef(model)
@@ -40,7 +40,7 @@ agg_logistic <- function(dataset, response_variable, PREVALENCE = TRUE) {
         }
       } else {
         # If PREVALENCE is FALSE, perform regression without prevalence and correlation checks
-        model <- glm(as.formula(paste(response_variable, "~ SEX_binary + year_birth + year_purch +", column)), data = dataset, family = "binomial")
+        model <- glm(as.formula(paste(response_variable, "~ SEX + year_birth + year_purch +", column)), data = dataset, family = "binomial")
         
         # Get Beta, p-value, se
         beta <- coef(model)
@@ -63,26 +63,31 @@ agg_logistic <- function(dataset, response_variable, PREVALENCE = TRUE) {
   return(results)
 }
 
-
 save_results <- function(results, filename){
-  output_path= "/home/ivm/project_migraine/output/"
+  output_path= "/data/projects/project_mferro/project_migraine/output/"
   output_filename = paste0(output_path,filename)
   write.csv(results, output_filename, row.names = FALSE)
 }
 
+# fetch cohort information
 
-cohort <- fread(study_population_file) %>% arrange(FINNGENID, EVENT_AGE) %>% group_by(FINNGENID) %>% slice(1) %>% 
-  mutate(SEX_binary=  as.numeric(SEX == "female"), #Recode (1 for Female, 0 for Male)
-         year_purch=as.numeric(format(as.Date(DATE_FIRST_PURCH, format="%d/%m/%Y"),"%Y")),
-         year_birth=as.numeric(format(as.Date(BIRTH_DATE, format="%Y-%m-%d"),"%Y"))) %>%  select(FINNGENID, F1,F2,F3,control_e, DATE_FIRST_PURCH, EVENT_AGE, SEX_binary, year_birth,year_purch) 
+# fetch cohort information
+cohort <- fread(study_population_file) %>% 
+  arrange(FINREGISTRYID, EVENT_AGE) %>% 
+  group_by(FINREGISTRYID) %>% 
+  slice(1) %>% 
+  mutate(
+    year_purch=as.numeric(format(as.Date(DATE_FIRST_PURCH, format="%Y-%m-%d"),"%Y")),
+    year_birth=as.numeric(format(as.Date(BIRTH_DATE, format="%Y-%m-%d"),"%Y"))
+  ) %>%  
+  select(FINREGISTRYID, F1,F2,F3,control_e, DATE_FIRST_PURCH, EVENT_AGE, SEX, year_birth,year_purch) 
 
 # fetch extra information and evaluate associations
-file_list = c(endpoint_file, medication_file,prev_med_file,SES_file)
-name_list = c('endpoint','medication','prev_med','SES')
+file_list = c(endpoint_file, medication_file, SES_file)
+name_list = c('endpoint','medication','SES')
 my_matrix <- data.frame()
 
-
-for( i in c(1,2,3,4) ){
+for( i in seq(1,length(name_list)) ){
   
   file = file_list[i]
   name = name_list[i]
@@ -90,48 +95,52 @@ for( i in c(1,2,3,4) ){
   
   if (name!="SES") {
     DB <- fread(file, sep = ',') %>%
-      left_join(cohort, by = "FINNGENID")  %>%
+      left_join(cohort, by = "FINREGISTRYID")  %>%
       select(-date_of_birth, -start_of_followup, -end_of_followup, -DATE_FIRST_PURCH)
-   
   }
-  else
-  {
+  else{
     DB <- fread(file, sep = ',') %>%
-      left_join(cohort, by = "FINNGENID") %>%
+      select(-SEX) %>%
+      rename( 
+        psychiatric_residential_care='247_psychiatric_residential_care', 
+        residential_care_housing_under_65yo='247_residential_care_housing_under_65yo'
+      ) %>%
+      left_join(cohort, by = "FINREGISTRYID") %>%
       select(-DATE_FIRST_PURCH)
   }
   
-  if (name=="prev_med") { colnames(DB)[c(2:9)] <- paste(colnames(DB)[2:9], 'prev', sep = '_')} #look into (2:9 are the columns with ATC codes, if necessary modify)
-  
   # Get estimates for F1, F2, F3, and controls
   #F1
-  ep_F1 <- DB %>%  filter(F1==1 | control_e==1)  %>% select(-F2,-F3,-control_e)
+  ep_F1 <- DB %>% filter(F1==1|control_e==1) %>% select(-F2,-F3,-control_e)
   response_variable <- "F1"
-  if (name!="SES") {  results_association_F1 <- agg_logistic(ep_F1, response_variable) }
-  else {  results_association_F1 <- agg_logistic(ep_F1, response_variable,FALSE)  }
-    if(i==1){  F1_association <- rbind(my_matrix, results_association_F1) }
+  if (name!="SES") {  results_association_F1 <- association_analysis_logistic(ep_F1, response_variable) }
+  else {  results_association_F1 <- association_analysis_logistic(ep_F1, response_variable,PREVALENCE=FALSE)  }
+  
+  if(i==1){  F1_association <- rbind(my_matrix, results_association_F1) }
   else {  F1_association <- rbind(F1_association, results_association_F1)  }
+  
   filename = paste0("association_",name,response_variable,".csv")
   save_results(results_association_F1,filename)
   
   #F2
   my_matrix <- data.frame()
-  ep_F2 <- DB %>% filter(F2==1 | control_e==1)  %>% select(-F1,-F3,-control_e)
+  ep_F2 <- DB %>% filter(F2==1|control_e==1) %>% select(-F1,-F3,-control_e)
   response_variable <- "F2"
-  if (name!="SES") {  results_association_F2 <- agg_logistic(ep_F2, response_variable) }
-  else {results_association_F2 <- agg_logistic(ep_F2, response_variable,FALSE)  }
-    if(i==1){  F2_association <- rbind(my_matrix, results_association_F2) }
+  if (name!="SES") {  results_association_F2 <- association_analysis_logistic(ep_F2, response_variable) }
+  else {results_association_F2 <- association_analysis_logistic(ep_F2, response_variable,PREVALENCE=FALSE)  }
+  
+  if(i==1){  F2_association <- rbind(my_matrix, results_association_F2) }
   else {  F2_association <- rbind(F2_association, results_association_F2)  }
   filename = paste0("association_",name,response_variable,".csv")
   save_results(results_association_F2,filename)
-
   
   #F3
-  ep_F3 <- DB %>% filter(F3==1 | control_e==1)  %>% select(-F1,-F2,-control_e)
+  ep_F3 <- DB %>% filter(F3==1|control_e==1) %>% select(-F1,-F2,-control_e)
   response_variable <- "F3"
-  if (name!="SES") {  results_association_F3 <- agg_logistic(ep_F3, response_variable) }
-  else {results_association_F3 <- agg_logistic(ep_F3, response_variable,FALSE)  }
-    if(i==1){  F3_association <- rbind(my_matrix, results_association_F3) }
+  if (name!="SES") {  results_association_F3 <- association_analysis_logistic(ep_F3, response_variable) }
+  else {results_association_F3 <- association_analysis_logistic(ep_F3, response_variable,PREVALENCE=FALSE)  }
+  
+  if(i==1){  F3_association <- rbind(my_matrix, results_association_F3) }
   else {  F3_association <- rbind(F3_association, results_association_F3)  }
   filename = paste0("association_",name,response_variable,".csv")
   save_results(results_association_F3,filename)
@@ -139,16 +148,14 @@ for( i in c(1,2,3,4) ){
   #CTRL
   ep_CTRL <- DB %>% select(-F1,-F2,-F3)
   response_variable <- "control_e"
-  if (name!="SES") {  results_association_CTRL <- agg_logistic(ep_CTRL, response_variable) }
-  else {results_association_CTRL <- agg_logistic(ep_CTRL, response_variable,FALSE)  }
-    if(i==1){  CTRL_association <- rbind(my_matrix, results_association_CTRL) }
+  if (name!="SES") {  results_association_CTRL <- association_analysis_logistic(ep_CTRL, response_variable) }
+  else {results_association_CTRL <- association_analysis_logistic(ep_CTRL, response_variable,PREVALENCE=FALSE)  }
+  
+  if(i==1){  CTRL_association <- rbind(my_matrix, results_association_CTRL) }
   else {  CTRL_association <- rbind(CTRL_association, results_association_CTRL)  }
   filename = paste0("association_",name,response_variable,".csv")
   save_results(results_association_CTRL,filename)
-
 }
-
-rm(results_association_CTRL,results_association_F1,results_association_F2,results_association_F3,my_matrix)
 
 ########## CHECK JACCARD DISTANCE BETWEEN ENDPOINTS, DROP IF J>0.9 ################
 F1_association <- F1_association %>% rownames_to_column("ENDPOINT") 
@@ -195,20 +202,19 @@ coord_high_sim <- coord_high_sim %>%filter(ColName!=RowName)
 print(coord_high_sim)
 
 #modify this list according to your list
-endpoint_to_remove <- c("F5_DEPRESSIO", "J10_INFLUPNEU", "K11_CARIES_1_OPER_ONLYAVO", "K11_PULPITIS_1_ONLYAVO", "N14_CERVICAL_HSIL","SPONDYLOPATHY_FG","G6_MIGRAINE_WITH_AURA_TRIPTAN","H7_IRIDOCYCLITIS","H7_IRIDOCYC_ANTER","N14_FEMALE_GENITAL_DYSPLASIA_ALL",
-                        "N14_HYPERTROPHYBREAST_BOTH","O15_PRE_OR_ECLAMPSIA","SPONDYLOPATHY_FG")
-
+endpoint_to_remove <- c(
+    "F5_DEPRESSIO", 
+    ...
+)
 
 F1_association <- F1_association %>% filter(!ENDPOINT %in% endpoint_to_remove) %>% mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>%  select(-"P-value") 
 F2_association <- F2_association %>% filter(!ENDPOINT %in% endpoint_to_remove) %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>%   select(-"P-value")
 F3_association <- F3_association %>%  filter(!ENDPOINT %in% endpoint_to_remove) %>% mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>%  select(-"P-value")
 
-
 #  significative coefficients and se
 Beta_F1_sign <- F1_association %>% filter(FDR_p_values < 0.05) %>% mutate (OR=exp(Beta), CI_low = exp(Beta - 1.96 * se), CI_high = exp(Beta + 1.96 * se))
 Beta_F2_sign <- F2_association %>% filter(FDR_p_values < 0.05)%>% mutate (OR=exp(Beta),CI_low = exp(Beta - 1.96 * se), CI_high = exp(Beta + 1.96 * se))
 Beta_F3_sign <- F3_association %>% filter(FDR_p_values < 0.05)%>% mutate (OR=exp(Beta),CI_low = exp(Beta - 1.96 * se), CI_high = exp(Beta + 1.96 * se))
-
 
 ### PLOT BETAS by Type of Switching ###
 betas <- bind_rows(Beta_F1_sign,
@@ -234,13 +240,10 @@ ggplot(betas, aes(y = reorder(ENDPOINT, -Beta), x = Beta, color = type_failure))
 # Extract column names for 'endpoint', 'medications', and 'prev_medications'
 endpoint_columns <- colnames(fread(endpoint_file, header=TRUE, nrows=0))
 drugs_columns <- colnames(fread(medication_file, header=TRUE, nrows=0))
-prev_med_columns <- colnames(fread(prev_med_file, header=TRUE, nrows=0))
-prev_med_columns <- paste0(prev_med_columns,"_prev")
 SES_columns <- colnames(fread(SES_file, header=TRUE, nrows=0))
 
 betas$subgroup <- ifelse(betas$ENDPOINT %in% endpoint_columns, "Clinical Endpoint",
-                         ifelse(betas$ENDPOINT %in% drugs_columns, "Drugs",
-                         ifelse(betas$ENDPOINT %in% prev_med_columns, "Prev. drugs", "SES")))
+                         ifelse(betas$ENDPOINT %in% drugs_columns, "Drugs"))
 
 
 ### PLOT OVERALL by type of variable ###
@@ -252,7 +255,6 @@ ggplot(betas, aes(Beta, ENDPOINT, color = type_failure)) +
   theme(strip.text.y = element_text(angle=0)) +
   theme_bw()
  
-
 
 library(ggrepel)
 top_n <- 5
