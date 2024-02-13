@@ -173,7 +173,7 @@ dataset <- dataset %>% select(any_of(c(list_F1,list_F2,list_F3)))
 threshold_simil <- 0.9
 
 n_cols <- ncol(dataset)
-matrix_Jaccard <- matrix(1, ncol = n_cols, nrow = n_cols,dimnames = list(colnames(dataset), colnames(dataset)))
+matrix_Jaccard <- matrix(0, ncol = n_cols, nrow = n_cols,dimnames = list(colnames(dataset), colnames(dataset)))
 
 for (i in 1:(n_cols - 1)) {
   for (j in (i + 1):n_cols) {
