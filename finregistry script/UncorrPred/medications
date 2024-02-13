@@ -1,3 +1,13 @@
+#preventing medications
+C07
+C08
+C09
+N03
+N06
+G02
+G03
+M03AX01
+#other medications
 A01AB
 A02BA
 A02BD
