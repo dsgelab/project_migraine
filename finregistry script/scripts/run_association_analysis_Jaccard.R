@@ -1,75 +1,81 @@
-# Install and load the necessary packages if not already installed
-suppressPackageStartupMessages({
-  
-  library(data.table)
-  library(dplyr)
-  library(lubridate)
-  library(tibble)
-})
+###############################################################################
+# 
+# 1. prepare environment and functions
+# 2. fetch data and extract+save result
+# 3. evaluate Jaccard distance
+# 4. plot final results
+# 
+###############################################################################
+
+library(data.table)
+library(dplyr)
+library(lubridate)
+library(tibble)
+library(ggrepel)
 
 source('/data/projects/project_mferro/project_migraine/file_paths.R')
 
+
+###############
+####   1   ####
+###############
+
+OUTPUT_PATH = "/data/projects/project_mferro/project_migraine/output/"
+COVARIATES_TO_EXCLUDE = c("FINREGISTRYID","SEX","year_purch","year_birth")
+PREVALENCE_CUTOFF = 0.01
+
+
 association_analysis_logistic <- function(dataset, response_variable, PREVALENCE = TRUE) {
-  # Create a matrix for results
-  results <- matrix(NA, nrow = length(colnames(dataset)), ncol = 3, dimnames = list(colnames(dataset), c("Beta", "P-value", "se")))
   
-  # Loop through the columns of the dataset
-  for (column in colnames(dataset)) {
-    if (column != response_variable & (column != "FINREGISTRYID") & column != "SEX" & column != "EVENT_AGE" & column != "year_purch") {
+  # Create empty matrix for results
+  results <- matrix(NA, nrow = length(colnames(dataset)), ncol = 3, dimnames = list(colnames(dataset), c("Beta", "p_value", "se")))
+  
+  # Loop through the columns of the dataset (representing all the covariates)
+  for (covariate in colnames(dataset)) {
+    if ( (covariate != response_variable) & !(covariate %in% COVARIATES_TO_EXCLUDE) ) {
       if (PREVALENCE) {
-        # Check if there is at least 1% cases in 2x2 matrix
-        contingency_table <- table(dataset[[response_variable]], dataset[[column]])
+        # Check if there is at least a 1% prevalence of the covariate in the response cases
+        contingency_table <- table(dataset[[response_variable]], dataset[[covariate]])
         percentage_contingency_table <- prop.table(contingency_table, 1) * 100
-        if (!is.na(percentage_contingency_table[4]) & percentage_contingency_table[4] >= 1) {
-          # Perform the regression only if |correlation| between response and endpoint is >0.01
-          correlation <- cor(as.numeric(dataset[[response_variable]]), as.numeric(dataset[[column]]))
-          if (abs(correlation) >= 0.01 & !is.na(correlation) & correlation != "NA") {
-            # Fit a logistic regression model
-            model <- glm(as.formula(paste(response_variable, "~ SEX + year_birth + year_purch +", column)), data = dataset, family = "binomial")
-            
-            # Get Beta, p-value, se
-            beta <- coef(model)
-            p_value <- summary(model)$coefficients[, "Pr(>|z|)"]
-            se <- summary(model)$coefficients[, "Std. Error"][5]
-            
-            # Save the results in the matrix
-            results[column, "Beta"] <- beta[5] 
-            results[column, "se"] <- se
-            results[column, "P-value"] <- p_value[5] 
+        
+        if ((dim(percentage_contingency_table)==c(2,2)) & !is.na(percentage_contingency_table[4]) & (percentage_contingency_table[4] >= PREVALENCE_CUTOFF*100))
+          {
+          # Fit a logistic regression model
+          model <- glm(as.formula(paste(response_variable, "~ SEX + year_birth + year_purch +", covariate)), data = dataset, family = "binomial")
+          # Save the model results in the matrix
+          results[covariate, "Beta"]    <- coef(model)[5] 
+          results[covariate, "p_value"] <- summary(model)$coefficients[, "Pr(>|z|)"][5] 
+          results[covariate, "se"]      <- summary(model)$coefficients[, "Std. Error"][5]
           }
-        }
-      } else {
-        # If PREVALENCE is FALSE, perform regression without prevalence and correlation checks
-        model <- glm(as.formula(paste(response_variable, "~ SEX + year_birth + year_purch +", column)), data = dataset, family = "binomial")
-        
-        # Get Beta, p-value, se
-        beta <- coef(model)
-        p_value <- summary(model)$coefficients[, "Pr(>|z|)"]
-        se <- summary(model)$coefficients[, "Std. Error"][5]
-        
-        # Save the results in the matrix
-        results[column, "Beta"] <- beta[5] 
-        results[column, "se"] <- se
-        results[column, "P-value"] <- p_value[5] 
+      } 
+      else {
+        # perform regression without prevalence checks
+        model <- glm(as.formula(paste(response_variable, "~ SEX + year_birth + year_purch +", covariate)), data = dataset, family = "binomial")
+        # Save the model results in the matrix
+        results[covariate, "Beta"]    <- coef(model)[5] 
+        results[covariate, "p_value"] <- summary(model)$coefficients[, "Pr(>|z|)"][5] 
+        results[covariate, "se"]      <- summary(model)$coefficients[, "Std. Error"][5]
       }
     }
   }
   
-  # Remove rows with NA values in 'Beta', 'P_Value'
+  # Remove rows with NA values in 'Beta', 'p_Value'
   results <- as.data.frame(results)
-  results <- results[complete.cases(results$Beta, results$P_Value), ]
-  
-  # Return the matrix of results
+  results <- results[complete.cases(results$Beta, results$p_value), ]
   return(results)
 }
 
+
 save_results <- function(results, filename){
-  output_path= "/data/projects/project_mferro/project_migraine/output/"
+  output_path= OUTPUT_PATH
   output_filename = paste0(output_path,filename)
   write.csv(results, output_filename, row.names = FALSE)
 }
 
-# fetch cohort information
+
+###############
+####   2   ####
+###############
 
 # fetch cohort information
 cohort <- fread(study_population_file) %>% 
@@ -80,7 +86,7 @@ cohort <- fread(study_population_file) %>%
     year_purch=as.numeric(format(as.Date(DATE_FIRST_PURCH, format="%Y-%m-%d"),"%Y")),
     year_birth=as.numeric(format(as.Date(BIRTH_DATE, format="%Y-%m-%d"),"%Y"))
   ) %>%  
-  select(FINREGISTRYID, F1,F2,F3,control_e, DATE_FIRST_PURCH, EVENT_AGE, SEX, year_birth,year_purch) 
+  select(FINREGISTRYID, SWITCH_1, SWITCH_2, SWITCH_3, NO_SWITCH, DATE_FIRST_PURCH, EVENT_AGE, SEX, year_birth, year_purch) 
 
 # fetch extra information and evaluate associations
 file_list = c(endpoint_file, medication_file, SES_file)
@@ -105,182 +111,116 @@ for( i in seq(1,length(name_list)) ){
         psychiatric_residential_care='247_psychiatric_residential_care', 
         residential_care_housing_under_65yo='247_residential_care_housing_under_65yo'
       ) %>%
+      # standardize continuous columns
+      mutate(across(c('total_benefits','self_rated_health_moderate_or_poor_scaled_health_and_welfare_indicator'), scale)) %>%
       left_join(cohort, by = "FINREGISTRYID") %>%
       select(-DATE_FIRST_PURCH)
   }
   
-  # Get estimates for F1, F2, F3, and controls
-  #F1
-  ep_F1 <- DB %>% filter(F1==1|control_e==1) %>% select(-F2,-F3,-control_e)
-  response_variable <- "F1"
-  if (name!="SES") {  results_association_F1 <- association_analysis_logistic(ep_F1, response_variable) }
-  else {  results_association_F1 <- association_analysis_logistic(ep_F1, response_variable,PREVALENCE=FALSE)  }
   
-  if(i==1){  F1_association <- rbind(my_matrix, results_association_F1) }
-  else {  F1_association <- rbind(F1_association, results_association_F1)  }
-  
+  # Get estimates for each response variable
+  DB_SWITCH_1 <- DB %>% filter(SWITCH_1==1|NO_SWITCH==1) %>% select(-SWITCH_2,-SWITCH_3,-NO_SWITCH)
+  response_variable <- "SWITCH_1"
+  if (name!="SES") { results_association <- association_analysis_logistic(DB_SWITCH_1, response_variable) }
+  else { results_association <- association_analysis_logistic(DB_SWITCH_1, response_variable, PREVALENCE=FALSE) }
+  if (i==1) { switch_1_association <- rbind(my_matrix, results_association) }
+  else { switch_1_association <- rbind(switch_1_association, results_association)  }
   filename = paste0("association_",name,response_variable,".csv")
-  save_results(results_association_F1,filename)
+  save_results(switch_1_association,filename)
   
-  #F2
-  my_matrix <- data.frame()
-  ep_F2 <- DB %>% filter(F2==1|control_e==1) %>% select(-F1,-F3,-control_e)
-  response_variable <- "F2"
-  if (name!="SES") {  results_association_F2 <- association_analysis_logistic(ep_F2, response_variable) }
-  else {results_association_F2 <- association_analysis_logistic(ep_F2, response_variable,PREVALENCE=FALSE)  }
-  
-  if(i==1){  F2_association <- rbind(my_matrix, results_association_F2) }
-  else {  F2_association <- rbind(F2_association, results_association_F2)  }
+  DB_SWITCH_2 <- DB %>% filter(SWITCH_2==1|NO_SWITCH==1) %>% select(-SWITCH_1,-SWITCH_3,-NO_SWITCH)
+  response_variable <- "SWITCH_2"
+  if (name!="SES") { results_association <- association_analysis_logistic(DB_SWITCH_2, response_variable) }
+  else { results_association <- association_analysis_logistic(DB_SWITCH_2, response_variable, PREVALENCE=FALSE) }
+  if (i==1) { switch_2_association <- rbind(my_matrix, results_association) }
+  else { switch_2_association <- rbind(switch_2_association, results_association)  }
   filename = paste0("association_",name,response_variable,".csv")
-  save_results(results_association_F2,filename)
+  save_results(switch_2_association,filename)
   
-  #F3
-  ep_F3 <- DB %>% filter(F3==1|control_e==1) %>% select(-F1,-F2,-control_e)
-  response_variable <- "F3"
-  if (name!="SES") {  results_association_F3 <- association_analysis_logistic(ep_F3, response_variable) }
-  else {results_association_F3 <- association_analysis_logistic(ep_F3, response_variable,PREVALENCE=FALSE)  }
-  
-  if(i==1){  F3_association <- rbind(my_matrix, results_association_F3) }
-  else {  F3_association <- rbind(F3_association, results_association_F3)  }
+  DB_SWITCH_3 <- DB %>% filter(SWITCH_3==1|NO_SWITCH==1) %>% select(-SWITCH_1,-SWITCH_2,-NO_SWITCH)
+  response_variable <- "SWITCH_3"
+  if (name!="SES") { results_association <- association_analysis_logistic(DB_SWITCH_3, response_variable) }
+  else { results_association <- association_analysis_logistic(DB_SWITCH_3, response_variable, PREVALENCE=FALSE) }
+  if (i==1) { switch_3_association <- rbind(my_matrix, results_association) }
+  else { switch_3_association <- rbind(switch_3_association, results_association)  }
   filename = paste0("association_",name,response_variable,".csv")
-  save_results(results_association_F3,filename)
-  
-  #CTRL
-  ep_CTRL <- DB %>% select(-F1,-F2,-F3)
-  response_variable <- "control_e"
-  if (name!="SES") {  results_association_CTRL <- association_analysis_logistic(ep_CTRL, response_variable) }
-  else {results_association_CTRL <- association_analysis_logistic(ep_CTRL, response_variable,PREVALENCE=FALSE)  }
-  
-  if(i==1){  CTRL_association <- rbind(my_matrix, results_association_CTRL) }
-  else {  CTRL_association <- rbind(CTRL_association, results_association_CTRL)  }
-  filename = paste0("association_",name,response_variable,".csv")
-  save_results(results_association_CTRL,filename)
+  save_results(switch_3_association,filename)
 }
 
-########## CHECK JACCARD DISTANCE BETWEEN ENDPOINTS, DROP IF J>0.9 ################
-F1_association <- F1_association %>% rownames_to_column("ENDPOINT") 
-F2_association <- F2_association %>% rownames_to_column("ENDPOINT") 
-F3_association <- F3_association %>% rownames_to_column("ENDPOINT") 
+###############
+####   3   ####
+###############
 
-list_F1 <-  unique(F1_association$ENDPOINT) 
-list_F2 <-  unique(F2_association$ENDPOINT) 
-list_F3 <-  unique(F3_association$ENDPOINT) 
+
+#Jaccard distance
+# J = (M.11 / (M.11 + M.10 + M.01))
+# where M is 2x2 matrix 
+
+# drop one of the covariates if the Jaccard distance (J) is above 0.9
+JACCARD_CUTOFF = 0.9
+
+switch_1_association <- switch_1_association %>% rownames_to_column("ENDPOINT") 
+switch_2_association <- switch_2_association %>% rownames_to_column("ENDPOINT") 
+switch_3_association <- switch_3_association %>% rownames_to_column("ENDPOINT") 
+
+list_1 <-  unique(switch_1_association$ENDPOINT) 
+list_2 <-  unique(switch_2_association$ENDPOINT) 
+list_3 <-  unique(switch_3_association$ENDPOINT) 
 
 # keep only endpoints that passed the prevalence check
-dataset  = fread(endpoint_file) 
-dataset <- dataset %>% select(any_of(c(list_F1,list_F2,list_F3)))
+# NB: no medication and SES
 
-threshold_simil <- 0.9
+dataset  = fread(endpoint_file) 
+dataset <- dataset %>%
+  select(any_of(c(list_1,list_2,list_3))) %>%
+  select(-c('date_of_birth','start_of_followup','end_of_followup'))
 
 n_cols <- ncol(dataset)
-matrix_Jaccard <- matrix(0, ncol = n_cols, nrow = n_cols,dimnames = list(colnames(dataset), colnames(dataset)))
+matrix_Jaccard <- matrix(0, ncol = n_cols, nrow = n_cols, dimnames = list(colnames(dataset), colnames(dataset)))
 
-for (i in 1:(n_cols - 1)) {
-  for (j in (i + 1):n_cols) {
+for (i in 1:(n_cols-1)) {
+  for (j in (i+1):n_cols) {
     current_col <- colnames(dataset[, ..i])
     next_col <- colnames(dataset[, ..j])
-    
     cont_table <- table(dataset[[current_col]], dataset[[next_col]])
-    #Jaccard distance = (M.11 / (M.11 + M.10 + M.01))
-    jaccard_distance <- (cont_table[4] / (cont_table[4] + cont_table[2] + cont_table[3]))
-    
-    matrix_Jaccard[i, j] <- jaccard_distance
-
+    J <- (cont_table[4] / (cont_table[4] + cont_table[2] + cont_table[3]))
+    matrix_Jaccard[i, j] <- J
   }
 }
 
-heatmap(matrix_Jaccard, Rowv = NA, Colv = NA, col = c("white", "red"),scale = "none") 
-        
-
-high_simil_index <- which(matrix_Jaccard > threshold_simil, arr.ind = TRUE)
-
-col_names <- colnames(matrix_Jaccard)[high_simil_index[, 2]]
-row_names <- rownames(matrix_Jaccard)[high_simil_index[, 1]]
-
-coord_high_sim <- data.frame(ColName = col_names, RowName = row_names)
-coord_high_sim <- coord_high_sim %>%filter(ColName!=RowName)
+high_simil_index <- which(matrix_Jaccard > JACCARD_CUTOFF, arr.ind = TRUE)
+coord_high_sim <- data.frame(
+  ColName = colnames(matrix_Jaccard)[high_simil_index[, 2]], 
+  RowName = rownames(matrix_Jaccard)[high_simil_index[, 1]]) %>%
+  filter(ColName!=RowName)
 print(coord_high_sim)
+endpoint_to_remove <- coord_high_sim$ColName
 
-#modify this list according to your list
-endpoint_to_remove <- c(
-    "F5_DEPRESSIO", 
-    ...
-)
+###############
+####   4   ####
+###############
 
-F1_association <- F1_association %>% filter(!ENDPOINT %in% endpoint_to_remove) %>% mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>%  select(-"P-value") 
-F2_association <- F2_association %>% filter(!ENDPOINT %in% endpoint_to_remove) %>%  mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>%   select(-"P-value")
-F3_association <- F3_association %>%  filter(!ENDPOINT %in% endpoint_to_remove) %>% mutate(FDR_p_values = p.adjust(`P-value`, method = "BH")) %>% arrange(FDR_p_values) %>%  select(-"P-value")
-
-#  significative coefficients and se
+# prepare results for plotting
+F1_association <- switch_1_association %>% filter(!ENDPOINT %in% endpoint_to_remove) %>% mutate(FDR_p_values = p.adjust(p_value, method = "BH")) %>% arrange(FDR_p_values) %>%  select(-"p_value") 
+F2_association <- switch_2_association %>% filter(!ENDPOINT %in% endpoint_to_remove) %>%  mutate(FDR_p_values = p.adjust(p_value, method = "BH")) %>% arrange(FDR_p_values) %>%   select(-"p_value")
+F3_association <- switch_3_association %>%  filter(!ENDPOINT %in% endpoint_to_remove) %>% mutate(FDR_p_values = p.adjust(p_value, method = "BH")) %>% arrange(FDR_p_values) %>%  select(-"p_value")
+# converting to OR for plotting
 Beta_F1_sign <- F1_association %>% filter(FDR_p_values < 0.05) %>% mutate (OR=exp(Beta), CI_low = exp(Beta - 1.96 * se), CI_high = exp(Beta + 1.96 * se))
-Beta_F2_sign <- F2_association %>% filter(FDR_p_values < 0.05)%>% mutate (OR=exp(Beta),CI_low = exp(Beta - 1.96 * se), CI_high = exp(Beta + 1.96 * se))
-Beta_F3_sign <- F3_association %>% filter(FDR_p_values < 0.05)%>% mutate (OR=exp(Beta),CI_low = exp(Beta - 1.96 * se), CI_high = exp(Beta + 1.96 * se))
+Beta_F2_sign <- F2_association %>% filter(FDR_p_values < 0.05) %>% mutate (OR=exp(Beta), CI_low = exp(Beta - 1.96 * se), CI_high = exp(Beta + 1.96 * se))
+Beta_F3_sign <- F3_association %>% filter(FDR_p_values < 0.05) %>% mutate (OR=exp(Beta), CI_low = exp(Beta - 1.96 * se), CI_high = exp(Beta + 1.96 * se))
 
-### PLOT BETAS by Type of Switching ###
-betas <- bind_rows(Beta_F1_sign,
-                   Beta_F2_sign,
-                   Beta_F3_sign,
-                   .id="Model") %>%
+#### PLOT BETAS by Type of Switching ####
+betas <- bind_rows(Beta_F1_sign, Beta_F2_sign, Beta_F3_sign, .id="Model") %>%
   mutate( type_failure= as.factor(case_when(
-                Model==1 ~ "F1",
-                Model==2 ~ "F2",
-                Model==3 ~ "F3",
-                TRUE~"None" )))
+    Model==1 ~ "SWITCH_1",
+    Model==2 ~ "SWITCH_2",
+    Model==3 ~ "SWITCH_3",
+    TRUE~"None" )))
 
-
-ggplot(betas, aes(y = reorder(ENDPOINT, -Beta), x = Beta, color = type_failure)) +
+ggplot(betas, aes(y = reorder(ENDPOINT, -OR), x = OR, color = type_failure)) +
   geom_point(position = position_dodge(width = 0.2), size = 3) +
-  geom_errorbar(aes(xmin = Beta - se, xmax = Beta + se), position = position_dodge(width = 0.2), width = 0.2) +
-  labs(x = "Beta (s.e.)",
-       y = "Variable") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 0, hjust = 0))
-
-
-# Extract column names for 'endpoint', 'medications', and 'prev_medications'
-endpoint_columns <- colnames(fread(endpoint_file, header=TRUE, nrows=0))
-drugs_columns <- colnames(fread(medication_file, header=TRUE, nrows=0))
-SES_columns <- colnames(fread(SES_file, header=TRUE, nrows=0))
-
-betas$subgroup <- ifelse(betas$ENDPOINT %in% endpoint_columns, "Clinical Endpoint",
-                         ifelse(betas$ENDPOINT %in% drugs_columns, "Drugs"))
-
-
-### PLOT OVERALL by type of variable ###
-ggplot(betas, aes(Beta, ENDPOINT, color = type_failure)) + 
-  geom_point(size=4) +
-  geom_errorbar(aes(xmin = Beta - se, xmax = Beta + se)) +
-  labs(x="Beta (s.e.)", y="") +
-  facet_grid(subgroup ~ ., scales = "free", space = "free") +
-  theme(strip.text.y = element_text(angle=0)) +
-  theme_bw()
- 
-
-library(ggrepel)
-top_n <- 5
-# Top n betas by failure group
-top_endpoints_by_group <- betas %>%
-  arrange(type_failure, desc(abs(Beta))) %>%
-  group_by(type_failure) %>%
-  slice_head(n = top_n) %>% pull(ENDPOINT)
-
-ggplot(betas, aes(x = Beta, y = reorder(subgroup, Beta), color = type_failure)) +
-  geom_jitter(position = position_jitterdodge(jitter.width = 0.2), size = 3) +
-  labs(x = "Beta", y = "Category") +
-  theme_be()  +
-  geom_label_repel(data = betas[betas$ENDPOINT %in% top_endpoints_by_group, ],
-                   aes(x = Beta, y = reorder(subgroup, Beta), label = ENDPOINT),
-                   box.padding = 0.5, force = 2, segment.color = 'grey50', segment.size = 0.5, size = 3) +
-  facet_grid(~type_failure, scales = "free_y") + 
-  theme(legend.position = "none")
-
-
-# PLOT BY TYPE FAILURE (eg F3)
-betas_F3 <- betas %>% filter(type_failure=="F3")
-ggplot(betas_F3, aes(y = reorder(ENDPOINT, -Beta), x = Beta )) +
-  geom_point(position = position_dodge(width = 0.2), size = 3) +
-  geom_errorbar(aes(xmin = Beta - se, xmax = Beta + se), position = position_dodge(width = 0.2), width = 0.2) +
-  labs(title="F3", x = "Beta (SE)", y = "Variable") +
+  geom_errorbar(aes(xmin = CI_low, xmax = CI_high), position = position_dodge(width = 0.2), width = 0.2) +
+  labs(x = "OR (CI_95%)", y = "") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 0, hjust = 0))
 
