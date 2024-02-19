@@ -52,12 +52,6 @@ cat('total number of triptan users: ')
 ORIGINAL_N = length(unique(cohort$FINNGENID))
 cat(ORIGINAL_N,'\n')
 
-print('total number of purchases available:')
-print(nrow(cohort))
-
-print('total number of triptan users:')
-print(length(unique(cohort$FINNGENID)))
-
 print('percentage of triptan users in FINNGEN:')
 print(100*length(unique(cohort$FINNGENID))/520105)
 
