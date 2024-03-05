@@ -1369,7 +1369,7 @@ J10_TONSILLITIS;Other and unspecified tonsillitis;J03;J
 J10_UPPERDIS;Other diseases of upper respiratory tract;J3;J
 J10_UPPERINFEC;Acute upper respiratory infections;J0[0-6];J
 J10_VIRALPNEUMO;Viral pneumonia;J12|J171|J100|J110|B012|B068|B250;J
-J10_VOCALLARYNX;Diseases of vocal cords and larynx+other diseases of upper respiratory tract, no elsewhere classified;J34|J3[8-9];J
+J10_VOCALLARYNX;Diseases of vocal cords and larynx;J34|J3[8-9];J
 JOINTPAIN;Pain in joint;M255;M
 JUVEN_ARTHR;Juvenile arthritis (FINNGEN);;
 K11_ABRASION;Abrasion of teeth;K031;K
@@ -1522,7 +1522,7 @@ K11_POSTOPDIS;Postprocedural disorders of digestive system, not elsewhere classi
 K11_PSC_COLITIS_STRICT;Colitis, primary sclerosing, strict definition;;
 K11_PULC;Peptic ulcer;K27;K
 K11_PULP_PERIAPICAL;Diseases of pulp and periapical tissues;K04;K
-K11_PULPITIS_1_ONLYAVO;Dental pulpitis 1, only avohilmo;;
+K11_PULPITIS_1_ONLYAVO;Dental pulpitis;;
 K11_PULPITIS_3;Dental pulpitis 3;K04;K
 K11_REFLUX;Gastro-oesophageal reflux disease;K21;K
 K11_REIMB_202;Reimbursement for rheumatic diseases;;
@@ -2135,7 +2135,7 @@ O15_LABOUR_OTHER;Other complications of labour and delivery, not elsewhere class
 O15_LABOUR_PELVIC_ABNORM;Obstructed labour due to maternal pelvic abnormality;O65;O
 O15_LABOUR_UMBILICAL;Labour and delivery complicated by umbilical cord complications;O69;O
 O15_MAT_CARE_MALPRESENT;Maternal care for known or suspected malpresentation of fetus;O32;O
-O15_MATERN_CARE;Maternal care related to the fetus and amniotic cavity and possible delivery problems;O[3-4];O
+O15_MATERN_CARE;Maternal care related to the fetus;O[3-4];O
 O15_MATERN_CARE_CERVICAL_INCOMPETENCE;Maternal care for cervical incompetence;O343;O
 O15_MATERN_CARE_DISPROP;Maternal care for known or suspected disproportion;O33;O
 O15_MATERN_CARE_FETAL_ABNORM;Maternal care for known or suspected fetal abnormality and damage;O35;O
