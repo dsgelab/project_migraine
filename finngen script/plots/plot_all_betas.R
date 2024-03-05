@@ -1,10 +1,11 @@
 source('/data/projects/project_mferro/project_migraine/file_paths.R')
 
-Beta_F1 <-fread(file='/home/ivm/project_migraine/output/list_ENDP_F1.csv')
-Beta_F2 <-fread(file='/home/ivm/project_migraine/output/list_ENDP_F2.csv')
-Beta_F3 <-fread(file='/home/ivm/project_migraine/output/list_ENDP_F3.csv')
+filepath = '/data/projects/project_mferro/project_migraine/output/'
+Beta_F1 <-fread(file=paste0(filepath,'list_ENDP_F1.csv'))
+Beta_F2 <-fread(file=paste0(filepath,'list_ENDP_F2.csv'))
+Beta_F3 <-fread(file=paste0(filepath,'list_ENDP_F3.csv'))
 
-ENDP_lists<- fread("/home/ivm/project_migraine/data/ENDP_MAPPING.csv")
+ENDP_lists<- fread("/data/projects/project_mferro/project_migraine/ENDP_MAPPING.csv")
 ENDP_lists$HD_ICD_10 <- gsub("\\[|\\]|\\$|%|!", "", ENDP_lists$HD_ICD_10)
 
 ENDP_lists <- ENDP_lists %>% mutate(CAT=ifelse(CAT=="", substr(NAME, 1, 1), substr(HD_ICD_10, 1, 1)))
@@ -137,7 +138,7 @@ recode_vector_SES <- c(
   'divorced' = "Whether the individual has divorced",
   'self_rated_health_moderate_or_poor_scaled_health_and_welfare_indicator' = "Self-rated health moderate or poor scaled health and welfare indicator",
   'ses_self_employed' = "Socioeconomic status: self-employed",
-  'ses_upperlevel' = "Socioeconomic status: Upper-level employees",
+  'ses_upperlevel' = "Upper-level employees (administrative, managerial, ..)",
   'ses_manual_workers' = "Socioeconomic status: manual workers",
   'ses_students' = "Socioeconomic status: students",
   'edufield_generic' = "Field of education: generic programmes and qualifications",
@@ -156,7 +157,7 @@ recode_vector_SES <- c(
   'mothertongue_other' = "Mother tongue: other than Finnish, Swedish, or Russian",
   'received_study_allowance' = "Received study allowance",
   'received_basic_unemployment_allowance' = "Received basic daily unemployment allowance",
-  'total_benefits' = "Sum of social benefits received, indexed",
+  'total_benefits' = "Sum of social benefits received (standardized)",
   'emigrated' = "Emigrated",
   'miscarriages' = "Number of miscarriages",
   'terminated_pregnancies' = "Number of terminated pregnancies",
@@ -247,9 +248,10 @@ names_SES <- colnames(fread(SES_file))
 
 betas <- betas %>% mutate(macro_cat = ifelse(betas$ENDPOINT %in% names_DRUGS, "DRUGS",
                                              ifelse(betas$ENDPOINT %in% names_SES, "SES",
-                                                 ifelse(is.na(macro_cat), 'Other', macro_cat))),
+                                                    ifelse(is.na(macro_cat), 'Other', macro_cat))),
                           LONGNAME = ifelse(macro_cat=="DRUGS", recode_vector_DRUGS[betas$ENDPOINT], LONGNAME),
                           LONGNAME = ifelse(macro_cat=="SES", recode_vector_SES[betas$ENDPOINT], LONGNAME))
+
 
 
 betas_final <- betas %>%  
@@ -268,12 +270,34 @@ betas_final_F3<- betas_final %>% subset(type_failure=="SWITCH_3")
 # 
 # betas_final_F3_filtered <- betas_final_F3 %>%
 #   filter(macro_cat %in% macro_cat_sign)
+library(ggrepel)
+
+#F1
+ggplot(betas_final_F1, aes(x = macro_cat, y = Beta, color = macro_cat)) +
+  geom_point(aes(alpha = ifelse(FDR_p_values < 0.05 , 1, 0.2))) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "darkgray") +
+  ggrepel::geom_text_repel(data = subset(betas_final_F1, FDR_p_values < 0.05 ), aes(label = LONGNAME), max.overlaps = Inf) +
+  ylim(-1,1) + 
+  xlab('switch 1') + 
+  theme_bw() +
+  theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1))
+
+#F2
+ggplot(betas_final_F2, aes(x = macro_cat, y = Beta, color = macro_cat)) +
+  geom_point(aes(alpha = ifelse(FDR_p_values < 0.05 , 1, 0.2))) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "darkgray") +
+  ggrepel::geom_text_repel(data = subset(betas_final_F2, FDR_p_values < 0.05 ), aes(label = LONGNAME), max.overlaps = Inf) +
+  ylim(-1,1) +  
+  xlab('switch 2') +  
+  theme_bw() +
+  theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1))
 
 #F3
-library(ggrepel)
 ggplot(betas_final_F3, aes(x = macro_cat, y = Beta, color = macro_cat)) +
-  geom_point(aes(alpha = ifelse(FDR_p_values < 0.05 | ENDPOINT=="G6_MIGRAINE", 1, 0.2))) +
+  geom_point(aes(alpha = ifelse(FDR_p_values < 0.05 , 1, 0.2))) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "darkgray") +
-  ggrepel::geom_text_repel(data = subset(betas_final_F3, FDR_p_values < 0.05 | ENDPOINT=="G6_MIGRAINE"), aes(label = LONGNAME), max.overlaps = Inf) +
+  ggrepel::geom_text_repel(data = subset(betas_final_F3, FDR_p_values < 0.05 ), aes(label = LONGNAME), max.overlaps = Inf) +
+  ylim(-1,1) + 
+  xlab('switch 3') + 
   theme_bw() +
   theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1))
