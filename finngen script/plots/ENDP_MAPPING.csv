@@ -1,0 +1,2484 @@
+﻿NAME;LONGNAME;HD_ICD_10;CAT
+AB1_ACTINOMYCOSIS;Actinomycosis;A42;A
+AB1_AMOEBIASIS;Amoebiasis;A06;A
+AB1_ANOGENITAL_HERPES_SIMPLEX;Anogenital herpesviral [herpes simplex] infection;A60;A
+AB1_ASPERGILLOSIS;Aspergillosis;B44;B
+AB1_ATYPICAL_CNS_VIRUS;Atypical virus infections of central nervous system;A81;A
+AB1_BACT_BIR_OTHER_INF_AGENTS;Bacterial, viral and other infectious agents;B9[5-7];B
+AB1_BACT_INTEST_OTH;Other bacterial intestinal infections;A0[4-5];A
+AB1_BACTINF_NOS;Bacterial infection, other or unspecified;A4[8-9];A
+AB1_CANDIDIASIS;Candidiasis;B37;B
+AB1_CHLAMYDIA_OTHER;Other sexually transmitted chlamydial diseases;A56;A
+AB1_CHOLERA;Cholera;A00;A
+AB1_DENGUE_FEVER;Dengue fever [classical dengue];A90;A
+AB1_DERMATOPHYTOSIS;Dermatophytosis;B35;B
+AB1_DIBTHERIA;Diphtheria;A36;A
+AB1_EARLY_SYPHILIS;Early syphilis;A51;A
+AB1_EBV;Infectious mononucleosis;B27;B
+AB1_ENTEROBIASIS;Enterobiasis;B80;B
+AB1_ERYSIPELAS;Erysipelas;A46;A
+AB1_GASTROENTERITIS_NOS;Diarrhoea and gastroenteritis of presumed infectious origin;A09;A
+AB1_GONOCOCCAL;Gonococcal infection;A54;A
+AB1_HELMINTIASES;Helminthiases;B6[5-9]|B7[0-9]|B8[0-3];B
+AB1_HEPATITIS_A;Acute hepatitis A;B15;B
+AB1_HEPATITIS_B;Acute hepatitis B;B16;B
+AB1_HERPES_SIMPLEX;Herpesviral [herpes simplex] infections;B00;B
+AB1_HIV_INFECT_PARASITES;Human immunodeficiency virus [HIV] disease resulting in infectious and parasitic diseases;B20;B
+AB1_HIV_NOS;Unspecified human immunodeficiency virus [HIV] disease;B24;B
+AB1_INTESTINAL_INFECTIONS;Intestinal infectious diseases;A0[0-9];A
+AB1_LATE_SYPHILIS;Late syphilis;A52;A
+AB1_LISTERIOSIS;Listeriosis;A32;A
+AB1_LYME;Lyme disease;A692;A
+AB1_MALARIA;Malaria;;
+AB1_MALARIA_FALCIPARIUM;Plasmodium falciparum malaria;B50;B
+AB1_MALARIA_NOS;Other parasitologically confirmed or unspecified malaria;B5[3-4];B
+AB1_MEASLES;Measles;B05;B
+AB1_MENINGOCOCCAL;Meningococcal infection;A39;A
+AB1_MUMPS;Mumps;B26;B
+AB1_MYCOSES;Mycoses;B3[5-9]|B4[0-9];B
+AB1_MYSOSIS_NOS;Other mycoses, not elsewhere classified/unspecified;B4[8-9];B
+AB1_OTHER_BACT_INOTHER;Other bacterial agents as the cause of diseases classified to other chapters;B96;B
+AB1_OTHER_BACTERIAL;Other bacterial diseases;A[3-4][0-9];A
+AB1_OTHER_CESTODE;Other cestode infections;B71;B
+AB1_OTHER_CHLAMYDIAE;Other diseases caused by chlamydiae;A7[0-4];A
+AB1_OTHER_CONDITIONS;Human immunodeficiency virus [HIV] disease resulting in other conditions;B23;B
+AB1_OTHER_INFECTIONS;Other infectious diseases;B99;B
+AB1_OTHER_INFESTATIONS;Other infestations;B88;B
+AB1_OTHER_MOSQUITO_FEVER;Other mosquito-borne viral fevers;A9[2-3];A
+AB1_OTHER_MYCOBAC;Infection due to other mycobacteria;A31;A
+AB1_OTHER_PROTOZOAL;Other protozoal intestinal diseases;A07;A
+AB1_OTHER_SEPSIS;Other septicaemia;A41;A
+AB1_OTHER_SPIROCHAETAL;Other spirochaetal diseases;A6[5-9];A
+AB1_OTHER_SUPERF_MYCOSIS;Other superficial mycoses;B36;B
+AB1_OTHER_VIRAL;Other viral diseases;B2[5-9]|B3[0-4];B
+AB1_PARASITIC_NOS;Unspecified parasitic disease;B89;B
+AB1_PEDICULOSIS_ACARIASIS_OTHERINFEST;Pediculosis, acariasis and other infestations;B8[5-9];B
+AB1_PEDICULOSIS_AND_PHTHIRIAASIS;Pediculosis and phthiriasis;B85;B
+AB1_PNEUMOCYSTOSIS;Pneumocystosis;B59;B
+AB1_POLIOMYELITIS;Acute poliomyelitis;A80;A
+AB1_PROTOZOAL;Protozoal diseases;B5[0-9]|B6[0-4];B
+AB1_RELAP_FEVER;Relapsing fevers;A68;A
+AB1_RESP_TUBERCU_CONF;Respiratory tuberculosis, confirmed;A15;A
+AB1_RESP_TUBERCU_NONCONF;Respiratory tuberculosis, not confirmed;A16;A
+AB1_RICKETTSIOSES;Rickettsioses;A7[5-9];A
+AB1_RUBELLA;Rubella [German measles];B06;B
+AB1_SALMONELLA_OTH;Other salmonella infections;A02;A
+AB1_SCABIES;Scabies;B86;B
+AB1_SCARLET_FEVER;Scarlet fever;A38;A
+AB1_SEQULAE_INF_NOS;Sequelae of other and unspecified infectious and parasitic diseases;B94;B
+AB1_SEQULAE_POLIO;Sequelae of poliomyelitis;B91;B
+AB1_SEQULAE_TUBERCU;Sequelae of tuberculosis;B90;B
+AB1_SEQULEAE_OF_INFECTIONS_AND_PARASITES;Sequelae of infectious and parasitic diseases;B9[0-4];B
+AB1_SEXUAL_TRANSMISSION;Infections with a predominantly sexual mode of transmission;A5[0-9]|A6[0-4];A
+AB1_SEXUAL_TRANSMISSION_NOS;Other predominantly sexually transmitted diseases, not elsewhere classified;A6[3-4];A
+AB1_SHIGELLOSIS;Shigellosis;A03;A
+AB1_STREPTO_SEPSIS;Streptococcal septicaemia;A40;A
+AB1_STREPTSTAPHYCOCC_INOTHER;Streptococcus and staphylococcus as the cause of diseases classified to other chapters;B95;B
+AB1_SYPHILIS;Syphilis;;
+AB1_SYPHILIS_NOS;Other and unspecified syphilis;A53;A
+AB1_TICK_BORNE_ENCEPHALITIS;Tick-borne viral encephalitis;A84;A
+AB1_TOXOPLASMOSIS;Toxoplasmosis;B58;B
+AB1_TRICHOMONIASIS;Trichomoniasis;A59;A
+AB1_TUBERCU_OTH_ORG;Tuberculosis of other organs, strict;A18;A
+AB1_TUBERCULOSIS;Tuberculosis, wide;A1[5-9];A
+AB1_TULARAEMIA;Tularaemia;A21;A
+AB1_TYPHOIDPARATHYPHOID;Typhoid and paratyphoid fevers;A01;A
+AB1_VARICELLA;Varicella [chickenpox];B01;B
+AB1_VIRAAL_CONJUNCT;Viral conjunctivitis;B30;B
+AB1_VIRAL_CNS;Viral infections of the central nervous system;A8[0-9];A
+AB1_VIRAL_ENCEPHALITIS_NOS;Viral encephalitis, not elsewhere classified/unspecified;A8[5-6];A
+AB1_VIRAL_HEMOR_FEVER_NOS;Viral haemorrhagic fevers, not elsewhere classified/unspecified;A9[8-9];A
+AB1_VIRAL_HEPATITIS;Viral hepatitis;B1[5-9];B
+AB1_VIRAL_INOTHER;Viral agents as the cause of diseases classified to other chapters;B97;B
+AB1_VIRAL_MENINGITIS;Viral meningitis;A87;A
+AB1_VIRAL_NOS;Other viral diseases, not elsewhere classified;B3[3-4];B
+AB1_VIRAL_OTHER_INTEST_INFECTIONS;Viral and other specified intestinal infections;A08;A
+AB1_VIRAL_SKIN_MUCOUS_MEMBRANE;Viral infections characterized by skin and mucous membrane lesions;B0[0-9];B
+AB1_VIRAL_SKIN_NOS;Other viral infections characterized by skin and mucous membrane lesions, not elsewhere classified;B0[8-9];B
+AB1_VIRAL_WARTS;Viral warts;B07;B
+AB1_VIRAN_CNS_INFECTIONS_NOS;Viral infections of central nervous system, not elsewhere classified/unspecified;A8[8-9];A
+AB1_WHOOPCOUGH;Whooping cough;A37;A
+AB1_ZOONOTIC_BACTERIAL;Certain zoonotic bacterial diseases;A2[0-8];A
+AB1_ZOSTER;Zoster [herpes zoster];B02;B
+AB1TUBERCU_MILIARY;Miliary tuberculosis;A19;A
+ABDOM_HERNIA;Hernia of abdominal wall;;
+ABDOM_HERNIA_POSTOP;Hernia of abdominal wall, postoperative;;
+ABPA;Allergic bronchopulmonary aspergillosis (ABPA);B441;B
+ACUTE_DRUGADVERS_INTERSTITIAL_LUNG_DISORD;Acute drug-induced interstitial lung disorder;J702;J
+ALCO_PRESCRIPTION;Use of disulfiram, acamprosate or naltrexone;;
+ALCODELIRIUM;Alcohol withdrawal state with delirium ;F104;F
+ALCOHOLACUTE10;Acute alcohol intoxication, ICD10;F100;F
+ALCOPANCACU;Alcohol-induced acute pancreatitis;K852;K
+ALCOPANCCHRON;Alcohol-induced chronic pancreatitis;K860;K
+ALLERG_ASTHMA;Allergic asthma (mode);J450;J
+ALLERG_RHINITIS;Allergic rhinitis;J30[1-4];J
+ALLERGIC_CONTACT_DERMA_DRUGS_CONTACT_W_SKIN;Allergic contact dermatitis due to drugs in contact with skin;L233;L
+AMN2;Transient global amnesia;G454;G
+ANAPH_SHOCK_ADVER_EFFECT_CORRE_DRUG_MEDICAM_PROPE_ADMINISTE;Anaphylactic shock due to adverse effect of correct drug or medication properly administered;T886;T
+ANOSMIA;Anosmia;G520|R430;G
+ANTIDEPRESSANTS;Depression medications;;
+APPENDACUT_COMPLIC;Acute appendicitis, with complications;K35[0-1];K
+APPENDACUT_NOCOMPLIC;Acute appendicitis, no complications;;
+ARTHRO_SPEC;Other specific arthropathies, wide;;
+ARTRHO_POSTDYSENTERIC;Postdysenteric arthropathy;M021;M
+ASTHMA_ACUTE_RESPIRATORY_INFECTIONS;Asthma-related acute respiratory infections;;
+ASTHMA_ALLERG;Asthma and allergy;;
+ASTHMA_EOSINOPHIL_SUGG;Suggestive for eosinophilic asthma;;
+ASTHMA_INFECTIONS;Asthma-related infections;;
+ASTHMA_NAS;Asthma, unspecified (mode);J459;J
+ASTHMA_OBESITY;Obesity related asthma;;
+ASTHMA_OPPORTUNIST_INFECTIONS;Asthma and opportunity respiratory infection;;
+ASTHMA_PNEUMONIA;Asthma-related pneumonia;;
+AUD;Alcohol use disorder, ICD-based;F10[1-2];F
+AUD_SWEDISH;Alcohol use disorder, Swedish definition;;
+AUTOHEP;Autoimmune hepatitis;K754;K
+AUTOIMMUNE;Autoimmune diseases;;
+AUTOIMMUNE_HYPERTHYROIDISM;Autoimmune hyperthyroidism;E059;E
+AUTOIMMUNE_NONTHYROID;Autoimmune diseases excluding thyroid diseases;;
+BACT_INTEST_INFECTION_NOS;Other specified/unspecified bacterial intestinal infections;A04[8-9];A
+BLEEDING;Bleeding;;
+BRONCHITIS;Bronchitis;;
+BRUXISM;Bruxism;F458|F4582;F
+C_DIFFICILE_ENTEROCOLITIS;Enterocolitis due to Clostridium difficile;A047;A
+C_STROKE;STROKE;;
+C3_ADRENAL_GLAND_EXALLC;Malignant neoplasm of adrenal gland, excluding all cancers (controls excluding all cancers);C74;C
+C3_ALL_EXALLC;Acute lymphocytic leukaemia, excluding all cancers (controls excluding all cancers);C910;C
+C3_AML_EXALLC;Acute myeloid leukaemia, excluding all cancers (controls excluding all cancers);C920|C92[3-5]|C930|C940|C942|C944;C
+C3_AML_MDS;Acute myeloid leukaemia and myelodysplastic syndromes;;
+C3_AML_MDS_EXALLC;Acute myeloid leukaemia and myelodysplastic syndromes, excluding all cancers (controls excluding all cancers);;
+C3_ANUS_ANALCANAL_EXALLC;Malignant neoplasm of anus and anal canal, excluding all cancers (controls excluding all cancers);C21;C
+C3_ASTROCYTOMA_EXALLC;Brain astrocytoma, excluding all cancers (controls excluding all cancers);C71;C
+C3_BASAL_CELL_CARCINOMA_EXALLC;Basal cell carcinoma, excluding all cancers (controls excluding all cancers);C44[0-9]1;C
+C3_BASAL_CELL_CARCINOMA_INCLAVO_EXALLC;Basal cell carcinoma, including avohilmo, excluding all cancers (controls excluding all cancers);;
+C3_BILIARY_GALLBLADDER_EXALLC;Malignant neoplasm of intrahepatic ducts, biliary tract and gallbladder, excluding all cancers (controls excluding all cancers);C2[2-4];C
+C3_BLADDER_EXALLC;Malignant neoplasm of bladder, excluding all cancers (controls excluding all cancers);C67;C
+C3_BONE_CARTILAGE_EXALLC;Malignant neoplasm of bone and articular cartilage, excluding all cancers (controls excluding all cancers);;
+C3_BRAIN_EXALLC;Malignant neoplasm of brain, excluding all cancers (controls excluding all cancers);C71;C
+C3_BREAST_ERNEG_EXALLC;Malignant neoplasm of breast, ER-negative, excluding all cancers (controls excluding all cancers);C50;C
+C3_BREAST_ERPLUS_EXALLC;Malignant neoplasm of breast, ER-positive, excluding all cancers (controls excluding all cancers);C50;C
+C3_BREAST_EXALLC;Malignant neoplasm of breast, excluding all cancers (controls excluding all cancers);C50;C
+C3_BRONCHUS_LUNG_EXALLC;Malignant neoplasm of bronchus and lung, excluding all cancers (controls excluding all cancers);C34;C
+C3_CANCER_EXALLC;Malignant neoplasm, excluding all cancers (controls excluding all cancers);;
+C3_CERVIX_ADENO_EXALLC;Adenocarcinomas of cervix, excluding all cancers (controls excluding all cancers);;
+C3_CERVIX_SQUAM_EXALLC;Squamous cell neoplasms and carcinoma of cervix, excluding all cancers (controls excluding all cancers);;
+C3_CERVIX_UTERI_EXALLC;Malignant neoplasm of cervix uteri, excluding all cancers (controls excluding all cancers);C53;C
+C3_CHONDROSARCOMA_EXALLC;Chondrosarcoma, excluding all cancers (controls excluding all cancers);C40.2|C4104|C4106|C4114|C4122|C4132|C4142|C4182|C4192;C
+C3_CIRCULATING_LYMPHOID;Rare circulating lymphoid malignancy;C831|C841|C901|C910|C913|C914|C915|C916;C
+C3_CIRCULATING_LYMPHOID_EXALLC;Rare circulating lymphoid malignancy, excluding all cancers (controls excluding all cancers);C831|C841|C901|C910|C913|C914|C915|C916;C
+C3_CLL_EXALLC;Chronic lymphocytic leukaemia and small lyphocytis leukaemia, excluding all cancers (controls excluding all cancers);C911|C830;C
+C3_CML_EXALLC;Chronic myeloid leukaemia, excluding all cancers (controls excluding all cancers);C921;C
+C3_COLON_ADENO_EXALLC;Colon adenocarcinoma, excluding all cancers (controls excluding all cancers);;
+C3_COLON_EXALLC;Malignant neoplasm of colon, excluding all cancers (controls excluding all cancers);C18;C
+C3_COLORECTAL_ADENO_EXALLC;Colorectal adenocarcinoma, excluding all cancers (controls excluding all cancers);;
+C3_COLORECTAL_EXALLC;Colorectal cancer, excluding all cancers (controls excluding all cancers);;
+C3_COLORECTAL_NEUROENDO_EXALLC;Colorectal neuroendocrine tumor and carcinoma, excluding all cancers (controls excluding all cancers);;
+C3_CORPUS_UTERI_EXALLC;Malignant neoplasm of corpus uteri, excluding all cancers (controls excluding all cancers);C54;C
+C3_DLBCL_EXALLC;Diffuse large B-cell lymphoma, excluding all cancers (controls excluding all cancers);C833;C
+C3_EPENDYDOMA_EXALLC;Ependymoma, excluding all cancers (controls excluding all cancers);;
+C3_EYE_ADNEXA_EXALLC;Malignant neoplasm of eye and adnexa, excluding all cancers (controls excluding all cancers);C69;C
+C3_FIBROSARCOMA_EXALLC;Fibrosarcoma, excluding all cancers (controls excluding all cancers);C47.5|C48.5|C49.5;C
+C3_GASTRINT_STROM_EXALLC;Gastrointestinal stromal tumor and sarcoma, excluding all cancers (controls excluding all cancers);;
+C3_GBM_ASTROCYTOMA_EXALLC;Brain glioblastoma and astrocytoma, excluding all cancers (controls excluding all cancers);;
+C3_GBM_EXALLC;Brain glioblastoma, excluding all cancers (controls excluding all cancers);;
+C3_HEAD_AND_NECK_EXALLC;Malignant neoplasm of head and neck, excluding all cancers (controls excluding all cancers);;
+C3_HEPATOCELLU_CARC_EXALLC;Hepatocellular carcinoma, excluding all cancers (controls excluding all cancers);C220;C
+C3_HYPOPHARYNX_EXALLC;Malignant neoplasm of hypopharynx, excluding all cancers (controls excluding all cancers);C1[23];C
+C3_KAPOSI_SARCOMA_EXALLC;Kaposi sarcoma, excluding all cancers (controls excluding all cancers);C46;C
+C3_KIDNEY_CHROMOPHOBE_EXALLC;Chromophobe cell carcinoma of kidney, excluding all cancers (controls excluding all cancers);;
+C3_KIDNEY_CLEAR_CELL_CARCINOMA_EXALLC;Clear cell adenocarcinoma of kidney, excluding all cancers (controls excluding all cancers);;
+C3_KIDNEY_NOTRENALPELVIS_EXALLC;Malignant neoplasm of kidney, except renal pelvis, excluding all cancers (controls excluding all cancers);C64;C
+C3_KIDNEY_PAPILLARYADENO_EXALLC;Adenocarcinoma and Papillary adenocarcinoma of kidney, excluding all cancers (controls excluding all cancers);;
+C3_LEIOMYOSARCOMA_EXALLC;Leiomyosarcoma, excluding all cancers (controls excluding all cancers);C48.3|C49.3|C5421;C
+C3_LIP_EXALLC;Malignant neoplasm of lip, excluding all cancers (controls excluding all cancers);C00;C
+C3_LIPOSARCOMA_EXALLC;Liposarcoma, excluding all cancers (controls excluding all cancers);C48.2|C49.2;C
+C3_LUNG_NEUROENDO_EXALLC;Neuroendocrine tumor and carcinoma of lung, excluding all cancers (controls excluding all cancers);;
+C3_LUNG_NONSMALL_EXALLC;Non-small cell lung cancer, excluding all cancers (controls excluding all cancers);C34.[123457];C
+C3_MACROGLOBULINEMIA_EXALLC;Waldenstrom macroglobulinemia, lymphoplasmacytic lymphoma, excluding all cancers (controls excluding all cancers);C880;C
+C3_MANTLE_CELL_LYMPHOMA_EXALLC;Mantle cell lymphoma, excluding all cancers (controls excluding all cancers);C831;C
+C3_MARGINAL_ZONE_LYMPHOMA_EXALLC;Marginal zone B-cell lymphoma, excluding all cancers (controls excluding all cancers);C838;C
+C3_MELANOMA_EXALLC;Malignant melanoma, excluding all cancers (controls excluding all cancers);C6902|D039|C5103|C5113|C5123|C5182|C5293|C6982|C6992;C
+C3_MELANOMA_SKIN_EXALLC;Malignant melanoma of skin, excluding all cancers (controls excluding all cancers);C43;C
+C3_MENINGES_EXALLC;Malignant neoplasm of meninges, excluding all cancers (controls excluding all cancers);C70;C
+C3_MENINGIOMA_EXALLC;Brain meningioma, excluding all cancers (controls excluding all cancers);C70;C
+C3_MESOTHELIOMA_EXALLC;Mesothelioma, excluding all cancers (controls excluding all cancers);C45;C
+C3_MULT_MYELOMA_EXALLC;Multiple myeloma, excluding all cancers (controls excluding all cancers);C90;C
+C3_MYELODYSP_SYNDR_EXALLC;Myelodysplastic syndrome, excluding all cancers (controls excluding all cancers);D46;D
+C3_MYELOMA_MONOCLONAL;Multiple myeloma, Monoclonal gammopathy of undetermined significance (MGUS);;
+C3_MYELOMA_MONOCLONAL_EXALLC;Multiple myeloma, Monoclonal gammopathy of undetermined significance (MGUS), excluding all cancers (controls excluding all cancers);;
+C3_NASAL_CAVITY_SINUSES_EXALLC;Malignant neoplasm of nasal cavity and sinuses, excluding all cancers (controls excluding all cancers);C3[01];C
+C3_NASOPHARYNX_EXALLC;Malignant neoplasm of nasopharynx, excluding all cancers (controls excluding all cancers);C11;C
+C3_NONHODGKIN_EXALLC;Non-Hodgkin lymphoma, all, excluding all cancers (controls excluding all cancers);C8[2-5];C
+C3_NSCLC_ADENO_EXALLC;Non-small cell lung cancer, adenocarcinoma, excluding all cancers (controls excluding all cancers);;
+C3_NSCLC_SQUAM_EXALLC;Non-small cell lung cancer, squamous, excluding all cancers (controls excluding all cancers);;
+C3_OESOPHAGUS_EXALLC;Malignant neoplasm of oesophagus, excluding all cancers (controls excluding all cancers);C15;C
+C3_ORALCAVITY_EXALLC;Malignant neoplasm of oral cavity, excluding all cancers (controls excluding all cancers);C0[1-6];C
+C3_OROPHARYNG_EXALLC;Malignant neoplasm of oropharynx, excluding all cancers (controls excluding all cancers);C10;C
+C3_OSTEOSARCOMA_EXALLC;Osteosarcoma, excluding all cancers (controls excluding all cancers);C40.1|C4103|C4107|C4113|C4121|C4131|C4141|C4181|C4191;C
+C3_OTHER_SKIN_EXALLC;Other malignant neoplasms of skin (=non-melanoma skin cancer), excluding all cancers (controls excluding all cancers);C44;C
+C3_OVARY_ENDOMETROID_EXALLC;Endometroid carcinoma of ovary, excluding all cancers (controls excluding all cancers);C5673;C
+C3_OVARY_EXALLC;Malignant neoplasm of ovary, excluding all cancers (controls excluding all cancers);C56;C
+C3_OVARY_GRANULOSA_EXALLC;Granulosa cell carcinoma of ovary, excluding all cancers (controls excluding all cancers);;
+C3_OVARY_MUCINO_EXALLC;Mucinous and mucinous cystic tumor, excluding all cancers (controls excluding all cancers);C5672;C
+C3_OVARY_SEROUS_EXALLC;Serous carcinoma of ovary, excluding all cancers (controls excluding all cancers);C5671;C
+C3_PANCREAS_ADENO_DUCTAL_EXALLC;Adenocarcinoma and ductal carcinoma of pancreas, excluding all cancers (controls excluding all cancers);;
+C3_PANCREAS_EXALLC;Malignant neoplasm of pancreas, excluding all cancers (controls excluding all cancers);C25;C
+C3_PANCREAS_NEUROENDOCRINE_EXALLC;Neuroendocrine tumor and carcinoma of pancreas, excluding all cancers (controls excluding all cancers);;
+C3_PAROTIDGLAND_EXALLC;Malignant neoplasm of parotid gland, excluding all cancers (controls excluding all cancers);C07;C
+C3_PENIS_EXALLC;Malignant neoplasm of penis, excluding all cancers (controls excluding all cancers);C60;C
+C3_PROSTATE_EXALLC;Malignant neoplasm of prostate, excluding all cancers (controls excluding all cancers);C61;C
+C3_RECTUM_ADENO;Adenocarcinoma and papilloma adenocarcinoma of rectum;;
+C3_RECTUM_ADENO_MUCINO_EXALLC;Adenocarcinoma, papilloma adenocarcinoma and mucinous carcinomas of rectum, excluding all cancers (controls excluding all cancers);C2092;C
+C3_RECTUM_EXALLC;Malignant neoplasm of rectum, excluding all cancers (controls excluding all cancers);C20;C
+C3_RECTUM_NEUROENDOCRINE_EXALLC;Neuroendocrine tumor and carcinoma of rectum, excluding all cancers (controls excluding all cancers);;
+C3_RENAL_PELVIS_EXALLC;Malignant neoplasm of renal pelvis, excluding all cancers (controls excluding all cancers);C65;C
+C3_RHABDOMYOSARCOMA_EXALLC;Rhabdomyosarcoma, excluding all cancers (controls excluding all cancers);C48.4|C49.4;C
+C3_SCLC_EXALLC;Small cell lung cancer, excluding all cancers (controls excluding all cancers);C34;C
+C3_SKIN_EXALLC;Malignant neoplasm of skin, excluding all cancers (controls excluding all cancers);;
+C3_SMALL_INTESTINE_ADENO_EXALLC;Adenocarcinoma of small intestine, excluding all cancers (controls excluding all cancers);;
+C3_SMALL_INTESTINE_EXALLC;Malignant neoplasm of small intestine, excluding all cancers (controls excluding all cancers);C17;C
+C3_SMALL_INTESTINE_NEUROENDOCRINE_EXALLC;Neuroendocrine tumor and carcinoma of small intestine, excluding all cancers (controls excluding all cancers);;
+C3_SPINAL_CORD_CRANIAL_AND_OTHER_CNS_EXALLC;Malignant neoplasm of spinal cord, cranial nerves and other parts of central nervous system, excluding all cancers (controls excluding all cancers);C72;C
+C3_SQUOMOUS_CELL_CARCINOMA_SKIN_EXALLC;Squamous cell neoplasms and carcinomas of the skin, excluding all cancers (controls excluding all cancers);C44[0-9]2;C
+C3_STOMACH_ADENO_EXALLC;Adenocarcinoma and papillary adenocarcinoma of stomach, excluding all cancers (controls excluding all cancers);;
+C3_STOMACH_EXALLC;Malignant neoplasm of stomach, excluding all cancers (controls excluding all cancers);C16;C
+C3_STOMACH_NEUROENDOCRINE_EXALLC;Neuroendocrine tumor and carcinoma of stomach, excluding all cancers (controls excluding all cancers);;
+C3_TESTIS_EXALLC;Malignant neoplasm of testis, excluding all cancers (controls excluding all cancers);C62;C
+C3_TESTIS_NONSEMINOMA_EXALLC;Non-seminoma of testis, excluding all cancers (controls excluding all cancers);C62.2;C
+C3_TESTIS_SEMINOMA_EXALLC;Seminoma of testis, excluding all cancers (controls excluding all cancers);C62.1;C
+C3_THYMUS_EXALLC;Malignant neoplasm of thymus, excluding all cancers (controls excluding all cancers);C37;C
+C3_THYROID_FOLLICULAR_EXALLC;Follicular adenocarcinoma of thyroid gland, excluding all cancers (controls excluding all cancers);C7392;C
+C3_THYROID_GLAND_EXALLC;Malignant neoplasm of thyroid gland, excluding all cancers (controls excluding all cancers);C73;C
+C3_THYROID_MEDULLARY_EXALLC;Medullary carcinoma of thyroid gland, excluding all cancers (controls excluding all cancers);C7394;C
+C3_THYROID_PAPILLARY_ADENO_EXALLC;Papillary adenocarcinoma of thyroid gland, excluding all cancers (controls excluding all cancers);C7391;C
+C3_TONSIL_BASETONGUE_EXALLC;Malignant cancer of tonsil and base of tongue, excluding all cancers (controls excluding all cancers);C01|C09;C
+C3_URETER_EXALLC;Malignant neoplasm of ureter, excluding all cancers (controls excluding all cancers);C66;C
+C3_URINARY_TRACT_EXALLC;Malignant neoplasm of urinary organs, excluding all cancers (controls excluding all cancers);;
+C3_VAGINA_EXALLC;Malignant neoplasm of vagina, excluding all cancers (controls excluding all cancers);C52;C
+C3_VULVA_EXALLC;Malignant neoplasm of vulva, excluding all cancers (controls excluding all cancers);C51;C
+C3_WILMS_TUMOR;Wilms' tumor;C6480;C
+C3_WILMS_TUMOR_EXALLC;Wilms' tumor, excluding all cancers (controls excluding all cancers);C6480;C
+CAMPYLOENTERITIS;Campylobacter enteritis;A045;A
+CARDIAC_ARRHYTM;Cardiac arrhythmias;;
+CARDIOMYOPATHY_DRUGS_OTHER_EXTER_AGENTS;Cardiomyopathy due to drugs and other external agents;I427;I
+CD2_BENIGN_ADRENAL;Benign neoplasm: Adrenal gland;D350;D
+CD2_BENIGN_ANUS_ANAL_CANAL;Benign neoplasm: Anus and anal canal;D129;D
+CD2_BENIGN_APPENDIX;Benign neoplasm: Appendix;D121;D
+CD2_BENIGN_ASCENDING_COLON;Benign neoplasm: Ascending colon;D122;D
+CD2_BENIGN_BLADDER;Benign neoplasm: Bladder;D303;D
+CD2_BENIGN_BONE_CARTILAGE;Benign neoplasm of bone and articular cartilage;D16;D
+CD2_BENIGN_BONE_CARTILAGE_NOS;Benign neoplasm: Bone and articular cartilage, unspecified;D169;D
+CD2_BENIGN_BONE_LONG_LOWER;Benign neoplasm: Long bones of lower limb;D162;D
+CD2_BENIGN_BONE_LOWER_JAW;Benign neoplasm: Lower jaw bone;D165;D
+CD2_BENIGN_BONE_SCAPULA_LONG_UPPER;Benign neoplasm: Scapula and long bones of upper limb;D160;D
+CD2_BENIGN_BONE_SHORT_LOWER;Benign neoplasm: Short bones of lower limb;D163;D
+CD2_BENIGN_BONE_SHORT_UPPER;Benign neoplasm: Short bones of upper limb;D161;D
+CD2_BENIGN_BONE_SKULL_FACE;Benign neoplasm: Bones of skull and face;D164;D
+CD2_BENIGN_BRAIN_CNS;Benign neoplasm of brain and other parts of central nervous system;D33;D
+CD2_BENIGN_BRAIN_INFRATENT;Benign neoplasm: Brain, infratentorial;D331;D
+CD2_BENIGN_BRAIN_NOS;Benign neoplasm: Brain, unspecified;D332;D
+CD2_BENIGN_BRAIN_SUPRATENT;Benign neoplasm: Brain, supratentorial;D330;D
+CD2_BENIGN_BREAST;Benign neoplasm of breast;D24;D
+CD2_BENIGN_BRONCHUS_LUNG;Benign neoplasm: Bronchus and lung;D143;D
+CD2_BENIGN_CAECUM;Benign neoplasm: Caecum;D120;D
+CD2_BENIGN_CAROTIDBODY;Benign neoplasm: Carotid body;D355;D
+CD2_BENIGN_CERVIX_UTERI;Other benign neoplasm of uterus: Cervix uteri;D260;D
+CD2_BENIGN_CHOROID;Benign neoplasm: Choroid;D313;D
+CD2_BENIGN_CILIARY;Benign neoplasm: Ciliary body;D314;D
+CD2_BENIGN_CNS_NOS;Benign neoplasm: Central nervous system, other parts/unspecified;D337;D
+CD2_BENIGN_COLON;Benign neoplasm: Colon;;
+CD2_BENIGN_COLON_NOS;Benign neoplasm: Colon, unspecified;D126;D
+CD2_BENIGN_COLORECANI;Benign neoplasm of colon, rectum, anus and anal canal;D12;D
+CD2_BENIGN_CONJUNCTIVA;Benign neoplasm: Conjunctiva;D310;D
+CD2_BENIGN_CONNECTIVE_SOFT;Other benign neoplasms of connective and other soft tissue;D21;D
+CD2_BENIGN_CONNSOFT_ABD;Benign neoplasm: Connective and other soft tissue of abdomen;D214;D
+CD2_BENIGN_CONNSOFT_PELVIS;Benign neoplasm: Connective and other soft tissue of pelvis;D215;D
+CD2_BENIGN_CONNSOFT_THX;Benign neoplasm: Connective and other soft tissue of thorax;D213;D
+CD2_BENIGN_CONNSOFT_TRUNK;Benign neoplasm: Connective and other soft tissue of trunk, unspecified;D216;D
+CD2_BENIGN_CONNSOFT_UPPERLIMB;Benign neoplasm: Connective and other soft tissue of upper limb, including shoulder;D211;D
+CD2_BENIGN_CORNEA;Benign neoplasm: Cornea;D311;D
+CD2_BENIGN_CORPUS_UTERI;Other benign neoplasm of uterus: Corpus uteri;D261;D
+CD2_BENIGN_CRANIAL_NERVE;Benign neoplasm: Cranial nerves;D333;D
+CD2_BENIGN_DESCENDING_COLON;Benign neoplasm: Descending colon;D124;D
+CD2_BENIGN_DIGESTIVE_NOS;Benign neoplasm: Ill-defined sites within the digestive system;D139;D
+CD2_BENIGN_DUODENUM;Benign neoplasm: Duodenum;D132;D
+CD2_BENIGN_EAR_NASAL_SINUS;Benign neoplasm: Middle ear, nasal cavity and accessory sinuses;D140;D
+CD2_BENIGN_EAR_RESP;Benign neoplasm of middle ear and respiratory system;D14;D
+CD2_BENIGN_ENDOCRINE_NOS;Benign neoplasm: Endocrine gland, other/unspecified;D35[7|9];D
+CD2_BENIGN_ENDOCRINE_OTH;Benign neoplasm of other and unspecified endocrine glands;D35;D
+CD2_BENIGN_ENDOCRINE_PANCREAS;Benign neoplasm: Endocrine pancreas;D137;D
+CD2_BENIGN_EPIDIDYMIS;Benign neoplasm: Epididymis;D293;D
+CD2_BENIGN_EXTRAHEPATIC_BILE;Benign neoplasm: Extrahepatic bile ducts;D135;D
+CD2_BENIGN_EYE;Benign neoplasm of eye and adnexa;D31;D
+CD2_BENIGN_FEMALE_GEN_NOS;Benign neoplasm: Female genital organ, unspecified;D289;D
+CD2_BENIGN_FEMALE_GEN_OTH;Benign neoplasm of other and unspecified female genital organs;D28;D
+CD2_BENIGN_FLOOROFMOUTH;Benign neoplasm: Floor of mouth;D102;D
+CD2_BENIGN_HEAMANGIOMA_LYMPHANGIOMA;Haemangioma and lymphangioma, any site;D18;D
+CD2_BENIGN_HEART;Benign neoplasm: Heart;D151;D
+CD2_BENIGN_HEMANGIOMA;Haemangioma, any site;D180;D
+CD2_BENIGN_HYPOPHARYNX;Benign neoplasm: Hypopharynx;D107;D
+CD2_BENIGN_INTRATHORACIC;Benign neoplasm of other and unspecified intrathoracic organs;D15;D
+CD2_BENIGN_INTRATHORACIC_NOS;Benign neoplasm: Other specified/unspecified intrathoracic organs (+ respiratory system NOS of Icd-9);D15[7|9];D
+CD2_BENIGN_KIDNEY;Benign neoplasm: Kidney;D300;D
+CD2_BENIGN_LARYNX;Benign neoplasm: Larynx;D141;D
+CD2_BENIGN_LEIOMYOMA_UTERI;Leiomyoma of uterus;D25;D
+CD2_BENIGN_LIP;Benign neoplasm: Lip;D100;D
+CD2_BENIGN_LIPO_INTRATHO;Benign lipomatous neoplasm of  of intra-abdominal organs;D175;D
+CD2_BENIGN_LIPO_NOS;Benign lipomatous neoplasm of other sites/unspecified;D17[7-9];D
+CD2_BENIGN_LIPO_SKIN_HEADFACENECK;Benign lipomatous neoplasm of skin and subcutaneous tissue of head, face and neck;D170;D
+CD2_BENIGN_LIPO_SKIN_LIMBS;Benign lipomatous neoplasm of skin and subcutaneous tissue of limbs;D172;D
+CD2_BENIGN_LIPO_SKIN_NOS;Benign lipomatous neoplasm of skin and subcutaneous tissue of other and unspecified sites;D173;D
+CD2_BENIGN_LIPO_SKIN_TRUNK;Benign lipomatous neoplasm of skin and subcutaneous tissue of trunk;D171;D
+CD2_BENIGN_LIPOMATOUS;Benign lipomatous neoplasm;D17;D
+CD2_BENIGN_LIVE_BILE;Benign neoplasm: Liver/bile ducts;;
+CD2_BENIGN_LIVER;Benign neoplasm: Liver;D134;D
+CD2_BENIGN_LYMPHANGIOMA;Lymphangioma, anys site;D181;D
+CD2_BENIGN_LYMPHNODES;Benign neoplasm: Lymph nodes;D360;D
+CD2_BENIGN_MALE_GEN;Benign neoplasm of male genital organs;D29;D
+CD2_BENIGN_MEDIASTINUM;Benign neoplasm: Mediastinum;D152;D
+CD2_BENIGN_MELANOCYTIC;Melanocytic naevi;D22;D
+CD2_BENIGN_MELANOCYTIC_EAR;Melanocytic naevi of ear and external auricular canal;D222;D
+CD2_BENIGN_MELANOCYTIC_EYELID;Melanocytic naevi of eyelid, including canthus;D221;D
+CD2_BENIGN_MELANOCYTIC_FACE;Melanocytic naevi of other and unspecified parts of face;D223;D
+CD2_BENIGN_MELANOCYTIC_LIP;Melanocytic naevi of lip;D220;D
+CD2_BENIGN_MELANOCYTIC_LOWERLIMB;Melanocytic naevi of lower limb, including hip;D227;D
+CD2_BENIGN_MELANOCYTIC_NOS;Melanocytic naevi, other sites/unspecified;D229;D
+CD2_BENIGN_MELANOCYTIC_SCALPNECK;Melanocytic naevi of scalp and neck;D224;D
+CD2_BENIGN_MELANOCYTIC_TRUNK;Melanocytic naevi of trunk;D225;D
+CD2_BENIGN_MELANOCYTIC_UPPERLIMB;Melanocytic naevi of upper limb, including shoulder;D226;D
+CD2_BENIGN_MENINGES;Benign neoplasm of meninges;D32;D
+CD2_BENIGN_MENINGES_CEREBRAL;Benign neoplasm: Cerebral meninges;D320;D
+CD2_BENIGN_MENINGES_NOS;Beningn neoplasm: Meninges, unspecified;D329;D
+CD2_BENIGN_MENINGES_SPINAL;Benign neoplasm: Spinal meninges;D321;D
+CD2_BENIGN_MOUTH_NOS;Benign neoplasm: Other and unspecified parts of mouth;D103;D
+CD2_BENIGN_MOUTH_PHARYNX;Benign neoplasm of mouth and pharynx;D10;D
+CD2_BENIGN_NASOPHARYNX;Benign neoplasm: Nasopharynx;D106;D
+CD2_BENIGN_NOS;Benign neoplasm: Other/unspecified site;D36[7|9];D
+CD2_BENIGN_OESOPHAGUS;Benign neoplasm: Oesophagus;D130;D
+CD2_BENIGN_ORBIT_NOS;Benign neoplasm: Orbit, unspecified;D316;D
+CD2_BENIGN_OROPHA_OTHER;Benign neoplasm: Other parts of oropharynx;D105;D
+CD2_BENIGN_OTHER_NOS;Benign neoplasm of other and unspecified sites;D36;D
+CD2_BENIGN_OTHERDIGESTIVE;Benign neoplasm of other and ill-defined parts of digestive system;D13;D
+CD2_BENIGN_OVARY;Benign neoplasm of ovary;D27;D
+CD2_BENIGN_PANCREAS;Benign neoplasm: Pancreas;D136;D
+CD2_BENIGN_PARATHYROID;Benign neoplasm: Parathyroid gland;D351;D
+CD2_BENIGN_PAROTID;Benign neoplasm: Parotid gland;D110;D
+CD2_BENIGN_PELVIC_BONES_SACRUM_COCCYX;Benign neoplasm: Pelvic bones, sacrum and coccyx;D168;D
+CD2_BENIGN_PENIS;Benign neoplasm: Penis;D290;D
+CD2_BENIGN_PERIPH_AUTO_NEURO;Benign neoplasm: Peripheral nerves and autonomic nervous system;D361;D
+CD2_BENIGN_PHARYNX_NOS;Benign neoplasm: Pharynx, unspecified;D109;D
+CD2_BENIGN_PINEAL;Benign neoplasm: Pineal gland;D354;D
+CD2_BENIGN_PITUITARY_CRANIPHAR;Benign neoplasm: Pituitary gland, craniopharyngeal duct;D35[2-3];D
+CD2_BENIGN_PROSTATE;Benign neoplasm: Prostate;D291;D
+CD2_BENIGN_RECTOSIGMOID_JUNC;Benign neoplasm: Rectosigmoid junction;D127;D
+CD2_BENIGN_RECTUM;Benign neoplasm: Rectum;D128;D
+CD2_BENIGN_RECTUM_ANAL;Benign neoplasm: Rectum, anus and anal canal;;
+CD2_BENIGN_RENALPELVIS;Benign neoplasm: Renal pelvis;D301;D
+CD2_BENIGN_RESPIRATORY_NOS;Benign neoplasm: Respiratory system, unspecified;D144;D
+CD2_BENIGN_RETINA;Benign neoplasm: Retina;D312;D
+CD2_BENIGN_RETROPERITONEUM_PERITONEUM;Benign neoplasm of soft tissue of retroperitoneum and peritoneum;D20;D
+CD2_BENIGN_RIBS_STERNUM_CLAVICLE;Benign neoplasm: Ribs, sternum and clavicle;D167;D
+CD2_BENIGN_SALIVARY;Benign neoplasm of major salivary glands;D11;D
+CD2_BENIGN_SALIVARY_KNOWN;Benign neoplasm: salivary glands, exclude unknown (D119);D110|D117;D
+CD2_BENIGN_SALIVARY_NOS;Benign neoplasm: other/unspecified salivary gland;D11[7|9];D
+CD2_BENIGN_SCROTUM;Benign neoplasm: Scrotum;D294;D
+CD2_BENIGN_SIGMOID_COLON;Benign neoplasm: Sigmoid colon;D125;D
+CD2_BENIGN_SKIN;Other benign neoplasms of skin;D23;D
+CD2_BENIGN_SMALL_INTESTINE;Benign neoplasm: Small intestine;;
+CD2_BENIGN_SMALL_INTESTINE_OTH;Benign neoplasm: Other and unspecified parts of small intestine;D133;D
+CD2_BENIGN_SPINAL_CORD;Benign neoplasm: Spinal cord;D334;D
+CD2_BENIGN_STOMACH;Benign neoplasm: Stomach;D131;D
+CD2_BENIGN_TESTIS;Benign neoplasm: Testis;D292;D
+CD2_BENIGN_THYMUS;Benign neoplasm: Thymus;D150;D
+CD2_BENIGN_THYROID;Benign neoplasm of thyroid gland;D34;D
+CD2_BENIGN_TONGUE;Benign neoplasm: Tongue;D101;D
+CD2_BENIGN_TONSIL;Benign neoplasm: Tonsil;D104;D
+CD2_BENIGN_TRANSVERSE_COLON;Benign neoplasm: Transverse colon;D123;D
+CD2_BENIGN_URINARY;Benign neoplasm of urinary organs;D30;D
+CD2_BENIGN_URINARY_NOS;Benign neoplasm: Urinary organ, other/unspecified;D30[7|9];D
+CD2_BENIGN_UTERINE_TUBES_LIGAMENTS;Benign neoplasm: Uterine tubes and ligaments;D287;D
+CD2_BENIGN_UTERUS_NOS;Other benign neoplasm of uterus: Other parts/unspecified;D26[7|9];D
+CD2_BENIGN_UTERUS_OTH;Other benign neoplasms of uterus;D26;D
+CD2_BENIGN_VAGINA;Benign neoplasm: Vulva;D280;D
+CD2_BENIGN_VULVA;Benign neoplasm: Vagina;D281;D
+CHARCOT;Charcot foot;M146&A521|M146&E106|M146&E116;M
+CHILDHOOD_ALLERGY;Childhood allergy (age < 16);J450|L20|J30[1-4]|L236|J3019;J
+CHIRBIL_NAS;Biliary cirrhosis, NAS;K745;K
+CHIRBIL_PRIM;Primary biliary cholangitis (PBC);K743;K
+CHIRHEP_NAS;Cirrhosis of liver, NAS;K746;K
+CHONDRO_OTH;Other chondrocalcinosis;M112;M
+CHRONHEP_NAS;Chronic hepatitis NAS;K7389|K739;K
+CHRONIC_DRUGADVERS_INTERSTITIAL_LUNG_DISORD;Chronic drug-induced interstitial lung disorders;J703;J
+CHRONLARGE;Crohn's disease of large intestine;K501;K
+CHRONMYELOPRO;Chronic myeloproliferative disease;D471;D
+CHRONNAS;Crohn's disease NAS;K509;K
+CHRONOTH;Other Crohn's disease;K508;K
+CHRONSMALL;Crohn's disease of small intestine;K500;K
+CHRYSTAL_NOS;Other/unspecified crystal arthropathies;M11[8-9];M
+CIRRHOSIS_BROAD;Cirrhosis, broad definition used in the article https://doi.org/10.1101/594523;;
+CML;Chronic myeloid leukaemia [CML], BCR/ABL-positive;C921;C
+CMV_HEPATITIS;Cytomegaloviral hepatitis;B251;B
+CMV_NOS;Other/unspecified cytomegaloviral diseases;B25[8-9];B
+CMV_PNEUMONIA;Cytomegaloviral pneumonitis;B250;B
+COLONPSEUDOP;Pseudopolyposis of colon;K514;K
+CONGEN_HEART_ARTER;Congenital malformations of heart and great arteries;Q2[0-5];Q
+COPD_EARLY;Early onset COPD;J44;J
+COPD_INSUFFICIENCY;COPD-related respiratory insufficiency;;
+COPD_LATER;Later onset COPD;J44;J
+COPD_OPPORTUNIST_INFECTIONS;COPD related to chronic (opportunist) infections;;
+CPAP;Continuous positive airway pressure;;
+CREST;CR(E)ST syndrome;M341;M
+CROHN_ARTHR;Arthropathy in Crohn disease;M074;M
+D3_ACQCOAFACDEF;Acquired coagulation factor deficiency;D684;D
+D3_ACQHAEMOLYTICANAEMIA;Acquired haemolytic anaemia;D59;D
+D3_ACQHAEMOLYTICANAEMIANAS;Other and unspecified acquired haemolytic anaemias;D59[8-9];D
+D3_ACQPUREREDCLLAPLASIA;Acquired pure red cell aplasia [erythroblastopenia];D60;D
+D3_ACUTEPOSTBLEEDANAEMIA;Acute posthaemorrhagic anaemia;D62;D
+D3_AGRANULOCYTOSIS;Agranulocytosis;D70;D
+D3_AIHA_OTHER;Other autoimmune haemolytic anaemias;D591;D
+D3_ALLERGPURPURA;Allergic purpura;D690;D
+D3_ANAEMIA;Anaemias;;
+D3_ANAEMIA_B12_DEF;Vitamin B12 deficiency anaemia;D51;D
+D3_ANAEMIA_FOLATEDEF;Folate deficiency anaemia;D52;D
+D3_ANAEMIA_IRONDEF;Iron deficiency anaemia;;
+D3_ANAEMIA_IRONDEF_BLOODLOSS;Iron deficiency anaemia secondary to blood loss (chronic);D500;D
+D3_ANAEMIA_IRONDEF_NAS;Other and unspecified iron deficiency;D50;D
+D3_ANAEMIAINCHRONICDISEASE;Anaemia in chronic diseases classified elsewhere;D63;D
+D3_ANAEMIANAS;Other and unspecified anaemias;D64[8-9];D
+D3_BLOODNAS;Other and unspecified diseases of blood and blood-forming organs;D75[8-9];D
+D3_BLOODOTHER;Other diseases of blood and blood-forming organs, wide;;
+D3_COAGDEF;Chronic Coagulation defects;;
+D3_COAGDEF_PURPUR_HAEMORRHAGIC;Coagulation defects, purpura and other haemorrhagic conditions;;
+D3_COAGDEFNAS;Other and unspecified coagulation defects;D68[8-9];D
+D3_COAGOTHER;Other coagulation defects;D68;D
+D3_COMBIMMUDEF;Combined immunodeficiencies;D81;D
+D3_COMPLEMENTDEF;Defects in the complement system;D841;D
+D3_CRYOGLOBU;Cryoglobulinemia;D891;D
+D3_CVID;Common variable immunodeficiency;D83;D
+D3_CVID_BCELL;Common variable immunodeficiency with predominant abnormalities of B-cell numbers and function;D830;D
+D3_CVIDNAS;Other or unspecified common variable immunodeficiency;D83[8-9];D
+D3_CYSTSPLEEN;Cyst of spleen;D734;D
+D3_DEF_IGG;Selective deficiency of immunoglobulin G [IgG] subclasses;D803;D
+D3_DEF_IIGA;Selective deficiency of immunoglobulin A [IgA]y;D802;D
+D3_DISSEINTRAVASCCOAG;Disseminated intravascular coagulation [defibrination syndrome];D65;D
+D3_FAMIERYTHROCYTOCIS;Familial erythrocytosis;D750;D
+D3_HAEMOLYTICANAEMIA;Haemolytic anaemias;;
+D3_HAEMORRHAGCIRGUANTICO;Haemorrhagic disorder due to circulating anticoagulants;D683;D
+D3_HAEMORRHAGICNAS;Other and unspecified haemorrhagic conditions;D699;D
+D3_HEREDFVIIIDEF;Hereditary factor VIII deficiency;D66;D
+D3_HEREDHAEMOLYTICANAEMIAOTHER;Other hereditary haemolytic anaemias;D58;D
+D3_HEREDHYPOGAMMA;Hereditary hypogammaglobulinemia;D800;D
+D3_HEREDOTHCLOFACTORS;Hereditary deficiency of other clotting factors;D682;D
+D3_HERESPHERO;Hereditary spherocytosis;D580;D
+D3_HYPERSPLENISM;Hypersplenism;D731;D
+D3_IMMUDEF;Immunodeficiencies;;
+D3_IMMUDEFANTIBODY;Immunodeficiency with predominantly antibody defects;D80;D
+D3_IMMUDEFANTIBODYNAS;Other and unspecified immunodeficiencies with predominantly antibody defects;D80[8-9];D
+D3_IMMUDEFNAS;Other or unspecified immunodeficiency;D84[8-9];D
+D3_IMMUDEFOTHER;Other immunodeficiencies;D84;D
+D3_IMMUDEFWITHMAJORDEF;Immunodeficiency associated with other major defects;D82;D
+D3_IMMUNEMECHANISM;Certain disorders involving the immune mechanism;;
+D3_INFARCTSPLEEN;Infarction of spleen;D735;D
+D3_ITP;Idiopathic thrombocytopenic purpura;D693;D
+D3_KELA_IMMUDEF;Kela reimbursement Agammaglobulinemia (D80-84);;
+D3_NEFELOF;Nezelof syndrome;D814;D
+D3_NOCT_HAEMOGLOBINURIA;Other nonautoimmune haemolytic anaemias;D594;D
+D3_NONAIHA_OTHER;Haemolytic-uraemic syndrome;D593;D
+D3_NONHEREDHYPOGAMMA;Nonhereditary hypogammaglobulinemia;D801;D
+D3_NUTRIANAEMIAOTHER;Other nutritional anaemias;D53;D
+D3_OTHDISLYMPHORETANDRETICULOHIST;Other specified diseases with participation of lymphoreticular and reticulohistiocytic tissue;D76;D
+D3_OTHERAPLASTICANAEMIA;Other and unspecified aplastic anaemias;D61;D
+D3_OTHERBLOOD;Other diseases of blood and blood-forming organs;D75;D
+D3_OTHERWHITECELL;Other disorders of white blood cells;D72;D
+D3_OTHHAEMOGLOPAT;Other haemoglobinopathies;D582;D
+D3_OTHNONTHROMBOCYTOPENPURPURA;Other nonthrombocytopenic purpura;D692;D
+D3_OTHPRIMTHROMBOCYTOPENIA;Other primary thrombocytopenia;D694;D
+D3_PURPURA_AND3_OTHER_HAEMORRHAGIC;Purpura and other haemorrhagic conditions;D69;D
+D3_QUALIPATELETDEF;Qualitative platelet defects;D691;D
+D3_SARCOIDOSIS;Sarcoidosis;D86;D
+D3_SCIDA;Severe combined immunodeficiency [SCID] with reticular dysgenesis;D810;D
+D3_SCNDPOLYCYTHAEMIA;Secondary polycythaemia;D751;D
+D3_SCNDTHROMBOCYTOPENIA;Secondary thrombocytopenia;D695;D
+D3_SICKLECELLDIS;Sickle-cell disorders;D57;D
+D3_SIDEROANAEMIAHERED;Hereditary sideroblastic anaemia;D640;D
+D3_SIDEROANAMIEAOTHER;Other sideroblastic anaemias;D643;D
+D3_SIDEROANASCND;Secondary sideroblastic anaemia;D64[1-2];D
+D3_SPLEENDISEASE;Diseases of spleen;D73;D
+D3_SPLEENNAS;Other and unspecified diseases of spleen;D73[8-9];D
+D3_THALASSAEMIA;Thalassaemia;D56;D
+D3_THROMBOCYTOPENIANAS;Thrombocytopenia, unspecified;D696;D
+D3_VONVILLEBRAND;Von Willebrand disease;D680;D
+D3_WHITEBLOODCELLNAS;Other and unspecified disorders of white blood cells;D72[8-9];D
+DENTAL_TMD;TMD related pain;K076[0|3];K
+DENTAL_TMD_FIBRO;TMD muscular pain linked with fibromyalgia;K0760;K
+DERMATOPOLY_FG;Dermatopolymyositis (FG);;
+DM_NEOVASCULAR_GLAUCOMA;Neovascular glaucoma;H405;H
+DM_NEPHROPATHY;Diabetic nephropathy;N083;N
+DM_NEUROPATHY;Diabetic neuropathy;E1[0-4]4;E
+DM_RETINOPATHY;Diabetic retinopathy;;
+DM_RETINOPATHY_STRICT;Diabetic retinopathy, strict definition;H3600|H3602|H3603;H
+DRUGADVERS_ACUTE_PANCREATIT;Drug-induced acute pancreatitis;K853;K
+DRUGADVERS_ADRENOCORTICAL_INSUFFICIENCY;Drug-induced adrenocortical insufficiency;E273;E
+DRUGADVERS_CATAR;Drug-induced cataract;H263;H
+DRUGADVERS_DYSTON;Drug-induced dystonia;G240;G
+DRUGADVERS_GOUT;Drug-induced gout;M102;M
+DRUGADVERS_HEADA_NOT_ELSEW_CLASSIFIED;Drug-induced headache, not elsewhere classified;G444;G
+DRUGADVERS_INTERSTITIAL_LUNG_DISORD_UNSPE;Drug-induced interstitial lung disorders, unspecified;J704;J
+DRUGADVERS_NEUTROPENIA;Drug-induced neutropenia;D7082;D
+DRUGADVERS_OSTEOPO;Drug-induced osteoporosis;M814;M
+DRUGADVERS_SYSTEMIC_LUPUS_ERYTHEMAT;Drug-induced systemic lupus erythematosus;M320;M
+DRUGADVERS_TREMOR;Drug-induced tremor;G251;G
+DRY_AMD;Dry age-related macular degeneration (includes geographic atrophy);H3530;H
+DUODENAL_ULCER_ACUTE_W_HAEMORRHAGE;Duodenal ulcer - Acute with haemorrhage, drug-induced;K260;K
+DUODENAL_ULCER_UNSPE_ACUTE_CHRONIC_WO_HAEMORRHAGE_PERFORATION;Duodenal ulcer - Unspecified as acute or chronic, without haemorrhage or perforation, drug-induced;K269;K
+E4_ACIDOSIS;Acidosis;E872;E
+E4_ACROMEG;Acromegaly and pituitary gigantism;E220;E
+E4_ADDISON;Adrenocortical insufficiency;E27[1-4];E
+E4_ADREACT;Other adrenocortical overactivity;E270;E
+E4_ADREMEDHYPER;Adrenomedullary hyperfunction;E275;E
+E4_ADRENAS;Disorders of adrenal gland, other and/or unspecified;E27[8-9];E
+E4_ADRENOGEN;Adrenogenital disorders;E25;E
+E4_ALKALOSIS;Alkalosis;E873;E
+E4_AMINO;Other disorders of amino-acid metabolism;E72;E
+E4_AMINOTRANSPORT;Disorders of amino-acid transport;E720;E
+E4_AMYL_ORGAN;Organ-limited amyloidosis;E854;E
+E4_AMYL_SCNDSYST;Secondary systemic amyloidosis;E853;E
+E4_AMYLNAS;Amyloidosis, other/unspecified;E85[8-9];E
+E4_ANTIDIU;Syndrome of inappropriate secretion of antidiuretic hormone;E222;E
+E4_AROMAMINO;Disorders of aromatic amino-acid metabolism;E70;E
+E4_AUTOPOLYFAI;Autoimmune polyglandular failure;E310;E
+E4_CARBO;Other disorders of carbohydrate metabolism;;
+E4_CARBONAS;Disorder of carbohydrate metabolism, other/unspecified;E74[8-9];E
+E4_CARCISDR;Carcinoid syndrome;E340;E
+E4_CONGEIOD;Congenital iodine-deficiency syndrome/hypothyroidism;E00|E03[0-1];E
+E4_CUSHING;Cushing syndrome;E24;E
+E4_CYSTFIBRO;Cystic fibrosis;E84;E
+E4_CYSTFIBRO_INT;Cystic fibrosis with intestinal manifestations;E841;E
+E4_CYSTFIBRO_NAS;Cystic fibrosis, other manifestations/unspecified;E84[8-9];E
+E4_DELPUB;Delayed puberty;E300;E
+E4_DIABINSIPIDUS;Diabetes insipidus;E232;E
+E4_DISPUB;Disorders of puberty;E30;E
+E4_DYSPOLYGL;Polyglandular dysfunction;E31;E
+E4_ENDINOTH;Disorders of endocrine glands in diseases classified elsewhere;E35;E
+E4_ENDODIS;Other endocrine disorders;E3[4-5];E
+E4_ENDODISNAS;Endocrine disorders, other/unspecified;E34[8-9];E
+E4_ENDOGLAND;Disorders of other endocrine glands;E[2-3];E
+E4_ENDOMETPOSTOP;Postprocedural endocrine and metabolic disorders, not elsewhere classified;E89;E
+E4_FABRY_KIDNEY;Kidney diseases associated to Fabry's disease;E752;E
+E4_FE_DEF;Iron deficiency;E611;E
+E4_FH;Familial hypercholesterolemia;E7800;E
+E4_FH_IHD;Familial hypercholesterolemia, with ischemic heart disease;;
+E4_FLUIDELECTRO;Other disorders of fluid, electrolyte and acid-base balance;E87;E
+E4_FLUIDELECTRONAS;Other disorders of electrolyte and fluid balance, not elsewhere classified;E878;E
+E4_FLUIDOVER;Fluid overload;E877;E
+E4_GILBERT;Gilbert syndrome;E804;E
+E4_GLUCOPANCREAS;Other disorders of glucose regulation and pancreatic internal secretion;E1[5-6];E
+E4_GOITREDIFF;Nontoxic diffuse goitre;E040;E
+E4_GOITREMULTINOD;Nontoxic multinodular goitre;E042;E
+E4_GOITRENAS;Other and/or unspecified nontoxic goitre;E04[8-9];E
+E4_GOITRENOD;Nontoxic single thyroid nodule;E041;E
+E4_GRAVES_OPHT_STRICT;Graves ophthalmopathy, strict;H062&E059;H
+E4_GRAVES_STRICT;Graves disease, strict definition;;
+E4_HYPERALDO;Hyperaldosteronism;E26;E
+E4_HYPERALI;Other hyperalimentation;E6[7-8];E
+E4_HYPERALISEQ;Sequelae of hyperalimentation;E68;E
+E4_HYPERCHOL;Pure hypercholesterolaemia;E780;E
+E4_HYPERCHYLO;Hyperchylomicronaemia;E783;E
+E4_HYPERGLYCER;Pure hyperglyceridaemia;E781;E
+E4_HYPERKALAEMIA;Hyperkalaemia;E875;E
+E4_HYPERLIPMIX;Mixed hyperlipidaemia;E782;E
+E4_HYPERLIPNAS;Hyperlipidaemia, other/unspecified;E78[4-5];E
+E4_HYPEROSMHNAT;Hyperosmolality and hypernatraemia;E870;E
+E4_HYPERPARA;Hyperparathyroidism;E21[0-3];E
+E4_HYPERPIT;Hyperfunction of pituitary gland;E22;E
+E4_HYPERPITNAS;Hyperfunction of pituitary gland, other and/or unspecified;E229;E
+E4_HYPERPRO;Hyperprolactinaemia;E221;E
+E4_HYPERPRO_ADVERSE;Hyperprolactinaemia, drug-induced;E221;E
+E4_HYPERURI;Hyperuricaemia without signs of inflammatory arthritis and tophaceous disease;E790;E
+E4_HYPOCOMA;Nondiabetic hypoglycaemic coma;E15;E
+E4_HYPODRUG;Drug-induced hypoglycaemia without coma;E160;E
+E4_HYPOKALAEMIA;Hypokalaemia;E876;E
+E4_HYPOOSMNAT;Hypo-osmolality and hyponatraemia;E871;E
+E4_HYPOPARA;Hypoparathyroidism;E20;E
+E4_HYPOPIT;Hypopituitarism;E230;E
+E4_HYPOTHALDYSF;Hypothalamic dysfunction, including iatrogenic, not elsewhere classified;E231|E233;E
+E4_HYTHY_AI_DX;Hypothyroidism, autoimmune, DX-based;E0380;E
+E4_HYTHY_AI_STRICT;Hypothyroidism, strict autoimmune;;
+E4_HYTHYPOSTINF;Postinfectious hypothyroidism;E033;E
+E4_HYTHYSUBS;Hypothyroidism due to medicaments and other exogenous substances;E032;E
+E4_IRON_MET;Disorders of iron metabolism;E831;E
+E4_KWASHIORKOR;Kwashiorkor;E40;E
+E4_LACTOCON;Congenital lactase deficiency;E730;E
+E4_LACTONAS;Lactose intolerance, other/unspecified;E73[8-9];E
+E4_LIPODEF;Lipoprotein deficiency;E786;E
+E4_LIPODYST;Lipodystrophy, not elsewhere classified;E881;E
+E4_LIPOMATOSIS;Lipomatosis, not elsewhere classified;E882;E
+E4_LIPOPROT;Disorders of lipoprotein metabolism and other lipidaemias;E78;E
+E4_LIPOPROTNAS;Disorder of lipoprotein metabolism, unspecified;E78[8-9];E
+E4_LOCALADIP;Localized adiposity;E65;E
+E4_MALNUTRITION;Malnutrition;E4;E
+E4_MARAKWASH;Marasmic kwashiorkor;E42;E
+E4_MARASMUS;Nutritional marasmus;E41;E
+E4_METABOLIA;Metabolic disorders;E[7-9];E
+E4_METABONAS;Metabolic disorder, other/unspecified;E88[8-9];E
+E4_MG_DEF;Magnesium deficiency;E612;E
+E4_MG_MET;Disorders of magnesium metabolism;E834;E
+E4_MINERAL_MET;Disorders of mineral metabolism;E83;E
+E4_MINERAL_METNAS;Disorder of mineral metabolism, other/unspecified;E83[8-9];E
+E4_NONTOXIC_THYROID;Nontoxic goitre/thyroid nodule;;
+E4_NUTRI_DEF_NAS;Other specified/unspecified nutritional deficiencies;E63[8-9];E
+E4_OBESITY;Obesity;E66;E
+E4_OBESITYCAL;Obesity due to excess calories;E660;E
+E4_OBESITYDRUG;Drug-induced obesity;E661;E
+E4_OBESITYNAS;Obesity, other/unspecified;E66[8-9];E
+E4_OBESITYXTRMALV;Extreme obesity with alveolar hypoventilation;E662;E
+E4_ODANDRO;Ovarian dysfunction: androgen excess;E281;E
+E4_OVARDYS;Ovarian dysfunction;E28;E
+E4_OVARDYSNAS;Ovarian dysfunction, other/unspecified;E28[8-9];E
+E4_OVARFAIL;Primary ovarian failure;E283;E
+E4_PANCSECNAS;Disorder of pancreatic internal secretion, other and/or unspecified;E16[8-9];E
+E4_PARANAS;Disorders of parathyroid gland, other and/or unspecified;E21[4-5];E
+E4_PARATHYRO;Disorders of parathyroid gland;E2[0-1];E
+E4_PCOS;Polycystic ovarian syndrome;E282;E
+E4_PCOS_BROAD;Polycystic ovarian syndrome, broad definition;;
+E4_PCOS_CONCORTIUM;Polycystic ovarian syndrome, consortium definition;N925|N926|L680;N
+E4_PHOS_MET;Disorders of phosphorus metabolism and phosphatases;E833;E
+E4_PITUDISNAS;Disorders of pituitary gland, other and/or unspecified;E23[6-7];E
+E4_PLASMAPROT;Disorders of plasma-protein metabolism, not elsewhere classified;E880;E
+E4_PORBILIR;Disorders of porphyrin and bilirubin metabolism;E80;E
+E4_PORPHYNAS;Other porphyria;E802;E
+E4_PRECOXCENTPUB;Precocious central puberty;E228;E
+E4_PREPUB;Precocious puberty;E301;E
+E4_PROTMALMODMILD;Protein-energy malnutrition of moderate and mild degree;E44;E
+E4_PROTMALNAS;Unspecified protein-energy malnutrition;E46;E
+E4_PROTMALSEVERNAS;Unspecified severe protein-energy malnutrition;E43;E
+E4_PUBDISNAS;Disorders of puberty, other/unspecified;E30[8-9];E
+E4_SEQUMAL;Sequelae of malnutrition and other nutritional deficiencies;E64;E
+E4_SPHIGLOLIPNAS;Sphingolipidosis, other/unspecified;E75[2-3];E
+E4_SPHINGOLIP;Disorders of sphingolipid metabolism and other lipid storage disorders;E75;E
+E4_TESTICDYSNAS;Testicular dysfunction, other/unspecified;E29[8-9];E
+E4_TESTICHYPO;Testicular hypofunction;E291;E
+E4_THIA_DEF;Thiamine deficiency;E51;E
+E4_THYCRISIS;Thyroid crisis or storm;E055;E
+E4_THYMUSDIS;Diseases of thymus;E32;E
+E4_THYMUSDISNAS;Disease of thymus, other/unspecified;E32[8-9];E
+E4_THYROID;Disorders of the thyroid gland;E0;E
+E4_THYROIDITACU;Acute thyroiditis;E060;E
+E4_THYROIDITAUTOIM;Autoimmune thyroiditis;E063;E
+E4_THYROIDITCHRON;Chronic thyroiditis;E062|E068;E
+E4_THYROIDITDRUG;Drug-induced thyroiditis;E064;E
+E4_THYROIDITNAS;Thyroiditis, unspecified;E069;E
+E4_THYROIDITSUBAC;Subacute thyroiditis;E061;E
+E4_THYROIDNASOTH;Disorder of thyroid, unspecified;E07[8-9];E
+E4_THYTOXFAC;Thyrotoxicosis factitia;E054;E
+E4_THYTOXGOITDIF;Thyrotoxicosis with diffuse goitre;E050;E
+E4_THYTOXGOITMULT;Thyrotoxicosis with toxic multinodular goitre;E052;E
+E4_THYTOXNOD;Thyrotoxicosis with toxic single thyroid nodule;E051;E
+E4_VIT_A_DEF;Vitamin A deficiency;E50;E
+E4_VIT_B_DEF;Deficiency of other B group vitamins;E53;E
+E4_VIT_D_DEF;Vitamin D deficiency;E55;E
+E4_VOLUME;Volume depletion;E86;E
+EHEC;Enterohaemorrhagic Escherichia coli infection;A043;A
+ENTEROPATH_E_COLI;Enteropathogenic Escherichia coli infection;A040;A
+EPILEPTIC_SEIZU_RELATED_DRUGS;Epileptic seizures related to drugs;G4052;G
+EPISEIZALCO;Epileptic seizures related to alcohol;G4051;G
+ERECTILE_DYSFUNCTION;Erectile dysfunction;;
+ESOSINOPHIL_DISEASE;Eosinophilic disease (BM);D721;D
+F5_ADHD;Disturbance of activity and attention;F900;F
+F5_AGORAPHOBIA;Agoraphobia;F400;F
+F5_ALCOHOL_DEPENDENCE;Alcohol dependence;F102;F
+F5_ALCOHOLAC;Acute alcohol intoxication;F100;F
+F5_ALLANXIOUS;All anxiety disorders;;
+F5_ALZHDEMENT;Dementia in Alzheimer disease;F00;F
+F5_ANAPER;Anankastic personality disorder;F605;F
+F5_ANOREX;Anorexia (incl.atypical);F50[0-1];F
+F5_ANXIETY;Other anxiety disorders;F41[2-9];F
+F5_ANXPER;Anxious personality disorder;F606;F
+F5_BEHAVE;Behavioural syndromes associated with physiological disturbances and physical factors;;
+F5_BEHEMOCHILD;Behavioural and emotional disorders with onset usually occurring in childhood and adolescence;;
+F5_BIPO;Bipolar affective disorders;F31;F
+F5_BULIMIA;Bulimia nervosa (incl. atypical);F50[2-3];F
+F5_CANNABIS;Mental and behavioural disorders due to cannabinoids;F12;F
+F5_COCAINE;Mental and behavioural disorders due to cocaine;F14;F
+F5_DELIRIUM;Delirium, not induced by alcohol and other psychoactive substances;F05;F
+F5_DELUSIO;Persistent delusional disorders;F22;F
+F5_DEMENTIA;Dementia;F0[0-3];F
+F5_DEMENTIA_INCLAVO;Dementia, including avohilmo;;
+F5_DEMINOTH;Dementia in other diseases classified elsewhere;F02;F
+F5_DEMNAS;Unspecified dementia;F03;F
+F5_DEPPER;Dependent personality disorder;F607;F
+F5_DEPRESSIO;Depression;F3[2-3];F
+F5_DEPRESSION_DYSTHYMIA;Depression or dysthymia;F3[2-3]|F341;F
+F5_DEPRESSION_PSYCHOTIC;Psychotic depression;F3[23]3;F
+F5_DEPRESSION_RECURRENT;Recurrent or chronic depression;F33;F
+F5_DISPER;Dissocial personality disorder;F602;F
+F5_DISSOCIATIVE;Dissociative [conversion] disorders;F44;F
+F5_EATOTH;Other eating disorders;F50;F
+F5_EMOCHILD;Emotional disorders and disorders of social functioning with onset specific to childhood;F9[3-4];F
+F5_EMOPER;Emotionally unstable personality disorder;F603;F
+F5_GAD;Generalized anxiety disorder;F411;F
+F5_GENDER;Gender identity disorders;F64;F
+F5_HABIT;Habit and impulse disorders;F63;F
+F5_HALLUCIN;Mental and behavioural disorders due to hallucinogens;F16;F
+F5_HISPER;Histrionic personality disorder;F604;F
+F5_HYPERKIN;Hyperkinetic disorders (excl. ADHD);F90;F
+F5_HYPERSOMNIA;Hypersomnia;F511|G471;F
+F5_INSOMNIA;Insomnia;F510|G470;F
+F5_KELAMENT;Kela-code for severe mental illness;;
+F5_KELARET;Kela-code for behavioural disturbances in mental retardation;;
+F5_MANIA;Manic episode;F30;F
+F5_MENTALUNSPE;Mental disorders, not otherwise specified;F99;F
+F5_MENTORG;Other mental disorders due to brain damage and dysfunction and to physical disease;F06;F
+F5_MILDRET;Mild mental retardation;F70;F
+F5_MIXEDDEV;Mixed specific developmental disorders;F83;F
+F5_MIXPER;Mixed and other personality disorders;F61;F
+F5_MODRET;Moderate mental retardation;F71;F
+F5_MOOD;Mood [affective] disorders;;
+F5_MOODOTH;Other and unspecified mood [affective] disorders;F3[8-9];F
+F5_NEUROTICOTH;Other neurotic disorders;F48;F
+F5_NIGHTMARES;Nightmares;F515;F
+F5_OCD;Obsessive-compulsive disorder;F42;F
+F5_OPIOIDS;Mental and behavioural disorders due to opioids;F11;F
+F5_OTHERSUB;Mental and behavioural disorders due to multiple drug use and use of multiple drugs and use of other psychoactive substances;F19;F
+F5_OTHPER;Other specified and unspecified personality disorders;F60[8-9];F
+F5_OTHRET;Other and unspecified mental retardation;F7[8-9];F
+F5_PANIC;Panic disorder;F410;F
+F5_PARAPER;Paranoid personality disorder;F600;F
+F5_PERSBEHORG;Personality and behavioural disorders due to brain disease, damage and dysfunction;F07;F
+F5_PERSMOOD;Persistent mood disorders;F34;F
+F5_PERSOCHANGE;Enduring personality changes;F62;F
+F5_PERSOTH;Other and unspecified disorders of adult personality and behaviour;F6[8-9];F
+F5_PERVASIVE;Pervasive developmental disorders excl. Autism + Asperger;F84;F
+F5_PHOBANX;Phobic anxiety disorders;F40;F
+F5_PHYSBEHOTH;Unspecified behavioural syndromes associated with physiological disturbances and physical factors +Physiological and behavioural factors associated with disorders of diseases classified elsewhere;F54|F56;F
+F5_PSYCHDEV;Disorders of psychological development;F8;F
+F5_PSYCHDEVOTH;Other and unspecified disorders of psychological development;F8[8-9];F
+F5_PSYCHOTH;Other and unspecified nonorganic psychotic disorders;F2[8-9];F
+F5_PSYTRANS;Acute and transient psychotic disorders;F23;F
+F5_PTSD;Post-traumatic stress disorder;F431;F
+F5_SCHIZOAFF;Schizoaffective disorder;F25;F
+F5_SCHIZOTYP;Schizotypal disorder;F21;F
+F5_SCHIZPER;Schizoid personality disorder;F601;F
+F5_SCHOLA;Specific development disorders of scholastic skills;F81;F
+F5_SCHZPHR;Schizophrenia;F20;F
+F5_SEDAHYP;Mental and behavioural disorders due to sedatives or hypnotics;F13;F
+F5_SEVRET;Severe mental retardation;F72;F
+F5_SEXDYS;Sexual dysfunction;F52;F
+F5_SEXPREF;Disorders of sexual preference;F65;F
+F5_SEXUAL;Physiological and behavioural disorders associated with sexual development and orientation;F66;F
+F5_SLEEP_NOS;Sleep disorders, other/unspecified;F51[8-9];F
+F5_SLEEPTERRORS;Sleep terrors [night terrors];F514;F
+F5_SLEEPWAKE;Disorder of the sleep-wake schedule;F512|G472;F
+F5_SLEEPWALKING;Sleepwalking [somnambulism];F513;F
+F5_SOCPHOB;Social phobias;F401;F
+F5_SOLVENT;Mental and behavioural disorders due to use of volatile solvents;F18;F
+F5_SOMATOFORM;Somatoform disorder;F45;F
+F5_SPEECH;Specific development disorders of speech and language;F80;F
+F5_STIMUL;Mental and behavioural disorders due to use of other stimulants, including caffeine;F15;F
+F5_STRESSOTH;Other reaction to severe stress, and adjustment disorders;F43;F
+F5_SUBSNOALCO;Substance use, excluding alcohol;;
+F5_UNSORG;Unspecified organic or symptomatic mental disorder;F09;F
+F5_VASCDEM;Vascular dementia;F01;F
+FALLS;Falls/tendency to fall;W[0-1]|R296;W
+FE;Focal epilepsy;G40[0-2];G
+FE_MODE;Focal epilepsy, mode (most common among epilepsy diagnosis);%G40[0-2];G
+FE_STRICT;Focal epilepsy, strict definition;;
+FELTY;Felty syndrome;M050;M
+FEMHER_BILATERAL;Femoral hernia, bilateral;K41[0-2];K
+FG_CARDMYO;Cardiomyopathy (excluding other);;
+FG_CVD;Cardiovascular diseases (excluding rheumatic etc);;
+FG_DOAAC;Diseases of arteries, arterioles and capillaries (FINNGEN);;
+FG_OTHHEART;Other heart diseases;;
+FIBROLIV;Fibrosis of liver;K740;K
+FOOD_ALLERGY;Food allergy;L236;L
+FTD;Frontotemporal dementia;F020&G310;F
+G6_AD_WIDE;Alzheimer’s disease, wide definition;G30[01]|F00[01];G
+G6_ADEM;Acute disseminated encephalitis/encephalomyelitis;G040;G
+G6_ALCODEGEN;Degeneration of the brain due to alcohol;G312;G
+G6_ALCOPOLY;Alcohol induced polyneuropathy;G621;G
+G6_ALS;Motor neuron disease;G122;G
+G6_ALZHEIMER;Alzheimer disease;G30;G
+G6_ANOXBRAINDAM;Anoxic brain damage;G931;G
+G6_ATROPHCIRCUM;Circumscribed brain atrophy;G310;G
+G6_ATYFAC;Atypical facial pain;G501;G
+G6_AUTONOM;Autonomic disorders;G90;G
+G6_AUTOTHUNS;Other and unspecified disorders of autonomic nervous system;G90[8-9];G
+G6_BASDEGENOTH;Other degenerative diseases of the basal ganglia;G23;G
+G6_BELLPA;Bell's palsy;G510;G
+G6_BENINTRAHYP;Benign intracranial hypertension;G932;G
+G6_BRACHPLE;Brachial plexus disorders;G540;G
+G6_CARPTU;Carpal tunnel syndrome;G560;G
+G6_CAUDA;Cauda equina syndrome;G834;G
+G6_CAUSALGIA;Causalgia;G564;G
+G6_CERCYST;Cerebral cysts;G93;G
+G6_CEROEDEMA;Cerebral oedema;G936;G
+G6_CERVROOT;Cervical root disorders;G542;G
+G6_CLUSTHEADACHE_STRICT_INCLAVO;Cluster headache, strict, including avohilmo;;
+G6_CLUSTHEADACHE_WIDE;Cluster headache, wide;G440;G
+G6_CNSABSC;Intracranial and intraspinal abscess and granuloma;G06|G07;G
+G6_CNSOTH;Other disorders of central nervous system;G96;G
+G6_CONMYOP;Congenital myopathies;G712;G
+G6_CP;Cerebral palsy;G80;G
+G6_CPETAL;Cerebral palsy and other paralytic syndromes;G8;G
+G6_CRAINOTH;Other cranial nerve disorders in other disorders;G53;G
+G6_DEGENOTH;Other and unspecified degenerative diseases of nervous system;G31[8-9]|G32;G
+G6_DEGENSEN;Senile degeneration of the brain, not elsewhere classified;G311;G
+G6_DISBROTHUNS;Disorders of brain, other and unspecified;G93[8-9]|G948;G
+G6_DISGLO;Disorders of glossopharyngeal nerve;G521;G
+G6_DISOTHUNS;Disorders of other and unspecified cranial nerves;G52[8-9];G
+G6_DISSOTH;Other acute disseminated demyelination;G36;G
+G6_DRUGMYOP;Drug-induced myopathy;G720;G
+G6_DRUGPOLY;Drug-induced polyneuropathy;G620;G
+G6_DYSTON;Dystonia;G24;G
+G6_ENCEPATH;Encephalopathy;G934;G
+G6_ENCEPHOTH;Other encephalitis;G041|G04[8-9]|G05;G
+G6_ENCEPHTOX;Toxic encephalopathy;G92;G
+G6_EPIPAROX;Episodal and paroxysmal disorders;G4;G
+G6_EPLEPSY;Epilepsy;G40;G
+G6_FACOTH;Other facial nerve disorders;G51;G
+G6_FEMLAPOP;Lesion of lateral popliteal nerve;G573;G
+G6_FEMLE;Lesion of femoral nerve;G572;G
+G6_FEMMEPOP;Lesion of medial popliteal nerve;G574;G
+G6_GUILBAR;Guillain-Barre syndrome;G610;G
+G6_HCCOMM;Communicating hydrocephalus;G910;G
+G6_HCINOTH;Hydrocephalus in other diseases;G94[0-2];G
+G6_HCNP;Normal-pressure hydrocephalus;G912;G
+G6_HCOBSTR;Obstructive hydrocephalus;G911;G
+G6_HCOTHUNS;Other and unspecified hydrocephalus;G91[8-9];G
+G6_HCPOSTRAU;Post-traumatic hydrocephalus, unspecified;G913;G
+G6_HEADACHE;Other headache syndromes;G44;G
+G6_HEMIPLE;Hemiplegia;G81;G
+G6_HERATAXIA;Hereditary ataxia;G11;G
+G6_HEREMOSEN;Hereditary motor and sensory neuropathy;G600;G
+G6_HERIPOTHUN;Other and unspecified neuropathies;G60[8-9];G
+G6_HORNER;Horner syndrome;G902;G
+G6_HYDROCEPH;Hydrocephalus;G91;G
+G6_ICNEUROP;Intercostal neuropathy;G580;G
+G6_IDIOAUT;Idiopathic peripheral autonomic neuropathy;G900;G
+G6_INFLAMYOP;Inflammatory myopathy;G724;G
+G6_IPNEUROP;Idiopathic progressive neuropathy;G603;G
+G6_LSPLEX;Lumbosacral plexus disorders;G541;G
+G6_LSROOT;Lumbosacral root disorders, not elsewhere classified;G544;G
+G6_MEDLEOTH;Other lesions of median nerve;G561;G
+G6_MENINGBACT;Bacterial meningitis;G0[0-1];G
+G6_MENINGOTH;Other meningitis;G0[2-3];G
+G6_MENINGVIR;Meningitis, viral;G020;G
+G6_MERALGIA;Meralgia paraesthetica;G571;G
+G6_MIGRAINE;Migraine;G43;G
+G6_MIGRAINE_NO_AURA;Migraine without aura;G430;G
+G6_MIGRAINE_NO_AURA_ADVERSE;Migraine without aura, drug-induced;G430;G
+G6_MIGRAINE_NO_AURA_TRIPTAN;Migraine without aura and triptan purchases;;
+G6_MIGRAINE_WITH_AURA;Migraine with aura;G431;G
+G6_MIGRAINE_WITH_AURA_ADVERSE;Migraine with aura, drug-induced;G431;G
+G6_MIGRAINE_WITH_AURA_TRIPTAN;Migraine with aura and triptan purchases;;
+G6_MITOCMY;Mitochondrial myopathy;G713;G
+G6_MONNEURMPLX;Mononeuritis multiplex;G587;G
+G6_MONOLOWOTHUNS;Other and unspecified mononeuropathies of lower limb;G57[8-9];G
+G6_MONONPOTHUS;Other and unspecified mononeuropathies of upper limb;G56[8-9];G
+G6_MONOOTHUNS;Other and unspecified mononeuropathies, also in other diseases;G58[8-9]|G59;G
+G6_MONOPLE;Monoplegia;G83[1-3];G
+G6_MS;MS-disease / Multiple Sclerosis;G35;G
+G6_MUSCOTHUNS;Other and unspecified primary disorders of muscles;G71[8-9];G
+G6_MUSDYST;Muscular dystrophy;G710;G
+G6_MYASTHENIA;Myasthenia gravis;G700;G
+G6_MYASTHENIA_ADVERSE;Myasthenia gravis, drug-induced;G700;G
+G6_MYOMUSCINOTH;Disorders of myoneural junction and muscle in diseases classified elsewhere;G73;G
+G6_MYONEU;Diseases of the myoneural junction and muscle;G7;G
+G6_MYONEUOTHUNS;Other and unspecified myoneural disorders;G70[8-9];G
+G6_MYOPOTHUNS;Other and unspecified myopathies;G72[8-9];G
+G6_MYOTDIS;Myotonic disorders;G711;G
+G6_NARCOCATA;Narcolepsy and cataplexy;G474;G
+G6_NERPLEX;Nerve, nerve root and plexus disorders;G5;G
+G6_NEUATR;Systemic atrophies primarily affecting the central nervous system;G1;G
+G6_NEUINFL;Inflammatory diseases of the central nervous system;G0;G
+G6_NEURAMYO;Neuralgic amyotrophy;G545;G
+G6_NEURODEGENERATIVE;Unspecific neurodegenerative disorder;G30|F00;G
+G6_NEUROINFSEQ;Sequelae of inflammatory diseases of the central nervous system;G09;G
+G6_NEUROOTH;Other disorders of nervous system;G98|G99;G
+G6_OTHDEMYEL;Other demyelinating diseases of the central nervous system;G37;G
+G6_OTHINMUSC;Other inherited muscular atrophy;G121;G
+G6_OTHNEU;Other neurological diseases;G9;G
+G6_PARALOTHUNS;Other and unspecified paralytic syndromes;G83[8-9];G
+G6_PARDIPLE;Paraplegia, diplegia of upper limbs;G82[0-2]|G830;G
+G6_PARKINSON;Parkinson's disease;G20;G
+G6_PERIPHOTH;Other disorders of peripheral nervous system;G64;G
+G6_PHANTOM;Phantom limb syndrome;G54[6-7];G
+G6_PLANTAR;Lesion of plantar nerve;G576;G
+G6_POLYOTHUNS;Other and unspecified polyneuropathies, also in other diseases;G61[1-9]|G62[8-9]|G63;G
+G6_POSTOPNEURO;Postprocedural disorders of nervous system;G97;G
+G6_POSTPOLIO;Postpolio syndrome;G14;G
+G6_POSTVIRFAT;Postviral fatigue syndrome;G933;G
+G6_POSTZOST;Postzoster neuralgia;G530;G
+G6_RADLES;Lesion of radial nerve;G563;G
+G6_RLS;Restless leg syndrome;G258;G
+G6_ROOTPLEXOTHUNS;Other and unspecified nerve root and plexus disorders, also in other diseases;G54[8-9]|G55;G
+G6_SCIALE;Lesion of sciatic nerve;G570;G
+G6_SLEEPAPNO;Sleep apnoea;G473;G
+G6_SLEEPAPNO_INCLAVO;Sleep apnoea, including avohilmo;;
+G6_SLEEPDISOTH;Other sleep disorders;G47;G
+G6_SPINAMUSCOTH;Other and unspecified spinal muscular atrophies;G12[8-9]|G13;G
+G6_SPINOTH;Other diseases of spinal cord;G95;G
+G6_STATUSEPI;Status epilepticus;G41;G
+G6_TARSTUN;Tarsal tunnel syndrome;G575;G
+G6_TETRAPLE;Tetraplegia;G82[3-5];G
+G6_THROOT;Thoracic root disorders;G543;G
+G6_TRINEU;Trigeminal neuralgia;G500;G
+G6_TRIOTHUNS;Other and unspecified trigeminal disorders;G50[8-9];G
+G6_ULLNLE;Lesion of ulnar nerve;G562;G
+G6_XTRAPYR;Extrapyramidal and movement disorders;G2;G
+G6_XTRAPYROTH;Other extrapyramidal and movement disorders in other diseases;G25|G26;G
+GASTRIC_ULCER_ACUTE_W_HAEMORRHAGE;Gastric ulcer - Acute with haemorrhage, drug-induced;K250;K
+GE;Generalized epilepsy;G403;G
+GE_MODE;Generalized epilepsy, mode (most common among epilepsy diagnosis);%G403;G
+GE_STRICT;Generalized epilepsy, strict definition;;
+GENERALI_SKIN_ERUPT_DRUGS_MEDICAM;Generalized skin eruption due to drugs and medicaments;L270;L
+GEST_DIABETES;Gestational diabetes (for exclusion);O244;O
+GOUT_IDIO;Idiopathic gout;M100;M
+GOUT_KIDNEY;Gout due to impairment of renal function;M103;M
+GOUT_NOS;Gout, unspecified;M10[8-9];M
+GOUT_SCND;Other secondary gout;M104;M
+GOUT_STRICT;Gout, strict definition;;
+GRAVES_OPHT;Graves ophthalmopathy;E05[0|9];E
+H7_ADHESIOIRIS;Pupillary membranes and other adhesions and disruptions of iris and ciliary body;H21[4-5];H
+H7_ALLERGICCONJUNCTIVITIS;Allergic conjunctivitis;;
+H7_AMBLYANOPSIA;Amblyopia ex anopsia;H530;H
+H7_AMD;Age-related macular degeneration (whether dry or wet);;
+H7_ANISOMETROPIA;Anisometropia and aniseikonia;H523;H
+H7_ANOMAPUPFUNC;Anomalies of pupillary function;H570|H580;H
+H7_APHAKIA;Aphakia;H270;H
+H7_ASTIGMATISM;Astigmatism;H522;H
+H7_BCKRNDRETINOPAT;Background retinopathy and retinal vascular changes;H350;H
+H7_BINOCUMOVNAS;Other and unspecified disorders of binocular movement;H51[8-9];H
+H7_BINOCUMOVOTH;Other disorders of binocular movement;H51;H
+H7_BINODISTOTH;Other disorders of binocular vision;H533;H
+H7_BLEPHAROCHALASIS;Blepharochalasis;H023;H
+H7_BLINDANDVISIMPAIRMENT;Visual impairment including blindness (binocular or monocular);H54;H
+H7_BLINDMONOCULAR;Blindness, monocular;H544;H
+H7_BULLKERATOPATHY;Bullous keratopathy;H181;H
+H7_CATARACTOTHER;Other cataract;H26;H
+H7_CATARACTSENILE;Senile cataract;H25;H
+H7_CENTRRETARTOCC;Central retinal artery occlusion;H341;H
+H7_CHALAZION;Chalazion;H001;H
+H7_CHORDETACH;Choroidal detachment;H314;H
+H7_CHORHAEMORRHAGE;Choroidal haemorrhage and rupture;H313;H
+H7_CHORIORETINFLAM;Chorioretinal inflammation;H30|H320;H
+H7_CHORNAS;Other specified and unspecified disorders of choroid;H31[8-9];H
+H7_CHOROIDOTH;Other disorders of choroid;;
+H7_CHOROIDRETINA;Disorders of choroid and retina;H3;H
+H7_CHORSCAR;Chorioretinal scars;H310;H
+H7_CONJUHAEMOR;conjunctival haemorrhage;H113;H
+H7_CONJUNAS;Other specified and unspecified disorders of conjunctiva;H11[8-9];H
+H7_CONJUNCTDEGDEPOT;conjunctival degenerations and deposits;H111;H
+H7_CONJUNCTIVITIS;Conjunctivitis;;
+H7_CONJUNCTIVITISACUNONATOPIC;Conjunctivitis (acute, non atopic);H10|H13[1-2];H
+H7_CONJUNCTIVITISATOPIC;Atopic conjunctivitis;H101;H
+H7_CONJUNCTIVITISCHRON;Chronic conjunctivitis;H104;H
+H7_CONJUNCTSCAR;conjunctival scars;H112;H
+H7_CONJUVASC;Other conjunctival vascular disorders and cysts;H114;H
+H7_CONVERGINSUFF;Convergence insufficiency and excess;H511;H
+H7_CONVERSTRAB;Convergent concomitant strabismus;H500;H
+H7_CORNEALDEFORM;Keratoconus;H186;H
+H7_CORNEALDYSTROPHY;Corneal degeneration;H184;H
+H7_CORNEALMEMBRANE;Changes in corneal membranes;H183;H
+H7_CORNEALNAS;Other and unspecified corneal deformities and disorders;H18[7-9];H
+H7_CORNEALOEDEMA;Other corneal oedema;H182;H
+H7_CORNEALOTH;Other disorders of cornea;H18;H
+H7_CORNEALSCAR;Corneal scars and opacities;H17;H
+H7_CORNEAPIGMENT;Corneal pigmentations and deposits;H180;H
+H7_CORNULCER;Corneal ulcer;H160;H
+H7_COULOURVISDEF;Colour vision deficiencies;H535;H
+H7_CYSTIRIS;Cyst of iris, ciliary body and anterior chamber;H213;H
+H7_DACRYOADENITIS;Dacryoadenitis;H040;H
+H7_DEGENMYOPIA;Degenerative myopia;H442;H
+H7_DIPLOPIA;Diplopia;H532;H
+H7_DISORDERLENSNAS;Other specified and unspecified disorders of lens;H27[8-9];H
+H7_DIVERGSTRAB;Divergent concomitant strabismus;H501;H
+H7_ECTROPION;Ectropion of eyelid;H021;H
+H7_ENTROPION;Entropion and trichiasis of eyelid;H020;H
+H7_EPIPHORA;Epiphora;H042;H
+H7_EPISCLERITIS;Episcleritis;H151;H
+H7_EXOPTHALMUS;Exophthalmic conditions;H052;H
+H7_EYEADNEXOTH;Other specified and unspecified disorders of eye and adnexa;H57[8-9];H
+H7_EYELIDDEGEN;Other degenerative disorders of eyelid and periocular area;H027;H
+H7_EYELIDDIS;Other disorders of eyelid;H0[2-3];H
+H7_EYELIDFUNC;Other disorders affecting eyelid function;H025;H
+H7_EYELIDINFLAMMATION;Other inflammation of eyelid;H01;H
+H7_EYELIDINOTH;Disorders of eyelid in diseases classified elsewhere;H03;H
+H7_EYELIDNAS;Other specified and unspecified  disorders of eyelid;H02[8-9];H
+H7_EYEOTH;Other disorders of eye and adnexa;H5[5-9];H
+H7_EYEPOSTOP;Postprocedural disorders of eye and adnexa, not elsewhere classified;H59;H
+H7_GLAUCCLOSEPRIM;Primary angle-closure glaucoma;H402;H
+H7_GLAUCNAS;Other and unspecified glaucoma;H40[8-9];H
+H7_GLAUCOMA;Glaucoma;H4[0-2];H
+H7_GLAUCOMA_JOAG;Juvenile Open Angle Glaucoma;$!$;$
+H7_GLAUCOMA_NTG;Normotensive glaucoma;H4011;H
+H7_GLAUCOMA_POAG;Primary open-angle glaucoma, strict;H401;H
+H7_GLAUCOMA_XFG;Glaucoma, exfoliation;H4010;H
+H7_GLAUCOMAMEDICATION;Use of antiglaucoma preparations and miotics;;
+H7_GLAUCSECDRUG;Glaucoma secondary to drugs;H406;H
+H7_GLAUCSECINFLAM;Glaucoma secondary to eye inflammation;H404;H
+H7_GLAUCSECTRAUMA;Glaucoma secondary to eye trauma;H403;H
+H7_GLAUCSUSP;Glaucoma suspect;H400;H
+H7_GLOBE;Disorders of globe;;
+H7_GLOBEDEGENERATED;Degenerative conditions of globe;H445;H
+H7_GLOBENAS;Other and unspecified disorders of globe;H44[8-9];H
+H7_HEREDRETINADYST;Hereditary retinal dystrophy;H355;H
+H7_HERPESKERATITIS;Herpesviral keratitis and keratoconjunctivitis;H191;H
+H7_HETEROPHORIA;Heterophoria;H505;H
+H7_HETEROTRONAS;Other and unspecified heterotropia;H504;H
+H7_HORDEOLUM;Hordeolum and other deep inflammation of eyelid;H000;H
+H7_HYPERMETRO;Hypermetropia;H520;H
+H7_INTERHETEROTRO;Intermittent heterotropia;H503;H
+H7_INTERNUCOPHTHALMOPLEGIA;Internuclear ophthalmoplegia;H512;H
+H7_IRIDOACUTE;Acute and subacute iridocyclitis;H200;H
+H7_IRIDOCHRONIC;Chronic iridocyclitis;H201;H
+H7_IRIDOCYC_ANTER;Anterior Iridocyclitis;;
+H7_IRIDOCYCLITIS;Iridocyclitis;H2[02];H
+H7_IRIDOCYCLITISINOTH;Iridocyclitis in diseases classified elsewhere;H22[0-1];H
+H7_IRIDOLENS;Lens-induced iridocyclitis;H202;H
+H7_IRIDONAS;Other and unspecified iridocyclitis;H20[8-9];H
+H7_IRISCILIARYNAS;Other specified and unspecified disorders of iris and ciliary body;H21[8-9]|H228;H
+H7_KERATITIS;Keratitis;H1[6-9];H
+H7_KERATITISINOTH;Keratitis and keratoconjunctivitis in other diseases classified elsewhere;H19[2-3];H
+H7_KERATITISOTH;Other keratitis;H16;H
+H7_KERATOCONUS;Hereditary corneal dystrophies;H185;H
+H7_LACRIMALSYSTEM;Disorders of lacrimal system;H04;H
+H7_LACRIMINFLAMACU;Inflammation of lacrimal passages (acute and unspecified);H043;H
+H7_LACRIMINFLAMCHRON;Inflammation of lacrimal passages (chronic);H044;H
+H7_LACRINAS;Other and unspecified disorders of lacrimal system;H04[8-9];H
+H7_LAGOPHTALMOS;Lagophthalmos;H022;H
+H7_LENSDISLOCATIO;Dislocation of lens;H271;H
+H7_LIDLACRIMALORBIT;Disorders of eyelid, lacrimal system and orbit;H0;H
+H7_MACULADEGEN;Degeneration of macula and posterior pole;H353;H
+H7_MILDVISIMPBINOC;Mild or no visual impairment, binocular;H543;H
+H7_MODVISIMPBINOC;Moderate visual impairment, binocular;H542;H
+H7_MODVISIMPMONOC;Moderate visual impairment, monocular;H546;H
+H7_MYOPIA;Myopia;H521;H
+H7_NYSTAGMUS;Nystagmus and other irregular eye movements;H55;H
+H7_OCUMUSCLE;Disorders of ocular muscles, binocular movement, accommodation and refraction;H49|H5[0-2];H
+H7_OCUPAIN;Ocular pain;H571;H
+H7_OPTATROPHY;Optic atrophy;H472|H480;H
+H7_OPTICDISCOTH;Other disorders of optic disc;H473;H
+H7_OPTNERVE;Disorders of optic nerve and visual pathways;H4[6-8];H
+H7_OPTNERVNAS;Disorders of optic nerve, not elsewhere classified;H470;H
+H7_OPTNEURITIS;Optic neuritis;H46;H
+H7_OPTNEUROTH;Other disorders of optic [2nd] nerve and visual pathways;H47;H
+H7_ORBIT;Disorders of orbit;H0[5-6];H
+H7_ORBITINFLAMACU;Acute inflammation of orbit;H050;H
+H7_ORBITINFLAMCHRON;Chronic inflammatory disorders of orbit;H051;H
+H7_ORBITNAS;Other and unspecified disorders of orbit;H05[8-9];H
+H7_OTHENDOPHTHALMITIS;Other endophthalmitis;H441|H451;H
+H7_OTHERCONJ;Other disorders of conjunctiva;;
+H7_OTHIRISCILIARY;Other disorders of iris and ciliary body;H21;H
+H7_OTHRETARTOCC;Other retinal artery occlusion;H342;H
+H7_PAPILLOEDEMA;Papilloedema, unspecified;H471;H
+H7_PARASTRA3;Third [oculomotor] nerve palsy;H490;H
+H7_PARASTRA4;Fourth [trochlear] nerve palsy;H491;H
+H7_PARASTRA6;Sixth [abducent] nerve palsy;H492;H
+H7_PARASTRAB;Paralytic strabismus;H49;H
+H7_PARASTRANAS;Other or unspecified paralytic strabismus;H49[8-9];H
+H7_PERIPHRETINADEGEN;Peripheral retinal degeneration;H354;H
+H7_POSTOPEYENAS;Other and unspecified postprocedural disorders of eye and adnexa;H59[8-9];H
+H7_PRESBYOPIA;Presbyopia;H524;H
+H7_PROLIFRETINOPATHOTH;Other proliferative retinopathy;H352;H
+H7_PTERYGIUM;Pterygium;H110;H
+H7_PTOSIS;Ptosis of eyelid;H024;H
+H7_PURENDOPHTHALMITIS;Purulent endophthalmitis;H440;H
+H7_REFRAACCOMMODIS;Disorders of refraction and accommodation;H52;H
+H7_RETARTOCCTRANS;Transient retinal artery occlusion;H340;H
+H7_RETINAHAEMORR;Retinal haemorrhage;H356;H
+H7_RETINALBREAK;Retinal breaks without detachment;H333;H
+H7_RETINALDETACH;Retinal detachments and breaks;;
+H7_RETINALDETACHBREAK;Retinal detachment with retinal break;H330;H
+H7_RETINALDETACHOTH;Other, unspecified and serous retinal detachments;H332|H335;H
+H7_RETINALDETACHTRACTION;Traction detachment of retina;H334;H
+H7_RETINALDISOTH;Other retinal disorders;;
+H7_RETINANAS;Other specified and unspecified retinal disorders;H35[8-9];H
+H7_RETINASEPAR;Separation of retinal layers (serosa);H357;H
+H7_RETINAVASC;Retinal vascular disorders;;
+H7_RETINOCHISISCYST;Retinoschisis and retinal cysts;H331;H
+H7_RETINODISINOTH;Other retinal disorders in diseases classified elsewhere;H368;H
+H7_RETIVASCOCCLUSION;Retinal vascular occlusion;H34;H
+H7_RETROBULBNEURINOTH;Retrobulbar neuritis in diseases classified elsewhere;H481;H
+H7_SCLERACORNEA;Disorders of sclera, cornea, iris and ciliary body;H1[5-9]|H2[0-2];H
+H7_SCLERITIS;Scleritis;H150;H
+H7_SEVVISIMPBINOC;Severe visual impairment, binocular;H541;H
+H7_SEVVISIMPMONOC;Severe visual impairment, monocular;H545;H
+H7_STENOLACRI;Stenosis and insufficiency of lacrimal passages;H045;H
+H7_STRABMECH;Mechanical strabismus;H506;H
+H7_STRABNAS;Other specified and unspecified strabismus;H50[8-9];H
+H7_STRABOTH;Other strabismus;H50;H
+H7_VASCCILIARY;Hyphaema and other vascular disorders of iris and ciliary body;H21[0-1];H
+H7_VERTISTRAB;Vertical strabismus;H502;H
+H7_VISDISTNAS;Other and unspecified visual disturbances;H53[8-9];H
+H7_VISFIELDDEF;Visual field defects;H534;H
+H7_VISIMPBILATERAL;Blindness or visual impairment, binocular;H540;H
+H7_VISUALPATHNAS;Disorder of visual pathways, unspecified;H477;H
+H7_VISUDISTURB;Visual disturbances;H53;H
+H7_VISUDISTURBSUB;Subjective visual disturbances;H531;H
+H7_VITRBODYGLOBE;Disorders of vitreous body;H43;H
+H7_VITRCRYSTAL;Crystalline deposits in vitreous body;H432;H
+H7_VITROPACIT;Other vitreous opacities;H433;H
+H7_VITROTH;Other and unspecified disorders of vitreous body;H43[8-9];H
+H7_VITRPROLAPSE;Vitreous prolapse;H430;H
+H7_XANTHELASMA;Xanthelasma of eyelid;H026;H
+H8_ABNAUDPER;Other abnormal auditory perceptions;H932;H
+H8_BPV;Benign paroxysmal vertigo;H811;H
+H8_CERUMEN;Impacted cerumen;H612;H
+H8_CHOLEASTOMA;Cholesteatoma of middle ear;H71;H
+H8_CHRON_SUPOTITIS;Chronic suppurative otitis media;H66[1-3];H
+H8_DISCON;Discontinuity and dislocation of ear ossicles;H742;H
+H8_EARNAS;Other specified/unspecified disorders of ear;H93[8-9];H
+H8_EUSTNAS;Other disorders of Eustachian tube;H69;H
+H8_EUSTSALP;Eustachian salpingitis and obstruction;H68[0-1];H
+H8_EXT_ABSC;Abscess of external ear;H600;H
+H8_EXT_CELLUL;Cellulitis of external ear;H601;H
+H8_EXT_CHOL;Cholesteatoma of external ear;H604;H
+H8_EXT_INFNAS;Other infective otitis externa;H603;H
+H8_EXT_MALIGN;Malignant otitis externa;H602;H
+H8_EXT_NAS;Otitis externa, unspecified;H609;H
+H8_EXT_NONINF;Acute otitis externa, noninfective;H605;H
+H8_EXT_OTH;Other otitis externa (chronic);H608;H
+H8_EXTDISINOTH;Disorder of external ear, unspecified;H62;H
+H8_EXTDISNAS;Other specified disorders of external ear;H61[8-9];H
+H8_EXTERNAL;Diseases of external ear;H6[0-2];H
+H8_EXTOTITIS;Otitis externa;H60;H
+H8_HL_CON_NAS;Conductive hearing loss, unspecified;H90[0-2];H
+H8_HL_DEAFMUT;Deaf mutism, not elsewhere classified;H913;H
+H8_HL_IDIOP;Sudden idiopathic hearing loss;H912;H
+H8_HL_MIX_NAS;Mixed conductive and sensorineural hearing loss;H90[6-8];H
+H8_HL_NAS;Other specified/unspecified hearing loss;H91[8-9];H
+H8_HL_OTOTOX;Ototoxic hearing loss;H910;H
+H8_HL_PRESBY;Presbycusis;H911;H
+H8_HL_SEN_NAS;Sensorineural hearing loss;H90[3-5];H
+H8_INNERNAS;Other specified/unspecified diseases of inner ear;H83[8-9];H
+H8_LABYRFISTU;Labyrinthine fistula;H831;H
+H8_LABYRINTHITIS;Labyrinthitis;H830;H
+H8_MASTACU;Acute mastoiditis;H700;H
+H8_MASTCHRON;Chronic mastoiditis;H701;H
+H8_MASTNAS;Other/unspecified mastoiditis and related conditions;H70[8-9];H
+H8_MED_SUPP;Suppurative and unspecified otitis media;;
+H8_MENIERE;Ménière disease;H810;H
+H8_MIDDLEADDH;Adhesive middle ear disease;H741;H
+H8_MIDDLEMASTOID;Diseases of middle ear and mastoid;H6[5-9]|H7[0-5];H
+H8_MIDDMASTNAS;Other specified/unspecified disorders of middle ear and mastoid;H74[8-9];H
+H8_MYRINGACU;Acute myringitis;H730;H
+H8_MYRINGCHRON;Chronic myringitis;H731;H
+H8_MYRINGNAS;Other specified/unspecified disorders of tympanic membrane;H73[8-9];H
+H8_NOISEINNER;Noise effects on inner ear;H833;H
+H8_NONSUPPNAS;Nonsuppurative otitis media;H65;H
+H8_OSSICABN;Abnormalities of ear ossicles;H743;H
+H8_OTALGIA;Otalgia;H920;H
+H8_OTHEREAR;Other disorders of ear;H9;H
+H8_OTHHEARINGLOSS;Other hearing loss;$!$;$
+H8_OTIMEDNAS;Otitis media, unspecified;H669;H
+H8_OTORRHAGIA;Otorrhagia;H922;H
+H8_OTORRHOEA;Otorrhoea;H921;H
+H8_OTOSCLE;Otosclerosis;H80;H
+H8_PERCHRONDR;Perichondritis of external ear;H610;H
+H8_PERFORATION;Perforation of tympanic membrane;H72;H
+H8_PERIPHVERTIGO;Other peripheral vertigo;H813;H
+H8_PINNADIS;Noninfective disorders of pinna;H611;H
+H8_POLYPMIDD;Polyp of middle ear;H744;H
+H8_POSTMASTCHOLEASTOMA;Recurrent cholesteatoma of postmastoidectomy cavity;H950;H
+H8_POSTMASTNAS;Other disorders following mastoidectomy;H951;H
+H8_POSTOP;Postprocedural disorders of ear and mastoid process, not elsewhere classified;;
+H8_POSTOPNAS;Other/unspecified postprocedural disorders of ear and mastoid process;H95[8-9];H
+H8_STENOEXTCAN;Acquired stenosis of external ear canal;H613;H
+H8_SUP_ACUTE;Acute suppurative otitis media;H660;H
+H8_SUP_OTINAS;Suppurative otitis media, unspecified;H664;H
+H8_TINNITUS;Tinnitus;H931;H
+H8_TYMPSCLE;Tympanosclerosis;H740;H
+H8_VERTIGO;Disorders of vestibular function (Vertigo);;
+H8_VERTIGOCENT;Vertigo of central origin;H814;H
+H8_VESTIBNEUR;Vestibular neuronitis;H812;H
+H8_VESTIFUNCNAS;Other/unspecified disorders of vestibular function;H81[8-9];H
+HAEMOPHIL_SEPTICHE;Haemophilus septicemia;A413;A
+HERING_BILATERAL;Inguinal hernia, bilateral;K40[0-2];K
+HERING_UNILATERAL;Inguinal hernia, unilateral;K41[3-9];K
+HYPOTE_DRUGS;Hypotension due to drugs;I952;I
+HYPOTHY_REIMB;Hypothyroidism, drug reimbursement;;
+I9_ABAORTANEUR;Abdominal aortic aneurysm (AAA);I713|I714;I
+I9_AF;Atrial fibrillation and flutter;I48;I
+I9_AF_REIMB;Atrial fibrillation and flutter with reimbursement;;
+I9_ANEURYSM;Cerebral aneurysm, nonruptured;I671;I
+I9_ANGINA;Angina pectoris;I20;I
+I9_ANGIO;Coronary angioplasty;;
+I9_AORTANEUR;Aortic aneurysm;I71[1-9];I
+I9_AORTDIS;Dissection of aorta;I710;I
+I9_ARTEMBTHR;Arterial embolism and thrombosis;;
+I9_ARTEMBTHRLOW;Arterial embolism and thrombosis of lower extremity artery;I743;I
+I9_ARTEMBTHRNAS;Other arterial embolism and thrombosis;I74;I
+I9_ARTOTH;Other diseases of arteries and capillaries;I7[7-9];I
+I9_ATHSCLE;Atherosclerosis, excluding cerebral and coronary sclerosis;I70;I
+I9_AVBLOCK;AV-block;I44[0-3];I
+I9_CABG;Coronary artery bypass grafting;;
+I9_CARDARR;Cardiac arrest;I46;I
+I9_CARDMSEC;Cardiomyopathies, Secondary/extrinsic;I426|I427;I
+I9_CARDMYO;Cardiomyopathy;I42;I
+I9_CARDMYOALC;Alcoholic cardiomyopathy;I426;I
+I9_CARDMYOHYP;Cardiomyopathy, Hypertrophic obstructive;I421;I
+I9_CARDMYOINOTH;Cardiomyopathy in other diseases;I43;I
+I9_CARDMYOOTH;Cardiomyopathy, other and unspecified;I428|I429;I
+I9_CARDMYORESTR;Restrictive cardiomyopathy;I425;I
+I9_CAVS_OPERATED;Calcific aortic valvular stenosis, operated;;
+I9_CEREBAMY;Cerebral amyloid angiopathy;I680;I
+I9_CEREBATHER;Cerebral atherosclerosis;I672;I
+I9_CEREBDOTH;Other specified cerebrovascular diseases, other cerebrovascular disorders in diseases classified elsewhere;I67[8-9]|I688;I
+I9_CEREBRART;Cerebral arteritis;I677|I68[1-2];I
+I9_CHD;Major coronary heart disease event;I200|I21|I22;I
+I9_CONDUCTIO;Conduction disorders;I44|I45;I
+I9_CORATHER;Coronary atherosclerosis;I25|I24|Z951|T822;I
+I9_CVD_HARD;Hard cardiovascular diseases;;
+I9_DISCER;Dissection of cerebral arteries, nonruptured;I670;I
+I9_DISVEINLYMPH;Diseases of veins, lymphatic vessels and lymph nodes, not elsewhere classified;;
+I9_E_DRONE;Dronedarone medication;;
+I9_EMBTHROAOR;Embolism and thrombosis of abdominal aorta;I740;I
+I9_ENDOCARD;Endocarditis;I33|I38|I39;I
+I9_HEARTFAIL;Heart failure, strict;I50|I110|I130|I132;I
+I9_HEARTFAIL_AND_CHD;Heart failure and coronary heart disease;;
+I9_HEARTFAIL_AND_HYPERTCARDIOM;Heart failure and hypertrophic cardiomyopathy;;
+I9_HEARTFAIL_AND_OVERWEIGHT;Heart failure and bmi 25plus;;
+I9_HYPERTENC;Hypertensive encephalopathy;I674;I
+I9_HYPERTROCARDMYOP;Hypertrophic cardiomyopathy;I42[1-2];I
+I9_HYPOTE;Hypotension;I95;I
+I9_HYPTENS;Hypertension;I10|I11|I12|I13|I15|I674;I
+I9_HYPTENSEC;Secondary hypertension;I15;I
+I9_HYPTENSESS;Hypertension, essential;I10;I
+I9_HYPTENSHD;Hypertensive Heart Disease;I11;I
+I9_HYPTENSPOR;Hypertension, portal;K766;K
+I9_HYPTENSPUL;Hypertension, Pulmonary Arterial;I270;I
+I9_HYPTENSRD;Hypertensive Renal Disease;I12;I
+I9_ICH;Intracerebral haemorrhage;I61;I
+I9_IHD;Ischaemic heart disease, wide definition;I2[0-5];I
+I9_INTRACRA;Nontraumatic intracranial haemmorrhage;;
+I9_LBBB;Left bundle-branch block;I44[4-7];I
+I9_LYMPHADE;Nonspecific lymphadenitis;I88;I
+I9_LYMPHOTH;Other noninfective disorders of lymphatic vessels and lymph nodes;I89;I
+I9_MI_COMPLICATIONS;Complications following myocardial infarction;I23;I
+I9_MI_STRICT;Myocardial infarction, strict;I21|I22;I
+I9_MYOCARD;Myocarditis;I4[0-1];I
+I9_NONISCHCARDMYOP;Non-ischemic cardiomyopathy;;
+I9_NONISCHCARDMYOP_STRICT;Nonischemic cardiomyopathy;I420|I511;I
+I9_OTHANEUR;Other aneurysm;I72;I
+I9_OTHARR;Other arrhythmias;I49;I
+I9_OTHILLHEART;Other or ill-defined heart diseases;I5[1-2];I
+I9_OTHINTRACRA;Other intracranial haemorrhages;I62;I
+I9_OTHOTH;Other other unspecified disorders of the circulatory system;I9[7-9];I
+I9_OTHPER;Other peripheral vascular diseases;I73;I
+I9_PAROXTAC;Paroxysmal tachycardia;I47;I
+I9_PERICAOTH;Other diseases of pericardium;I31;I
+I9_PERICARD;Pericarditis;I30|I32;I
+I9_PHLETHROM;Phlebitis and thrombophlebitis (not including DVT);I80;I
+I9_PHLETHROMBDVTLOW;DVT of lower extremities;I80[12];I
+I9_POSTAMI;Status post-ami;I253;I
+I9_PROGVASC;Progressive vascular leukoencephalopathy;I673;I
+I9_PULMEMB;Pulmonary embolism;I26;I
+I9_PVT;Portal vein thrombosis;I81;I
+I9_RBBB;Right bundle-branch block;I45[0-1];I
+I9_REVASC;Coronary revascularization (ANGIO or CABG);;
+I9_RHEUFEV;Rheumatic fever incl heart disease;;
+I9_RHEUFEVHRT;Rheumatic fever with heart involvement;I01|I020;I
+I9_RHEUFEVWITHOUTHEART;Rheumatic fever without mention of heart involvement;I00|I029;I
+I9_RHEUOTHHRT;Rheumatic heart disease, other;I09;I
+I9_RHEUVALV;Rheumatic valve diseases;I0[5-8];I
+I9_SAH;Subarachnoid haemorrhage;I60;I
+I9_SAHANEUR;Aneurysms, operations, SAH;;
+I9_SECONDRIGHT;Secondary right heart disease;I27;I
+I9_SEQULAE;Sequelae of cerebrovascular disease;I69;I
+I9_STENOSIS;Occlusion and stenosis of arteries, not leading to stroke;I66;I
+I9_STR;Stroke, excluding SAH;I61|I63|I64;I
+I9_STR_EMBOLIC;Embolic stroke;I631;I
+I9_STR_EMBOLIC_WITH_FLIMMER;Embolic stroke with flimmer;;
+I9_THAORTANEUR;Thoracic aortic aneurysm;I7101|I71[12]|Q2543;I
+I9_THROMBANG;Thromboangiitis obliterans;I731;I
+I9_THROMBICV;Nonpyogenic thrombosis of intracranial venous system;I676;I
+I9_THROMBOTH;Other embolism and thrombosis;I82;I
+I9_TIA;Transient ischemic attack;G45;G
+I9_UAP;Unstable angina pectoris;I200;I
+I9_VARICVE;Varicose veins;I83;I
+I9_VARICVEOES;Oesophageal varices;I85;I
+I9_VARICVESOTH;Varicose veins of other sites;I86;I
+I9_VASCINT;Vascular diseases of the intestine;K55[0-1]|K559;K
+I9_VASCSYND;Vascular syndromes of brain in cerebrovascular disorders;G46;G
+I9_VEINSOTH;Other disorders of veins;I87;I
+I9_VHD;Valvular heart disease excluding rheumatic fever;;
+I9_VTE;Venous thromboembolism;I26|I80|O871|O882;I
+ILD_ENDPOINTS;Interstitial lung disease endpoints;;
+ILD_INSUFFICIENCY;ILD-related respiratory insufficiency;;
+INCREASEDMUSCLETONE;Increased muscle tone;R29[0|3];R
+INFLUENZA;All influenza (not pneumonia);J1[0-1];J
+INTERSTITIAL_CYSTIT_CHRONIC;Interstitial cystitis (chronic), drug-induced;N301;N
+INV_VENT;Invasive ventilation;;
+IPF;Idiopathic pulmonary fibrosis;J841;J
+J10_ABSCLUNGPNEUMO;Abscess of lung;J85[1-2];J
+J10_ABSCMEDIASTINUM;Abscess of mediastinum;J853;J
+J10_ACUTELOWERNAS;Unspecified acute lower respiratory infection;J22;J
+J10_ACUTEUPPERINFEC;Acute upper respiratory infections of multiple and unspecified sites;J06;J
+J10_AIRWDISDUST;Airway disease due to specific organic dust;J66;J
+J10_ARDS;Adult respiratory distress syndrome;J80;J
+J10_ASBESTPNEUMOC;Pneumoconiosis due to asbestos and other mineral fibres;J61;J
+J10_ASTHMACOPDKELA;Asthma/COPD (KELA code 203);;
+J10_BRONCH;Bronchitis, not specified as acute or chronic;J40;J
+J10_BRONCHIECTASIS;Bronchiectasis;J47;J
+J10_BRONCHIOLITIS;Acute bronchiolitis;J21;J
+J10_BRONCHITIS;Acute bronchitis;J20;J
+J10_BRONCHNAS;Unspecified chronic bronchitis;J42;J
+J10_CHEMGASRESP;Respiratory conditions due to inhalation of chemicals, gases, fumes and vapours;J68;J
+J10_CHRONLARYNGITIS;Chronic laryngitis and laryngotracheitis;J37;J
+J10_CHRONRHINITIS;Chronic rhinitis, nasopharyngitis and pharyngitis;J31;J
+J10_CHRONSINUSITIS;Chronic sinusitis;J32;J
+J10_CHRONTONSADEN;Chronic diseases of tonsils and adenoids;J35;J
+J10_COLD;Acute nasopharyngitis (common cold);J00;J
+J10_COPD;COPD;;
+J10_EMPHYSEMA;Emphysema;J43;J
+J10_EPIGLOTTITIS;Acute epiglottitis;J051;J
+J10_EXTERLUNG;Lung diseases due to external agents;J[6-7];J
+J10_HYPERSPNEUMONI;Hypersensitivity pneumonitis due to organic dust;J67;J
+J10_INFLUENZA;All influenza;J09|J1[0-1];J
+J10_INFLUPNEU;Influenza and pneumonia;J09|J1;J
+J10_INORGPNEUMOC;Pneumoconiosis due to other inorganic dusts;J63;J
+J10_LARYNGITIS;Acute laryngitis and tracheitis;J04|J050;J
+J10_LOWCHRON;Chronic lower respiratory diseases;J4;J
+J10_LOWERINF;Other acute lower respiratory infections;J2[0-2];J
+J10_NASALPOLYP;Nasal polyp;J33;J
+J10_NECROTIC;Suppurative and necrotic conditions of lower respiratory tract;J8[5-6];J
+J10_PERITONSABSC;Peritonsillar abscess;J36;J
+J10_PHARYNGITIS;Acute pharyngitis;J02;J
+J10_PLEURA;Other diseases of pleura;J9[0-9];J
+J10_PLEUREFFUSION;Pleural effusion;J9[0-1];J
+J10_PLEUROTH;Other pleural conditions;J94;J
+J10_PLEURPLAGUE;Pleural plaque;J92;J
+J10_PNEUMOBACT;Bacterial pneumoniae;;
+J10_PNEUMOHAEM;Pneumonia due to Haemophilus influenzae;J14;J
+J10_PNEUMONIA;All pneumoniae;;
+J10_PNEUMONISOLLIQ;Pneumonitis due to solids and liquids;J69;J
+J10_PNEUMONONBACT;Pneumonia due to other infectious organisms, not elsewhere classified;J16|J17[2-8];J
+J10_PNEUMOPNEUMO;Pneumonia due to Streptococcus pneumoniae;J13;J
+J10_PNEUMOTHORAX;Pneumothorax;J93;J
+J10_PULMEOS;Pulmonary eosinophilia, not elsewhere classified;J82;J
+J10_PULMOEDEMA;Pulmonary oedema;J81;J
+J10_PYOTHORAX;Pyothorax;J86;J
+J10_RESPCONDEXT;Respiratory conditions due to other external agents;J70;J
+J10_RESPOTHER;Other diseases of the respiratory system;J9[5-8];J
+J10_SEPTDEV;Deviated nasal septum;J342;J
+J10_SILICAPNEUMOC;Pneumoconiosis due to dust containing silica;J62;J
+J10_SIMPLBRONCH;Simple and mucopurulent chronic bronchitis;J41;J
+J10_SINUSITIS;Acute sinusitis;J01;J
+J10_TONSILLECTOMY;Tonsillectomy and adenotomy;;
+J10_TONSILLITIS;Other and unspecified tonsillitis;J03;J
+J10_UPPERDIS;Other diseases of upper respiratory tract;J3;J
+J10_UPPERINFEC;Acute upper respiratory infections;J0[0-6];J
+J10_VIRALPNEUMO;Viral pneumonia;J12|J171|J100|J110|B012|B068|B250;J
+J10_VOCALLARYNX;Diseases of vocal cords and larynx+other diseases of upper respiratory tract, no elsewhere classified;J34|J3[8-9];J
+JOINTPAIN;Pain in joint;M255;M
+JUVEN_ARTHR;Juvenile arthritis (FINNGEN);;
+K11_ABRASION;Abrasion of teeth;K031;K
+K11_ABSCANAL;Abscess of anal and rectal regions;K61;K
+K11_ACHAL;Achalasia of cardia;K220;K
+K11_ACUTGASTR;Acute gastritis;K29[0-1];K
+K11_ACUTPANC;Acute pancreatitis;K85;K
+K11_ADHE;Intestinal adhesions without obstruction;K565;K
+K11_ALCGASTR;Alcoholic gastritis;K292;K
+K11_ALCOLIV;Alcoholic liver disease;K70;K
+K11_ANOMALI_DENTAL_ARCH_RELATIONS1;Anomalies of dental arch relationship, including avohilmo;K072;K
+K11_APHTA_RECUR;Recurring oral aphthae;K12[01];K
+K11_APHTA_RECUR_INCLAVO;Recurring oral aphthae, including avohilmo;K12[01];K
+K11_APPENDACUT;Acute appendicitis;K35;K
+K11_APPENDECTOMY;Appendectomy;;
+K11_APPENDOTH;Other appendicitis;K3[6-7];K
+K11_ASYMMETRY_JAW;Asymmetry of jaw;K0710;K
+K11_ATTRITION;Excessive attrition of teeth;K030;K
+K11_BARRET;Barrett oesophagus;K227;K
+K11_BILIAOTH;Other diseases of biliary tract;K83;K
+K11_CARIES_1_OPER_ONLYAVO;Dental caries 1 and operation codes, only avohilmo;;
+K11_CARIES_2_OPER_ONLYAVO;Dental caries 2 and operation codes, only avohilmo;;
+K11_CARIES_3_OPER_ONLYAVO;Dental caries 3 and operation codes, only avohilmo;;
+K11_CARIES_DENTIN;Dentinal caries;K021;K
+K11_CD_STRICT_PSC;Crohn's disease (strict) with PSC;;
+K11_CD_STRICT2;Crohn disease (strict definition, require KELA, min 2 HDR);K50;K
+K11_CHOLANGI;Cholangitis (primary sclerosing, PSC);K830;K
+K11_CHOLANGI_STRICT;Cholangitis (primary sclerosing, PSC), with reimbursement 202;K830;K
+K11_CHOLECYST;Cholecystitis;K81;K
+K11_CHOLECYSTECTOMY;Cholecystectomy;;
+K11_CHOLELITH;Cholelithiasis;K80;K
+K11_CHRONGASTR;Chronic gastritis;K29[3-5];K
+K11_CHRONHEP;Chronic hepatitis, not elsewhere classified;K73;K
+K11_CHRONPANC;Chronic pancreatitis;K86[0-1];K
+K11_COELIAC;Coeliac disease;K900;K
+K11_CONSTIPATION;Constipation;K590;K
+K11_CROSSBITE;Crossbite;K0725;K
+K11_CROWDI_TEETH;Crowding of teeth, including avohilmo;K0730;K
+K11_DEEP_BITE;Deep bite;K0723;K
+K11_DEEP_BITE_SURGERY;Deep bite that required surgery;K0723;K
+K11_DENTOFACIAL_ANOMALIES;Dentofacial anomalies [including malocclusion];K07;K
+K11_DEPOSITS;Deposits [accretions] on teeth;K036;K
+K11_DIAHER;Diaphragmatic hernia;K44;K
+K11_DISLIVOTH;Other diseases of liver;K76;K
+K11_DISOESINOTH;Disorders of oesophagus in diseases classified elsewhere;K23;K
+K11_DISORD_TEETH;Other disorders of teeth and supporting structures;K08;K
+K11_DISTAL_BITE;Distal bite;K0720;K
+K11_DIVERTIC;Diverticular disease of intestine;K57;K
+K11_DULC;Duodenal ulcer;K26;K
+K11_EMBED_TEETH;Embedded teeth, including avohilmo;K010;K
+K11_EMBIMPACT_TEETH;Embedded and impacted teeth;K01;K
+K11_ENERCOLNONINF;Noninfective enteritis and colitis;K5[0-2];K
+K11_EROSION;Erosion of teeth;K032;K
+K11_EROSION_INCLAVO;Erosion of teeth, including avohilmo;;
+K11_ERUPTION;Tooth eruption problems;K010|K0068|K0069;K
+K11_FEMHER;Femoral hernia;K41;K
+K11_FIBROCHIRLIV;Fibrosis and cirrhosis of liver;K74;K
+K11_FISTULA;Colonic or urogenital fistula;K316|K383|K60|K63.2|N321|N82[2-4];K
+K11_FUNCDYSP;Functional dyspepsia;K30;K
+K11_GALLBLAOTH;Other diseases of gallbladder;K82;K
+K11_GASTRODUOULC;Gastroduodenal ulcer;K2[5-8];K
+K11_GINGIV_HYPERPLAS;Gingival hyperplasia;K061;K
+K11_GINGIVA;Other disorders of gingiva or/and edentulous alveolar ridge;K06;K
+K11_GINGIVITIS_PERIODONTAL;Gingivitis and periodontal diseases;K05;K
+K11_GJULC;Gastrojejunal ulcer;K28;K
+K11_GULC;Gastric ulcer;K25;K
+K11_HAEMORR;Haemorrhoids and perianal venous thrombosis;K64;K
+K11_HEPFAIL;Hepatic failure, not elsewhere classified;K72;K
+K11_HERING;Inguinal hernia;K40;K
+K11_HERNIA;Hernia;K4;K
+K11_HYPERTROPHY_TONGUE_PAPILLAE;Hypertrophy of tongue papillae;K143;K
+K11_HYPO_ONLY;Tooth agenesis EXCLUDE clefts and syndromes;K0000;K
+K11_HYPOPLASIA_ENAMEL;Hypoplasia of dental enamel, including avohilmo;K0040;K
+K11_HYPOPLASIA_ENAMEL_INCLAVO;Hypoplasia of dental enamel , including avohilmo;K0040;K
+K11_HYPOPLASIA_ENAMEL_PRENATAL;Hypoplasia of dental enamel, prenatal;K0041;K
+K11_HYPOPLASIA_ENAMEL_PRENATAL_INCLAVO;Hypoplasia of dental enamel, prenatal , including avohilmo;K0041;K
+K11_IBD_STRICT;Inflammatory bowel disease, strict (require KELA);;
+K11_IBD_STRICT_PSC;IBD (strict) with PSC;;
+K11_IBS;Irritable bowel syndrome;K58;K
+K11_ILEUS;Paralytic ileus and intestinal obstruction;K56;K
+K11_IMPACT;Impaction of intestines;K56[3-4];K
+K11_IMPACTED_TEETH;Impacted teeth;K011;K
+K11_INTESTOTH;Other diseases of intestines;K5[5-9]|K6[0-3];K
+K11_INTUSS;Intussusception;K561;K
+K11_JAWS;Other diseases of jaws;K10;K
+K11_LICHEN_PLANUS_WIDE;Lichen ruber planus, wide definition including periferal and oral lichen planus;;
+K11_LIP_ORAL_MUCOSA;Other diseases of lip and oral mucosa;K13;K
+K11_LIVDISINOTH;Liver disorders in diseases classified elsewhere;K77;K
+K11_LIVER;Diseases of liver;K7;K
+K11_MAJOR_ANOMALI_JAW_SIZE;Major anomalies of jaw size;K070;K
+K11_MALABSORB;Intestinal malabsorption;K90;K
+K11_MANDIBULAR_HYPOPL;Mandibular hypoplasia;K0704;K
+K11_MAXIL_CANINE_FAILED_ERUPT_OBSTRUCTION_TOOTH;Impacted maxillary canine;K0112;K
+K11_MAXIL_CANINE_PALAT;Palatinal maxillary canine;K0735|K01;K
+K11_MAXIL_HYPOPL;Maxillary  hypoplasia;K0703;K
+K11_MAXIL_MOLAR_FAILED_ERUPT_OBSTRUCTION_TOOTH;Impacted maxillary molar;K0116;K
+K11_MAXIL_PROGN;Maxillary prognathism;K0712;K
+K11_MESIAL_BITE;Mesial bite;K0721;K
+K11_MIH;Molar incisor enamel hypoplasia;K004[0-1];K
+K11_MIH_CARIES;Molar incisor enamel hypoplasia, with caries;K004[0-1];K
+K11_MISS_TEETH_ACCID_EXTR_PAROD;Missing teeth due to accident, extraction or parodontitis;K081;K
+K11_MN_PROGN;Mandibular prognathia;K0711;K
+K11_MN_PROGN_AND_SURGRT;Mandibular prognathia AND surgery (LeFortI or BSSRO);K0711;K
+K11_MN_PROGN_AND_SURGRT_INCLAVO;Mandibular prognathia AND surgery (LeFortI or BSSO or LeFortI AND BSSO), including avohilmo;;
+K11_MN_RETRGN;Mandibular retrognathia;K0713;K
+K11_MN_RETRGN_AND_SURG;Mandibular retrognathia AND surgery (BSSRO);K0713;K
+K11_OESITIS;Oesophagitis;K20;K
+K11_OESITIS_ADVERSE;Oesophagitis, drug-induced;K20;K
+K11_OESOBST;Oesophageal obstruction;K222;K
+K11_OESSTODUO;Diseases of oesophagus, stomach and duodenum;K2|K3[0-1];K
+K11_OESULC;Ulcer of oesophagus;K221;K
+K11_OESULC_ADVERSE;Ulcer of oesophagus, drug-induced;K221;K
+K11_OPEN_BITE;Open bite;K0724;K
+K11_OPEN_BITE_SURGERY;Open bite that required surgery (Lefort1 or BSSRO);K0724;K
+K11_ORAL;Diseases of oral cavity, salivary glands and jaws;K0;K
+K11_ORAL_LEUCOPLAC_RELAT;Oral leukoplakia and related diseases;K132;K
+K11_ORAL_LEUCOPLAC_RELAT_INCLAVO;Oral leukoplakia and related diseases, including avohilmo;K132;K
+K11_ORAL_LEUCOPLACIA;Oral leukoplakia;K132[01];K
+K11_ORAL_LEUCOPLACIA_INCLAVO;Oral leukoplakia, including avohilmo;K132[01];K
+K11_ORAL_LICHEN_PLANUS;Oral lichen ruber planus;K1374;K
+K11_ORALCYST;Cysts of oral region, not elsewhere classified;K09;K
+K11_OTHABDHER;Other and unspecified abdominal hernia;K4[5-6];K
+K11_OTHANRECT;Other diseases of anus and rectum;K62;K
+K11_OTHAPPEND;Other diseases of appendix;K38;K
+K11_OTHDIG;Diseases of the digestive system;K9;K
+K11_OTHDISDIG;Other diseases of the digestive system;K92;K
+K11_OTHDISOES;Other diseases of oesophagus;K22[4-9];K
+K11_OTHDISSTOMDUOD;Other diseases of stomach and duodenum;K31;K
+K11_OTHENTERCOL;Other noninfective gastroenteritis and colitis;K52;K
+K11_OTHFUNC;Other functional intestinal disorders;K59;K
+K11_OTHGASTR;Other gastritis (incl. Duodenitis);K29[6-9];K
+K11_OTHILEUS;Other or unspecified ileus, impaction or obstruction;K564|K56[6-7];K
+K11_OTHINFLIV;Other inflammatory liver diseases;K75;K
+K11_OTHINT;Other diseases of intestine;K63;K
+K11_OTHPERITON;Other diseases of peritoneum;K66;K
+K11_OVERJET;Overjet;K0722;K
+K11_PANCOTH;Other diseases of pancreas;K86[2-9];K
+K11_PARALIL;Paralytic ileus;K560;K
+K11_PARODON_OPER;Parodontitis or operation codes;K0530|K0531|K054;K
+K11_PARODON_OPER_DENTAL_OPER;Parodontitis or/and operation codes;;
+K11_PARODON_PERIAPIC_CHRONIC;Chronic periapical parodontitis;K045;K
+K11_PERFOES;Perforation of oesophagus;K223;K
+K11_PERIODON_CHRON;Chronic periodontitis;K053[01];K
+K11_PERIODON_CHRON_COMPL;Chronic periodontitis, complicated;K0531;K
+K11_PERIODONTAL_NOS;Periodontal disease, other/unspecified;K05[5-6];K
+K11_PERIODONTOSIS;Periodontosis;K054;K
+K11_PERITON;Diseases of peritoneum;K6[5-7];K
+K11_PERITONITIS;Acute peritonitis;K65;K
+K11_POSTOPDIS;Postprocedural disorders of digestive system, not elsewhere classified;K91;K
+K11_PSC_COLITIS_STRICT;Colitis, primary sclerosing, strict definition;;
+K11_PULC;Peptic ulcer;K27;K
+K11_PULP_PERIAPICAL;Diseases of pulp and periapical tissues;K04;K
+K11_PULPITIS_1_ONLYAVO;Dental pulpitis 1, only avohilmo;;
+K11_PULPITIS_3;Dental pulpitis 3;K04;K
+K11_REFLUX;Gastro-oesophageal reflux disease;K21;K
+K11_REIMB_202;Reimbursement for rheumatic diseases;;
+K11_RESORPTION;Pathological resorption of teeth;K033;K
+K11_RETROG_MAXILLAE;Maxillary retrognathism;K0714;K
+K11_SALIVARY;Diseases of salivary glands;K11;K
+K11_SCISS_BITE;Scissor bite;K0727;K
+K11_STOMATITIS;Stomatitis and related lesions;K12;K
+K11_SUPNUM_ONLY;Supernumerary teeth EXCLUDE clefts and syndromes;K001;K
+K11_SUPNUM_ONLY_INCLAVO;Supernumerary teeth EXCLUDE clefts and syndromes, including avohilmo;K001;K
+K11_TEETH_HARD_NOS;Disease of hard tissues of teeth, NOS;K03[8-9];K
+K11_TOXLIV;Toxic liver disease;K71;K
+K11_UC_STRICT_PSC;Ulcerative colitis (strict) with PSC;;
+K11_UC_STRICT2;Ulcerative colitis (strict definition, require KELA, min 2 HDR);K51;K
+K11_UMBHER;Umbilical hernia;K42;K
+K11_VASCINT;Vascular disorders of the intestines;K55;K
+K11_VENTHER;Ventral hernia;K43;K
+K11_VOLVU;Volvulus;K562;K
+KRA_PSY_ANYMENTAL;Any mental disorder;F0[0-3]|F051|G30|F[1-9];F
+KRA_PSY_TIC;Tic and related disorders;F95;F
+L12_ABSCESS_CUT;Cutaneous abscess, furuncle and carbuncle;L02;L
+L12_ACANTHNIGRICANS;Acanthosis nigricans;L83;L
+L12_ACANTHOLYTIC;Other acantholytic disorders;L11;L
+L12_ACNE;Acne;L70;L
+L12_ACNE_CONGLOBLATA;Acne conglobata;L701;L
+L12_ACNE_NAS;Other  and unspecified acne;L70[8-9];L
+L12_ACNE_VARIOLIFORMIS;Acne varioliformis;L702;L
+L12_ACNEKELOID;Acne keloid;L730;L
+L12_ACQKERAT;Acquired keratosis [keratoderma] palmaris et plantaris;L851;L
+L12_ACRODERMATITIS;Acrodermatitis chronica atrophicans;L904;L
+L12_ACTINKERA;Actinic keratosis;L570;L
+L12_ALLERGICCONTACT;Allergic contact dermatitis;L23;L
+L12_ALOPECANDRO;Androgenic alopecia;L64;L
+L12_ALOPECAREATA;Alopecia areata;L63;L
+L12_APOCRINESWEAT;Apocrine sweat disorders, other sweat gland disorders;L75;L
+L12_ATOPIC;Atopic dermatitis;L20;L
+L12_ATROPHICSKIN;Atrophic disorders of skin;L90;L
+L12_ATROPHICSKINNAS;Other and unspecified atrophic disorders of skin;L90[8-9];L
+L12_BULLOTH;Other bullous disorders;L13;L
+L12_BULLOUS;Bullous disorders;L1;L
+L12_CALCINOSISCUTIS;Calcinosis cutis;L942;L
+L12_CELLULITIS;Cellulitis;L03;L
+L12_CHLOASMA;Chloasma;L811;L
+L12_CHRONICULCEROFSKIN;Chronic ulcer of skin, not elsewhere classified;L984;L
+L12_CORNSANDCALLOS;Corns and callosities;L84;L
+L12_CUTLAXSEN;Cutis laxa senilis;L574;L
+L12_DECUBITANSULCERANDPRESSURE;Decubitus ulcer and pressure area;L89;L
+L12_DERM_NUMMULAR;Nummular dermatitis;L300;L
+L12_DERMATHERP;Dermatitis herpetiformis;L130;L
+L12_DERMATITISECZEMA;Dermatitis and eczema;L[2-3];L
+L12_DERMATITISNAS;Dermatitis;L30;L
+L12_DIAPER;Diaper [napkin] dermatitis;L22;L
+L12_DISORDSKINAPPENDIX;Disorders of skin appendages;L[6-7];L
+L12_DYSHIDROSIS;Dyshidrosis [pompholyx];L301;L
+L12_ECCRINESWEAT;Eccrine sweat disorders;L74;L
+L12_EPIDERMALTHICKOTH;Other epidermal thickening;L85;L
+L12_EPIDERMTHICKNAS;Other and unspecified epidermal thickening;L85[8-9];L
+L12_ERTYTH_TOXIC;Toxic erythema;L530;L
+L12_ERYT_INTERTRIG;Erythema intertrigo;L304;L
+L12_ERYTH_ANNULCENTRIFUG;Erythema annulare centrifugum;L531;L
+L12_ERYTHEMAMULTIF;Erythema multiforme;L51;L
+L12_ERYTHEMANODOSUM;Erythema nodosum;L52;L
+L12_ERYTHEMATOUSOTH;Other erythematous conditions;;
+L12_ERYTHINOTH;Erythema in diseases classified elsewhere;L54;L
+L12_ERYTHRASMA;Erythrasma;L081;L
+L12_ERYTHRO_KELA;Universal erythroderma, KELA reimbursement;;
+L12_EXFOLIATIVE;Exfoliative dermatitis;L26;L
+L12_FACTITIALDERMAT;Factitial dermatitis;L981;L
+L12_FOLICULAROTH;Other follicular disorders;L73;L
+L12_FOLLICULARCYST;Follicular cysts of skin and subcutaneous tissue;L72;L
+L12_FOLLICULARNAS;Other and unspecified follicular disorders;L73[8-9];L
+L12_FOLLICULITDECALV;Folliculitis decalvans;L662;L
+L12_FOODDERMAT;Dermatitis due to ingested food;L272;L
+L12_FOREIGNBODYGRANULOMA;Foreign body granuloma of skin and subcutaneous tissue;L923;L
+L12_GRANUANNU;Granuloma annulare;L920;L
+L12_GRANULOMASKINNAS;Other and unspecified granulomatous disorders of skin and subcutaneous tissue;L92[8-9];L
+L12_GRANULOMATOUSSKIN;Granulomatous disorders of skin and subcutaneous tissue;L92;L
+L12_GROVER;Transient acantholytic dermatosis [Grover];L111;L
+L12_HAIRCOLOUR;Hair colour and hair shaft abnormalities;L67;L
+L12_HAIRLOSS_NONSCARNAS;Other and unspecified nonscarring hair loss;L65[8-9];L
+L12_HAIRLOSS_SCARNAS;Other and unspecified cicatricial alopecia;L66[8-9];L
+L12_HAIRLOSSNONSCAR;Other nonscarring hair loss;L65;L
+L12_HAIRLOSSSCAR;Cicatricial alopecia [scarring hair loss];L66;L
+L12_HIDRADENITISSUP;Hidradenitis suppurativa;L732;L
+L12_HIRSUTISM;Hirsutism in women;L680;L
+L12_HIRSUTISM_ADVERSE;Hirsutism, drug-induced;L680;L
+L12_HYPERTICHNAS;Other hypertrichosis;L68[8-9];L
+L12_HYPERTROPHICNAS;Other and unspecified hypertrophic disorders of skin;L91[8-9];L
+L12_HYPETROPHICSCAR;Hypertrophic scar;L910;L
+L12_IMPETIGO;Impetigo;L01;L
+L12_INFECT_DERM;Infective dermatitis;L303;L
+L12_INFECT_SKIN;Infections of the skin and subcutaneous tissue;L0;L
+L12_INFECT_SKIN_OTHER;Other local infections of skin and subcutaneous tissue;;
+L12_INTERNALSUBSTANCEDERM;Dermatitis due to substances taken internally;L27;L
+L12_LICHENPLANO;Lichen planopilaris;L661;L
+L12_LICHENSCLERATROPH;Lichen sclerosus et atrophicus;L900;L
+L12_LICHENSIMPLEX;Lichen simplex chronicus;L280;L
+L12_LICHSIMPANDPRURIGO;Lichen simplex chronicus and prurigo;L28;L
+L12_LIVEDOIDVASC;Livedoid vasculitis;L950;L
+L12_LOCALCONNECTISSUENAS;Other and unspecified localized connective tissue disorders;L94[8-9];L
+L12_LOCALDCONNECTISSUEOTH;Other localized connective tissue disorders;L94;L
+L12_LOCALSCLERODERMA;Localized scleroderma [morphea];L940;L
+L12_LUPUS;Lupus erythematosus;L93;L
+L12_LYMPHADENITIS;Acute lymphadenitis;L04;L
+L12_NAIL_DYSTROPHY;Nail dystrophy;L603;L
+L12_NAIL_GRYPHOSIS;Onychogryphosis;L602;L
+L12_NAIL_INGROW;Ingrowing nail;L600;L
+L12_NAIL_LYSIS;Onycholysis;L601;L
+L12_NAILDIS;Nail disorders;L6[02];L
+L12_NAILNAS;Other and unspecified nail disorders;L60[8-9];L
+L12_NECROLIPOIDIC;Necrobiosis lipoidica, not elsewhere classified;L921;L
+L12_NONIONRADISKINNAS;Other and unspecified skin changes due to chronic exposure to nonionizing radiation;L57[8-9];L
+L12_OTHACUSKINSUN;Other acute skin changes due to ultraviolet radiation;L56;L
+L12_OTHACUSKINSUNNAS;Other and unspecified acute skin changes due to ultraviolet radiation;L56[8-9];L
+L12_OTHERBULL;Other and unspecified bullous disorders;L13;L
+L12_OTHERCONTACT;Other contact dermatitis;L2[4-5];L
+L12_OTHERDISSKINANDSUBCUTIS;Other disorders of skin and subcutaneous tissue, not elsewhere classified;L98;L
+L12_OTHERINFILTRATIVESKIN;Other infiltrative disorders of skin and subcutaneous tissue;L986;L
+L12_OTHERMELANIN;Other melanin hyperpigmentation;L814;L
+L12_OTHERSKINSUBCUTIS;Other disorders of skin and subcutaneous tissue;L[8-9];L
+L12_OTHPIGMENTATION;Other disorders of pigmentation;L81;L
+L12_PAPULOSQUAMOUS;Papulosquamous disorders;L4;L
+L12_PAPULOSQUAOTH;Other papulosquamous disorders;L44;L
+L12_PAPULOSQUONAS;Other and unspecified papulosquamous disorders;L44[8-9];L
+L12_PARAPSO_PITYLICHCHRON;Pityriasis lichenoides chronica;L411;L
+L12_PARAPSO_PITYLICHETVARACUT;Pityriasis lichenoides et varioliformis acuta;L410;L
+L12_PARAPSO_PLAQUE;Small plaque parapsoriasis;L41[3-5];L
+L12_PARAPSO_RETIFORM;Other and unspecified parapsoriasis;L41[8-9];L
+L12_PARAPSORI;Parapsoriasis;L41;L
+L12_PEMPHIGOID_BULL;Bullous pemphigoid;L120;L
+L12_PEMPHIGOID_CICA;Cicatricial pemphigoid;L121;L
+L12_PEMPHIGOID_NAS;Other and unspecified pemphigoid;L12[8-9];L
+L12_PEMPHIGUS;Pemphigus;L10;L
+L12_PEMPHIGUS_NAS;Other and unspecified pemphigus;L10[8-9];L
+L12_PEMPHIGUS_VULG;Pemphigus vulgaris;L100;L
+L12_PEMPHIKELA;Severe bullous disorders, KELA reimbursement;;
+L12_PERIORALDERM;Perioral dermatitis;L710;L
+L12_PIGMENTNAS;Other and unspecified disorders of pigmentation;L81[8-9];L
+L12_PIGPURPDERM;Pigmented purpuric dermatosis;L817;L
+L12_PILONIDALCYST;Pilonidal cyst;L05;L
+L12_PITYRIASISRUBRA;Pityriasis rubra pilaris;L440;L
+L12_PITYROCHEA;Pityriasis rosea;L42;L
+L12_POIKOLOCIVAT;Poikiloderma of Civatte;L573;L
+L12_POLYMORPHLIGHTERUPT;Polymorphous light eruption;L564;L
+L12_PRURIGONAS;Other  prurigo;L282;L
+L12_PRURIGONOD;Prurigo nodularis;L281;L
+L12_PRURITUS;Pruritus;L29;L
+L12_PSORI_ACRODERM;Acrodermatitis continua;L402;L
+L12_PSORI_GUTTATE;Guttate psoriasis;L404;L
+L12_PSORI_NAS;Other and unspecified psoriasis;L40[8-9];L
+L12_PSORI_PUSTGEN;Generalized pustular psoriasis;L401;L
+L12_PSORI_PUSTUPALM;Pustulosis palmaris et plantaris;L403;L
+L12_PSORI_VULG;Psoriasis vulgaris;L400;L
+L12_PSORIASIS;Psoriasis;L40;L
+L12_PYODERMA;Pyoderma;L080;L
+L12_PYOGENGRANUL;Pyogenic granuloma;L980;L
+L12_RADIODERMATITIS;Radiodermatitis;L58;L
+L12_RHINOPHYMA;Rhinophyma;L711;L
+L12_ROSACEANAS;Other and unspecified rosacea;L71[8-9];L
+L12_SCARCONDITIONS;Scar conditions and fibrosis of skin;L905;L
+L12_SEBORRHOEIC;Seborrhoeic dermatitis;L21;L
+L12_SEBORRKERAT;Seborrhoeic keratosis;L82;L
+L12_SKINRADIOTH;Other disorders of skin and subcutaneous tissue related to radiation;L59;L
+L12_SKINSUBCUTISNAS;Other and unspecified disorders of skin and subcutaneous tissue;L98[8-9];L
+L12_STRIAEATROPHICAE;Striae atrophicae;L906;L
+L12_SUNBURN;Sunburn;L55;L
+L12_TELOGEFFLU;Telogen effluvium;L650;L
+L12_ULCERLOWLIMB;Ulcer of lower limb, not elsewhere classified;L97;L
+L12_URTICA_ALLERG;Allergic urticaria;L500;L
+L12_URTICA_CHOLINERG;Cholinergic urticaria;L505;L
+L12_URTICA_COLDHEAT;Urticaria due to cold and heat;L502;L
+L12_URTICA_DERTMATOG;Dermatographic urticaria;L503;L
+L12_URTICA_IDIOPAT;Idiopathic urticaria;L501;L
+L12_URTICA_NAS;Other and unspecified urticaria;L50[8-9];L
+L12_URTICARIA;Urticaria;;
+L12_URTIGA_CONTACT;Contact urticaria;L506;L
+L12_VASCULITISNAS;Other and unspecified vasculitis limited to skin;L95[8-9];L
+L12_VITILIGO;Vitiligo;L80;L
+L12_XEROSCUT;Xerosis cutis;L853;L
+LICHENOID_DRUG_REACTION;Lichenoid drug reaction;L432;L
+LOCALIZED_SKIN_ERUPT_DRUGS_MEDICAM;Localized skin eruption due to drugs and medicaments;L271;L
+LUNG_TRANSPLANTATION;Lung transplantation;;
+M13_ABSCTENDON;Abscess of tendon sheath;M650;M
+M13_ACHILLESTEND;Achilles tendinitis;M766;M
+M13_ADHCAPSULITIS;Adhesive capsulitis of shoulder;M750;M
+M13_ALGONEURO;Algoneurodystrophy;M890;M
+M13_ANKLEFOOT;Other acquired deformities of ankle and foot;M216;M
+M13_ANKYLOSISJOINT;Ankylosis of joint;M246;M
+M13_ANKYLOSPON;Ankylosing spondylitis;M45;M
+M13_ANKYLOSPON_STRICT;Ankylosing spondylitis, strict definition;;
+M13_ARTHINOTH;Arthropathies in other diseases classified elsewhere;M14;M
+M13_ARTHROPATHIES;Arthropathies;M[0-2];M
+M13_ARTHROSIS;Arthrosis;M1[5-9];M
+M13_ARTHROSIS_INCLAVO;Artrosis, including avohilmo;;
+M13_ARTHROSIS_KNEE;Gonarthrosis;M17;M
+M13_ARTHROSIS_KNEE_PRIM_KNEESURG;Gonarthrosis, primary, with knee surgery;;
+M13_ARTHROSIS_OTH;Other arthrosis;M19|M18;M
+M13_ARTHROSIS_POLY;Polyarthrosis;M15;M
+M13_ARTHTROSIS_COX;Coxarthrosis;M16;M
+M13_ARTHTROSIS_COX_PRIM_HIPSURG;Coxarthrosis, primary, with hip surgery;;
+M13_ARTHTROSIS_COX_PRIM_ICD10;Coxarthrosis, primary;M16[0-1];M
+M13_ATLOAXSUBLUX;Atlantoaxial subluxation;M43[3-4];M
+M13_BAKERCYST;Synovial cyst of popliteal space [Baker];M712;M
+M13_BEHCET;Behçet disease;M352;M
+M13_BICIPITALTEND;Bicipital tendinitis;M752;M
+M13_BIOMECHLESIO;Biomechanical lesions, not elsewhere classified;M99;M
+M13_BONECONTINUITY;Disorders of continuity of bone;M84;M
+M13_BONEDENSOTH;Other disorders of bone density and structure;M85;M
+M13_BONEDISNAS;Other specified/unspecified disorders of  bone/cartilage;M89[8-9]|M94[8-9];M
+M13_BONEHYPERTRPH;Hypertrophy of bone;M893;M
+M13_BURSCYSTOTH;Other bursal cyst;M713;M
+M13_BURSELBOWOTH;Other bursitis of elbow;M703;M
+M13_BURSITISHIPOTH;Other bursitis of hip;M707;M
+M13_BURSITISKNEEOTH;Other bursitis of knee;M705;M
+M13_BURSITISOTH;Other bursitis, not elsewhere classified;M715;M
+M13_BURSOPATHY;Other bursopathies;M71;M
+M13_CALCANSPUR;Calcaneal spur;M773;M
+M13_CALCBURS;Calcium deposit in bursa;M714;M
+M13_CALCIFICTEND;Calcific tendinitis of shoulder;M753;M
+M13_CALCIOSSIMUSCLE;Calcification and ossification of muscle;M61;M
+M13_CALCTENDINITIS;Calcific tendinitis;M652;M
+M13_CARTILAGE;Other articular cartilage disorders;M241;M
+M13_CERVICALGIA;Cervicalgia;M542;M
+M13_CERVICDISC;Cervical disc disorders;M50;M
+M13_CERVICOBRACHSDR;Cervicobrachial syndrome;M531;M
+M13_CERVICOCRANSDR;Cervicocranial syndrome;M530;M
+M13_CHONDROMALACIA;Chondromalacia;M942;M
+M13_CHRONDROPATHIES;Chondropathies;M9[1-4];M
+M13_CHRONSYNOVITISHANDWRIST;Chronic crepitant synovitis/bursitis of hand and wrist/periarthritis of wrist;M70[0-1]|M772;M
+M13_CHURGSTRAUSS;Polyarteritis with lung involvement [Churg-Strauss]/EGPA;M301;M
+M13_CLAWCLUBHANDFOOT;Acquired clawhand, clubhand, clawfoot and clubfoot;M215;M
+M13_CONNECTNAS;Other specified/unspecified systemic involvement of connective tissue;M35[8-9];M
+M13_CONTRACTUREJOINT;Contracture of joint;M245;M
+M13_CRYSTALARTH;Other crystal arthropathies;M11;M
+M13_DEFORMACQ;Other acquired deformities of musculoskeletal system and connective tissue;M95;M
+M13_DEFORMDORSO;Deforming dorsopathies;M4[0-3];M
+M13_DEFORMDORSONAS;Other specified/unspecified deforming dorsopathies;M43[8-9];M
+M13_DEQUERVAIN;Radial styloid tenosynovitis [de Quervain];M654;M
+M13_DERMATOMYOTH;Other dermatomyositis;M331;M
+M13_DERMATOPOLYNAS;Dermatopolymyositis, unspecified;M339;M
+M13_DIASTASIS;Diastasis of muscle;M620;M
+M13_DIFFASCITIS;Diffuse (eosinophilic) fasciitis;M354;M
+M13_DISCINFECTION;Infection of intervertebral disc (pyogenic);M463;M
+M13_DISCITIS;Discitis, unspecified;M464;M
+M13_DISSYNOTENDNAS;Other specified/unspecified disorders of synovium and tendon +Other specified/unspecified bursopathies;M67[8-9];M
+M13_DORSALGIA;Dorsalgia;;
+M13_DORSALGIANAS;Other/unspecified dorsalgia;M54[8-9];M
+M13_DORSOPATHY;Dorsopathies;M4|M5[0-5];M
+M13_DORSOPATHYNAS;Other specified/unspecified dorsopathies;M53[8-9];M
+M13_DORSOPATHYOTH;Other dorsopathies, not elsewhere classified;M5[0-4];M
+M13_DUPUTRYEN;Palmar fascial fibromatosis [Dupuytren];M720;M
+M13_EARLY_LUMBAR_PROLAPSE;Early lumbar disc prolapse, operated;M511;M
+M13_ENTEROARTHR;Enteropathic arthropathies;M07[4-6];M
+M13_ENTESOPATHYLOW;Enthesopathies of lower limb, excluding foot;M76;M
+M13_ENTESOPATHYLOWNAS;Other/unspecified enthesopathies of lower limb, excluding foot;M76[8-9];M
+M13_ENTESOPATHYNAS;Other/unspecified enthesopathies, not elsewhere classified;M77[8-9];M
+M13_ENTESOPATHYOTH;Other enthesopathies;M77;M
+M13_FATIGFRACT;Fatigue fracture of vertebra;M484;M
+M13_FATPADHYPERTROPHY;Hypertrophy of (infrapatellar) fat pad;M794;M
+M13_FIBROBLASTIC;Fibroblastic disorders;M72;M
+M13_FIBROBLASTNAS;Other fibroblastic disorders;M72[8-9];M
+M13_FIBROMYALGIA;Fibromyalgia;M797;M
+M13_FINGERDEFORM;Deformity of finger(s);M200;M
+M13_FLATFOOT;Flat foot [pes planus] (acquired);M214;M
+M13_FOREIGNBODY;Residual foreign body in soft tissue;M795;M
+M13_FORESTIER;Ankylosing hyperostosis [Forestier];M481;M
+M13_GANGLION;Ganglion;M674;M
+M13_GIANTCELL;Giant cell arteritis;M31[5-6];M
+M13_GLUTEALTEND;Gluteal tendinitis;M760;M
+M13_GOUT;Gout;M10;M
+M13_HALLUDEFORMOTH;Other deformity of hallux (acquired);M203;M
+M13_HALLUXRIGIDUS;Hallux rigidus;M202;M
+M13_HALLUXVALGUS;Hallux valgus (acquired);M201;M
+M13_HAMMERTOE;Other hammer toe(s) (acquired);M204;M
+M13_HTROMBMICROANG;Thrombotic microangiopathy;M311;M
+M13_HYPERANG;Hypersensitivity angiitis;M310;M
+M13_HYPERMOBILITY;Hypermobility syndrome;M357;M
+M13_ILIOTIBBAND;Iliotibial band syndrome;M763;M
+M13_IMPINGEMENT;Impingement syndrome of shoulder;M754;M
+M13_INFBURSA;Infective bursitis;M71[0-1];M
+M13_INFTENOSYNOVITIS;Other infective (teno)synovitis;M651;M
+M13_INTERHYDRARTHR;Intermittent hydrarthrosis;M124;M
+M13_INTERVERTEB;Other intervertebral disc disorders;M51;M
+M13_JUVERHEU;Juvenile rheumatoid arthirtis;M080;M
+M13_JUVOSTEOCHONRHIP;Juvenile osteochondrosis;M9[1-2];M
+M13_KAWASAKI;Mucocutaneous lymph node syndrome [Kawasaki];M303;M
+M13_KISSING;Kissing spine;M482;M
+M13_KNEEDERANGEMENTS;Internal derangement of knee;M23;M
+M13_KNUCKLEPADS;Knuckle pads;M721;M
+M13_KYPHOSIS;Kyphosis;M40[0-2];M
+M13_LATERALEPICOND;Lateral epicondylitis;M771;M
+M13_LIMBDEFORM;Other specified acquired deformities of limbs;M21[8-9];M
+M13_LIMBLENGTH;Unequal limb length (acquired);M217;M
+M13_LIMBPAIN;Pain in limb;M796;M
+M13_LOOSEJOINT;Loose body in joint;M240;M
+M13_LORDOSIS;Lordosis;M40[4-5];M
+M13_LOWBACKPAIN;Low back pain;M545;M
+M13_LOWBACKPAINORANDSCIATICA;Lower back pain or/and sciatica;;
+M13_LUMBAR_PROLAPSE;Lumbar disc prolapse;M511;M
+M13_MCTD;Mixed connective tissue disease;M359;M
+M13_MEDIALEPICOND;Medial epicondylitis;M770;M
+M13_MENISCUSDERANGEMENTS;Meniscus derangement;M23[0-3];M
+M13_METATARSALGIA;Metatarsalgia;M774;M
+M13_MICROPOLYANG;Microscopic polyangiitis;M317;M
+M13_MONOARTHRITIS;Monoarthritis, not elsewhere classified;M131;M
+M13_MULTIFIBRO;Multifocal fibrosclerosis;M355;M
+M13_MUSCLE;Disorders of muscles;M6[0-3];M
+M13_MUSCLEATROPH;Muscle wasting and atrophy, not elsewhere classified;M625;M
+M13_MUSCLEDISNAS;Other specified disorders of muscle;M62[8-9];M
+M13_MUSCLESTRAIN;Muscle strain;M626;M
+M13_MUSCONTRAC;Contracture of muscle;M624;M
+M13_MUSCULOSKELEOTH;Other disorders of the musculoskeletal system and connective tissue;M9[5-9];M
+M13_MYALGIA;Myalgia;M791;M
+M13_MYOSITIS;Myositis;M60;M
+M13_MYOSITISOSSIF;Myositis ossificans;M61[0-1];M
+M13_NECROFASC;Necrotizing fasciitis;M726;M
+M13_NECROVASCNAS;Other specified/unspecified necrotizing vasculopathies;M31[8-9];M
+M13_NEURALGIA;Neuralgia and neuritis, unspecified;M792;M
+M13_OLECRANONBURSITIS;Olecranon bursitis;M702;M
+M13_OSTEOCHONDRO;Osteopathies and chondropathies;M8|M9[0-4];M
+M13_OSTEOCHONDROPATHY;Other osteochondropathies;M93;M
+M13_OSTEOMALACIA;Osteomalacia;M83;M
+M13_OSTEOMYELITIS;Osteomyelitis;M86;M
+M13_OSTEOMYELVERTEB;Osteomyelitis of vertebra;M462;M
+M13_OSTEONECROSIS;Osteonecrosis;M87;M
+M13_OSTEOPATHYINOTH;Osteopathy in diseases classified elsewhere;M90;M
+M13_OSTEOPOROSIS;Osteoporosis;M8[0-2];M
+M13_OTERSPECARTHR;Other specific arthropathies;M128;M
+M13_OTHERBONE;Other disorders of bone;M89|M9[0-4];M
+M13_OTHERJOINT;Other joint disorders;M2[0-5];M
+M13_OVERLAP;Other overlap syndromes;M351;M
+M13_OVERUSENAS;Other/unspecified soft tissue disorders related to use, overuse and pressure;M70[8-9];M
+M13_PAGET;Paget disease;M88;M
+M13_PALINDROMIC;Palindromic rheumatism;M123;M
+M13_PANNICULITIS;Panniculitis affecting regions of neck and back;M540;M
+M13_PANNICULITISNAS;Panniculitis, unspecified;M793;M
+M13_PATELLADISLOCATIO;Recurrent dislocation of patella;M22[0-1];M
+M13_PATELLAOTH;Other disorders of patella;M22[2-9];M
+M13_PATELLARTEND;Patellar tendinitis;M765;M
+M13_PERONEALTEND;Peroneal tendinitis;M767;M
+M13_PLANTARFASC;Plantar fascial fibromatosis;M722;M
+M13_POLNODOSA;Polyarteritis nodosa;M300;M
+M13_POLYARTERETAL;Polyarteritis nodosa and related conditions;M30;M
+M13_POLYARTHRITIS;Polyarthritis, unspecified;M130;M
+M13_POLYARTHROPATHIES;Polyarthropathies;M0[5-9]|M1[0-4];M
+M13_POLYMYALGIA;Polymyalgia rheumatica;M353;M
+M13_POLYMYO;Polymyositis;M332;M
+M13_POSTOPMUSCULOSKE;Postprocedural musculoskeletal disorders, not elsewhere classified;M96;M
+M13_POYARTOTH;Other conditions related to polyarteritis nodosa;M308;M
+M13_PREPATELLARBURSITIS;Prepatellar bursitis;M704;M
+M13_PSOASTEND;Psoas tendinitis;M761;M
+M13_PSORIARTH;Psoriatic arthropathies;M07[0-3];M
+M13_PYOGARTH;Pyogenic arthritis;M0[0-1];M
+M13_RADICULOPATHY;Radiculopathy;M541;M
+M13_REACTARTH;Reactive arthropathies;M0[2-3];M
+M13_RECUDISLOCATIO;Recurrent dislocation and subluxation of joint;M244;M
+M13_RELAPSPOLYCHONDR;Relapsing polychondritis;M941;M
+M13_RHEUMA;Rheumatoid arthritis;M0[5-6];M
+M13_RHEUMATISM;Rheumatism, unspecified;M790;M
+M13_ROTATORCUFF;Rotator cuff syndrome;M751;M
+M13_RUPTUREMUSC;Other rupture of muscle;M621;M
+M13_SACROCOGG;Sacrococcygeal disorders, not elsewhere classified;M533;M
+M13_SACROILIITIS;Sacroiliitis, not elsewhere classified;M461;M
+M13_SCIATICA;Sciatica+with lumbago;M54[3-4];M
+M13_SCOLIOSIS;Scoliosis;M41;M
+M13_SHORTACHILLES;Short Achilles tendon (acquired);M670;M
+M13_SHOULDER;Shoulder lesions;M75;M
+M13_SHOULDERBURSITIS;Bursitis of shoulder;M755;M
+M13_SHOULDERNAS;Other shoulder lesions;M75[8-9];M
+M13_SJOGREN;Sicca syndrome [Sjögren];M350;M
+M13_SOFTOVERUSE;Soft tissue disorders related to use, overuse and pressure;M70;M
+M13_SOFTTISSUE;Soft tissue disorders;M[6-7];M
+M13_SOFTTISSUENAS;Other specified/unspecified soft tissue disorders;M79[8-9];M
+M13_SOFTTISSUEOTH;Other soft tissue disorders, not elsewhere classified;M79;M
+M13_SPINALOSTEOCHON;Spinal osteochondrosis;M42;M
+M13_SPINEFUSION;Other fusion of spine;M432;M
+M13_SPINENTHES;Spinal enthesopathy;M460;M
+M13_SPININSTAB;Spinal instabilities;M532;M
+M13_SPINSTENOSIS;Spinal stenosis;M480;M
+M13_SPONDYLINFLAMNAS;Other specified/unspecified inflammatory spondylopathies;M46[8-9];M
+M13_SPONDYLOINFECTION;Other infective spondylopathies;M465;M
+M13_SPONDYLOLISTHESIS;Spondylolisthesis/Spondylolysis;M43[0-1];M
+M13_SPONDYLOPATHINOTH;Spondylopathies in diseases classified elsewhere;M49;M
+M13_SPONDYLOPATHY;Spondylopathies;M4[5-9];M
+M13_SPONDYLOPATHYNAS;Other specified/unspecified spondylopathies;M48[8-9];M
+M13_SPONDYLOSIS;Spondylosis;M47;M
+M13_SPONDYLOTRAUM;Traumatic spondylopathy;M483;M
+M13_SPONTRUPTSYNOTEND;Spontaneous rupture of synovium and tendon;M66;M
+M13_SYNOHYPERTROPH;Synovial hypertrophy, not elsewhere classified;M672;M
+M13_SYNOTEND;Disorders of synovium and tendon;M6[5-8];M
+M13_SYNOTENDINOTH;Disorders of synovium and tendon in diseases classified elsewhere;M68|M71[8-9];M
+M13_SYSTCONINOTH;Systemic disorders of connective tissue in diseases classified elsewhere;M36;M
+M13_SYSTCONNECT;Systemic connective tissue disorders;;
+M13_SYSTSLCE;Systemic sclerosis;M34;M
+M13_TAKAYASU;Aortic arch syndrome [Takayasu];M314;M
+M13_TEMPARTERIT;Temporal arteritis;M315;M
+M13_TENDONCONTRACT;Oher contracture of tendon (sheath);M671;M
+M13_TENDOSYNOVITISNAS;Other/unspecified synovitis and tenosynovitis;M65[8-9];M
+M13_THORACISPINEPAIN;Pain in thoracic spine;M546;M
+M13_TIBIALCOLLATERAL;Tibial collateral bursitis [Pellegrini-Stieda];M764;M
+M13_TIETZE;Chondrocostal junction syndrome [Tietze];M940;M
+M13_TOEDEFORMOTH;Other deformities of toe(s);M20[5-6];M
+M13_TORTICOLLIS;Torticollis;M436;M
+M13_TRANSSYNOVITIS;Transient synovitis;M673;M
+M13_TRIGGERFINGER;Trigger finger;M653;M
+M13_TROCHANTERICBURSITIS;Trochanteric bursitis;M706;M
+M13_VALGUS;Valgus deformity, not elsewhere classified;M210;M
+M13_VARUS;Varus deformity, not elsewhere classified;M211;M
+M13_VERTEBCOLLAPSE;Collapsed vertebra, not elsewhere classified;M485;M
+M13_VILLONODULAR;Villonodular synovitis (pigmented);M122;M
+M13_WEGENER;Wegener granulomatosis;M313;M
+MACULA_NAS;Degenerative macular diseases;H3539;H
+MACULA_NAS_ADVERSE;Degenerative macular diseases, drug-induced;H3539;H
+MACULAR_CYST;Macular cyst;H3536;H
+MACULAR_HOLE;Macular hole;H3537;H
+MACULAR_PUCKER;Macular pucker;H3538;H
+MATERNCAREFETUSALCO;Maternal care for (suspected) damage to fetus from alcohol;O354;O
+MEMLOSS;Memory loss;R41[1-3];R
+MENINGITIS;Meningitis;;
+MIGRAINE_TRIPTAN;Migraine, single triptan purchase ok & required. ICD-code if available is included;;
+MIGRAINE_UNSPE;Migraine, unspecified, drug-induced;G439;G
+MUCOPROCT;Mucosal proctocolitis;K515;K
+MYCOBLUNGATYPICA;Atypical mycobacterium lung infection;A310;A
+MYELOPROF_NONCML;Myeloproliferative diseases (CML excluded);D752;D
+N14_ABNORMALBLEED;Other abnormal uterine and vaginal bleeding;N93;N
+N14_ACUTENEPHRITIC;Acute nephritic syndrome;N00;N
+N14_ACUTERENFAIL;Acute renal failure;N17;N
+N14_AMENORRHEAPRIM;Amenorrhoea;N91[0-2];N
+N14_ATROPHOV;Acquired atrophy of ovary and fallopian tube;N833;N
+N14_BARTHOABSCESS;Abscess of Bartholin gland;N751;N
+N14_BARTHOCYS;Cyst of Bartholin Gland;N750;N
+N14_BARTHOOTHNAS;Other and unspecified disease of Bartholin gland;N75[8-9];N
+N14_BENIGNMAMDYSP;Benign mammary dysplasia;N60;N
+N14_BREAST;Disorders of breast;N6;N
+N14_BREASTDISOTH;Other disorders of breast;N64;N
+N14_CALCUKIDUR;Calculus of kidney and ureter;N20;N
+N14_CALCULOWER;Calculus of lower urinary tract;N21;N
+N14_CERVICAL_DYSPLASIA_ALL;All dysplastic lesions of the cervix uteri;N870|N871|N872|N879|D060|D061|D067|D069;N
+N14_CERVICAL_DYSPLASIA_NOS;Dysplastic lesion of unknown severity of the cervix uteri;N879;N
+N14_CERVICAL_HSIL;HSIL lesion of the cervix uteri;N871|N872|D060|D061|D067|D069;N
+N14_CERVICAL_LSIL;LSIL lesion of the cervix uteri;N870;N
+N14_CHRONEPHROPATH;Chronic nephritic syndrome;N03;N
+N14_CHRONKIDNEYDIS;Chronic kidney disease;N18;N
+N14_CHRONTUBULOINTNEPHRITIS;Chronic tubulo-interstitial nephritis;N11;N
+N14_CYSTITIS;Cystitis;N30;N
+N14_CYSTKID;Cyst of kidney;N281;N
+N14_DIALYSIS;Dialysis;Z992|Y841;Z
+N14_DISIMPAIRRENTUB;Disorders resulting from impaired renal tubular function;N25;N
+N14_DRUGSANDHEAVYMETAL;Drug- and heavy-metal-induced tubulo-interstitial and tubular conditions;N14;N
+N14_ENDOMET_INFERT;Endometriosis diagnosis and infertility diagnosis occurring together;;
+N14_ENDOMETRIOSIS;Endometriosis;N80;N
+N14_ENDOMETRIOSIS_ASRM_STAGE3_4;Endometriosis ASRM stages 3,4;$!$;$
+N14_ENDOMETRIOSIS_DEEP;Deep endometriosis;N808[01];N
+N14_ENDOMETRIOSIS_FALLOPIAN_TUBE;Endometriosis of fallopian tube;N802;N
+N14_ENDOMETRIOSIS_INTESTINE;Endometriosis of intestine;N805;N
+N14_ENDOMETRIOSIS_NOS;Unspecified/other endometriosis;N80[8-9];N
+N14_ENDOMETRIOSIS_OVARY;Endometriosis of ovary;N801;N
+N14_ENDOMETRIOSIS_PELVICPERITONEUM;Endometriosis of pelvic peritoneum;N803;N
+N14_ENDOMETRIOSIS_RECTPVAGSEPT_VAGINA;Endometriosis of rectovaginal septum and vagina;N804;N
+N14_ENDOMETRIOSIS_SKIN_SCAR;Endometriosis in cutaneous scar;N806;N
+N14_ENDOMETRIOSIS_UTERUS;Adenomyosis (Endometriosis of uterus);N800;N
+N14_EROSECTROPUT;Erosion and ectropion of cervix uteri;N86;N
+N14_FEMALE_GENITAL_DYSPLASIA_ALL;All dysplastic lesions of the cervix uteri, vagina or vulva;N87|N89[0-3]|N90[0-3]|D06|D071|D072;N
+N14_FEMALE_GENITAL_DYSPLASIA_NOS;Dysplastic lesion of unknown severity in the cervix uteri, vagina or vulva;N879|N893|N903;N
+N14_FEMALE_GENITAL_HSIL;HSIL lesion of the cervix uteri, vagina or vulva;N871|N872|N891|N892|N901|N902|D06[0-9]|D071|D072;N
+N14_FEMALE_GENITAL_LSIL;LSIL lesion of the cervix uteri, vagina or vulva;N870|N890|N900;N
+N14_FEMALEGENINF;Inflammatory diseases of female pelvic organs;N7;N
+N14_FEMALEGENNONINF;Noninflammatory disorders of female genital tract;N8|N9[0-8];N
+N14_FEMALEINFERT;Female infertility;N97;N
+N14_FEMGENFISTUL;Fistulae involving female genital tract;N82;N
+N14_FEMGENPAIN;Pain and other conditions associated with female genital organs and menstrual cycle;N94;N
+N14_FEMGENPROL;Female genital prolapse;N81;N
+N14_FEMPELINFINOTH;Female pelvic inflammatory disorders in diseases classified elsewhere;N74;N
+N14_FIANOV;Female infertility, associated with anovulation;N970;N
+N14_FIOTHNAS;Female infertility, cervigal, vaginal, other or unspecified origin;N97[3-9];N
+N14_FITUB;Female infertility, tubal origin;N971;N
+N14_FIUTERINE;Female infertility, uterine origin;N972;N
+N14_GALACTORRHEA;Galactorrhea;N643;N
+N14_GENITOUROTH;Other disorders of the genitourinary system;N99;N
+N14_GLOMEINOTH;Glomerular disorders in diseases classified elsewhere;N08;N
+N14_GLOMER_NEPHRITIS;Glomerulonephritis;;
+N14_GLOMERULAR;Glomerular diseases;;
+N14_HABITABORT;Habitual aborter;N96;N
+N14_HENOCHSCHONLEIN_NEPHRITIS;Henoch-Schönlein purpura nephritis (HSPN);N082&D690;N
+N14_HYDROCELE;Hydrocele;N43;N
+N14_HYDRONEPHR;Hydronephrosis;N13[0-3];N
+N14_HYPERTROPHYBREAST;Hypertrophy of breast;N62;N
+N14_HYPERTROPHYBREAST_BOTH;Hypertrophy of breast in women and men;N62;N
+N14_IGA_NEPHROPATHY;IgA nephropathy (IgA glomerulonephritis);N082&D8980;N
+N14_IMPOTENCE;Impotence;N484;N
+N14_INFCERVIX;Inflammatory disease of cervix uteri;N72;N
+N14_INFLAMALEGEN;Inflammatory disorders of male genital organs, not elsewhere classified;N49;N
+N14_INFLAMMBREAST;Inflammatory disorders of breast;N61;N
+N14_INFLUTH;Inflammatory disease of uterus;N71;N
+N14_ISOLPROTEINURIA;Isolated proteinuria with specified morphological lesion;N06;N
+N14_KIDUROTH;Other disorders of kidney and ureter;N2[5-9];N
+N14_LUMPNASBREAST;Unspecified lump in breast;N63;N
+N14_MAEMABROAD;Haematosalpinx/Haematoma of broad ligament;N836|N837;N
+N14_MALEGEN;Diseases of male genital organs;N[4-5];N
+N14_MALEGENINOTH;Disorders of male genital organs in diseases classified elsewhere;N51;N
+N14_MALEINFERT;Male infertility;N46;N
+N14_MENOPAUSOT;Other menopausal disorders;N951|N95[3-9];N
+N14_MENORRHAGIA;Menorrhagia;N920;N
+N14_MENSIRREG;Irregular menses;N91|N921|N925|N926;N
+N14_MESNRUIRREG;Excessive, frequent and irregular menstruation;N92;N
+N14_NEPHRITICNAS;Unspecified nephritic syndrome;N05;N
+N14_NEPHROPATHYHER;Hereditary nephropathy, not elsewhere classified;N07;N
+N14_NEPHROTICSYND;Nephrotic syndrome;N04;N
+N14_NEUROMUSCDYSBLADD;Neuromuscular dysfunction of bladder;N31;N
+N14_OBSTRUREFLUROPATH;Other obstructive and reflux uropathy;N13;N
+N14_OLIGOMEN;Oligomenorrhoea;N91[3-5];N
+N14_ORHCEPINDIDYMITIS;Orchitis and epididymitis;N45;N
+N14_OTHBLADD;Other disorders of  bladder;N32;N
+N14_OTHDISMALEGEN;Other disorders of male genital organs;N50;N
+N14_OTHETNASKIDUR;Other specified disorders of kidney and ureter;N280|N28[8-9];N
+N14_OTHFEMPELINF;Other female pelvic inflammatory diseases;N73;N
+N14_OTHINFVAGVULV;Other inflammation of vagina/vulva;N768;N
+N14_OTHNONINFCERVIX;Other noninflammatory disorders of cervix uteri;N88;N
+N14_OTHNONINFOVA;Other and unspecified noninflammatory disorders of ovary, fallopian tube and broad ligament;N83[8-9];N
+N14_OTHNONINFUTER;Other noninflammatory disorders of uterus, except cervix;N85;N
+N14_OTHNONINFVAG;Other noninflammatory disorders of vagina;N89;N
+N14_OTHNONINFVULV;Other noninflammatory disorders of vulva and perineum;N90;N
+N14_OTHPENIS;Other disorders of penis;N48;N
+N14_OVAR_HYPERSTIM;Ovarian hyperstimulation (induction);N981;N
+N14_OVARTORS;Torsion of ovary, ovarian pedicle and fallopian tube;N835;N
+N14_OVARYCYST;Ovarian cyst;N83[0-2];N
+N14_PHIMOSIS;Redundant prepuce, phimosis and paraphimosis;N47;N
+N14_POLYPFEMGEN;Polyp of the female genital tract;N84;N
+N14_POSTMENATRVAG;Postmenopausal atrophic vaginitis;N952;N
+N14_POSTMENBLEED;Postmenopausal bleeding;N950;N
+N14_PREMENSTSYNDROM;Premenstrual syndrome;N943;N
+N14_PROHERNOV;Prolapse and hernia of ovary and fallopian tube;N834;N
+N14_PROSTAOTH;Other disorders of prostate;N42;N
+N14_PROSTATITIS;Inflammatory diseases of prostate (prostatitis);N41;N
+N14_PROSTHYPERPLA;Hyperplasia of prostate;N40;N
+N14_PYELONEPHR;Acute tubulo-interstitial nephritis;N10;N
+N14_RAPIDPROGNEPHRITIC;Rapidly progressive nephritic syndrome;N01;N
+N14_RECURANDPERHEAMATUR;Recurrent and persistent haematuria;N02;N
+N14_RENALCOLNAS;Unspecified renal colic;N23;N
+N14_RENALTUB;Renal tubulo-interstitial diseases;N1;N
+N14_RENALTUBULOINOTH;Renal tubulo-interstitial disorders in diseases classified elsewhere;N16;N
+N14_RENALTUBULOOTH;Other renal tubulo-interstitial diseases;N15;N
+N14_RENFAIL;Renal failure;;
+N14_RENFAILNAS;Unspecified kidney failure;N19;N
+N14_SALPHOOPH;Salpingitis and oophoritis;N70;N
+N14_SMALLKIDNEY;Small kidney of unknown cause;N27;N
+N14_SPERMATOCELE;Spermatocele;N434;N
+N14_TORSIOTEST;Torsion of testis;N44;N
+N14_TUBULOINTNEPHRNAS;Tubulo-interstitial nephritis, not specified as acute or chronic;N12;N
+N14_ULCERVAGVUL;Ulcer of vagina/vulva;N76[5-6];N
+N14_UNSPECKIDCONTR;Unspecified contracted kidney;N26;N
+N14_URETHRALSTRICT;Urethral stricture;N35;N
+N14_URETHRAOTH;Other disorders of urethra and urinary system;N36|N39;N
+N14_URETHRITISANDURSYNDR;Urethritis and urethral syndrome;N34;N
+N14_URINOTH;Other diseases of urinary system;N3;N
+N14_UTER_POLYP;Uterine polyps;N841;N
+N14_VAGINAL_DYSPLASIA_ALL;All dysplastic lesions of the vagina;N890|N891|N892|N893|D072;N
+N14_VAGINAL_HSIL;HSIL lesion of the vagina;N891|N892|D072;N
+N14_VAGINAL_LSIL;LSIL lesion of the vagina;N890;N
+N14_VAGINITIS;Vaginitis/vulvovaginitis/vulvitis/abscess of vulva;N76[0-4];N
+N14_VULVAL_DYSPLASIA_ALL;All dysplastic lesions of the vulva;N900|N901|N902|N903|D071;N
+N14_VULVAL_DYSPLASIA_NOS;Dysplastic lesion of the vulva of unknown severity;N903;N
+N14_VULVAL_HSIL;HSIL lesion of the vulva;N901|N902|D071;N
+N14_VULVAL_LSIL;LSIL lesion of the vulva;N900;N
+N14_VULVOVAGINFINOTH;Vulvovaginal ulceration/inflammation in other diseases;N77;N
+NAFLD;Nonalcoholic fatty liver disease;K760;K
+NASH;Nonalcoholic steatohepatitis;K7380;K
+NECROVASC_FG;Other necrotizing vasculopathies (FG);;
+NEPHROP_INDUCED_OTHER_DRUGS_MEDICAM_BIOLO_SUBST;Nephropathy induced by other drugs, medicaments and biological substances;N141;N
+NEURODEGOTH;Other degenerative diseases of the nervous system;G3;G
+NIV;Non-invasive ventilation;;
+O15_ABORT_FAILED;Failed attempted abortion;O07;O
+O15_ABORT_MEDICAL;Medical abortion;O04;O
+O15_ABORT_OTHER;Other abortion;O05;O
+O15_ABORT_SPONTAN;Spontaneous abortion;O03;O
+O15_ABORT_UNS;Unspecified abortion;O06;O
+O15_AMNIOT_OTHER;Other disorders of amniotic fluid and membranes;O41;O
+O15_ANTENAT_ABNORM;Abnormal findings on antenatal screening of mother;O28;O
+O15_ANTEPART_HAEM_NAS;Antepartum haemorrhage, not elsewhere classified;O46;O
+O15_BIRTH_BREAT_INFECT;Infections of breast associated with childbirth;O91;O
+O15_BREAST_LACT_OTHER_DIS;Other disorders of breast and lactation associated with childbirth;O92;O
+O15_COMPLIC_ABORT_ECTOP_MOLAR;Complications following abortion and ectopic and molar pregnancy;O08;O
+O15_COMPLIC_LAB_DELIV;Complications of labour and delivery;O[6-7];O
+O15_COMPLIC_PUERP;Complications predominantly related to the puerperium;O8[5-9]|O9[0-2];O
+O15_CONCEPT_ABNORM;Other abnormal products of conception;O02;O
+O15_DELIV_CAESAR;Single delivery by caesarean section;O82;O
+O15_DELIV_FORCEP_VAC;Single delivery by forceps and vacuum extractor;O81;O
+O15_DELIV_MULTIP;Multiple delivery;O84;O
+O15_DELIV_OTHER_ASSIST;Other assisted single delivery;O83;O
+O15_DELIV_PERIN_LACER;Perineal laceration during delivery;O70;O
+O15_DELIV_SPONT;Single spontaneous delivery;O80;O
+O15_ECLAMPSIA;Eclampsia;O15;O
+O15_EXCESS_VOMIT_PREG;Excessive vomiting in pregnancy;O21;O
+O15_EXIST_HYPERT_COMPLIC;Pre-existing hypertension complicating pregnancy, childbirth and the puerperium;O10;O
+O15_FAILED_INDUCT;Failed induction of labour;O61;O
+O15_FALSE_LAB;False labour;O47;O
+O15_GESTAT_HYPERT;Gestational [pregnancy-induced] hypertension;O13;O
+O15_GESTAT_OEDEM_PREINUR;Gestational [pregnancy-induced] oedema and proteinuria without hypertension;O12;O
+O15_HAEMORRH_EARLY_PREG;Haemorrhage in early pregnancy;O20;O
+O15_HYPTENSPREG;Pregnancy hypertension;O10|O11|O13|O14|O15|O16;O
+O15_ICP_WIDE;Intrahepatic Cholestasis of Pregnancy (ICP) , incl. ICD-8;O266;O
+O15_LABOUR_ABNORM_FORCES;Abnormalities of forces of labour;O62;O
+O15_LABOUR_ANEST_COMPLIC;Complications of anaesthesia during labour and delivery;O74;O
+O15_LABOUR_FETAL_STRESS;Labour and delivery complicated by fetal stress [distress];O68;O
+O15_LABOUR_INTRAPART_HAEMORRH;Labour and delivery complicated by intrapartum haemorrhage, not elsewhere classified;O67;O
+O15_LABOUR_LONG;Long labour;O63;O
+O15_LABOUR_MALPOS;Obstructed labour due to malposition and malpresentation of fetus;O64;O
+O15_LABOUR_OBSTR_OTHER;Other obstructed labour;O66;O
+O15_LABOUR_OTHER;Other complications of labour and delivery, not elsewhere classified;O75;O
+O15_LABOUR_PELVIC_ABNORM;Obstructed labour due to maternal pelvic abnormality;O65;O
+O15_LABOUR_UMBILICAL;Labour and delivery complicated by umbilical cord complications;O69;O
+O15_MAT_CARE_MALPRESENT;Maternal care for known or suspected malpresentation of fetus;O32;O
+O15_MATERN_CARE;Maternal care related to the fetus and amniotic cavity and possible delivery problems;O[3-4];O
+O15_MATERN_CARE_CERVICAL_INCOMPETENCE;Maternal care for cervical incompetence;O343;O
+O15_MATERN_CARE_DISPROP;Maternal care for known or suspected disproportion;O33;O
+O15_MATERN_CARE_FETAL_ABNORM;Maternal care for known or suspected fetal abnormality and damage;O35;O
+O15_MATERN_CARE_OTHER;Maternal care for other known or suspected fetal problems;O36;O
+O15_MATERN_CARE_PELVIC_ABNORM;Maternal care for known or suspected abnormality of pelvic organs;O34;O
+O15_MATERN_HYPERT_UNS;Unspecified maternal hypertension;O16;O
+O15_MATERN_INFECT_ELSEWHERE;Maternal infectious and parasitic diseases classifiable elsewhere but complicating pregnancy, childbirth and  the puerperium;O98;O
+O15_MEMBR_PREMAT_RUPT;Premature rupture of membranes;O42;O
+O15_MULTIP_GEST;Multiple gestation;O30;O
+O15_MULTIP_GEST_COMPLIC;Complications specific to multiple gestation;O31;O
+O15_OBSTET_TRAUMA_OTHER;Other obstetric trauma;O71;O
+O15_OTHER_MATERN_DIS_ELSEWHERE;Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium;O99;O
+O15_PLAC_DISORD;Placental disorders;O43;O
+O15_PLAC_PRAEVIA;Placenta praevia;O44;O
+O15_PLAC_PREMAT_SEPAR;Premature separation of placenta [abruptio placentae];O45;O
+O15_POLYHYDR;Polyhydramnios;O40;O
+O15_POOR_FETGRO;Poor fetal growth;O365;O
+O15_POSTPART_HAEMORRH_ANATOMY;Postpartum haemorrhage due to anatomy;O721;O
+O15_POSTPART_HAEMORRH_PLACENTA;Postpartum haemorrhage due to retained placenta;O720;O
+O15_PRE_OR_ECLAMPSIA;Pre-eclampsia or eclampsia;O11|O140|O141|O149|O150|O151|O152|O159;O
+O15_PREEC_OR_FETGRO;Pre-eclampsia or poor fetal growth;O365;O
+O15_PREECLAMPS;Pre-eclampsia;O14;O
+O15_PREECLAMPS_CHRONIC_HYPERT;Pre-eclampsia superimposed on chronic hypertension;O11;O
+O15_PREG_ABORT;Pregnancy with abortive outcome;O0;O
+O15_PREG_ANESTH_COMPL;Complications of anaesthesia during pregnancy;O29;O
+O15_PREG_ECTOP;Ectopic pregnancy;O00;O
+O15_PREG_GU_INFECT;Infections of genitourinary tract in pregnancy;O23;O
+O15_PREG_HYDAT;Hydatidiform mole;O01;O
+O15_PREG_MATERN_CARE;Maternal care for other conditions predominantly related to pregnancy;O26;O
+O15_PREG_OTHER_MAT_DISORD;Other maternal disorders predominantly related to pregnancy;O2;O
+O15_PREG_PROLONGED;Prolonged pregnancy;O48;O
+O15_PREG_VENOUS_HAEMORRH;Venous complications and haemorrhoids in pregnancy;O22;O
+O15_PRETERM;Preterm labour and delivery;O60;O
+O15_PUERP_ANEST_COMPL;Complications of anaesthesia during the puerperium;O89;O
+O15_PUERP_COMPL_NAS;Complications of the puerperium, not elsewhere classified;O90;O
+O15_PUERP_INFECT_OTHER;Other puerperal infections;O86;O
+O15_PUERP_SEPSIS;Puerperal sepsis;O85;O
+O15_RETAINED_PLAC_MEMB_NO_HEAMORRH;Retained placenta and membranes, without haemorrhage;O73;O
+O15_TWIN_GEST;Twin gestation;O300;O
+O15_VENOUS_COMPLIC;Venous complications and haemorrhoids in the puerperium;O87;O
+OFFICIAL_TILASTOKESKUS_DEATH;Alcohol related diseases, tilastokeskus definition, death only;;
+OSTEON_DRUGS;Osteonecrosis due to drugs;M871;M
+OSTEOPOROSIS_FRACTURE_FG;Osteoporosis with pathological fracture (FG);;
+OSTPOPATFRACTURE;Drug-induced osteoporosis with pathological fracture;M804;M
+OSTPOPATFRCTURE_POSTEMENO;Postmenopausal osteoporosis with pathological fracture;M800;M
+OTHER_DRUGADVERS_SECONDA_PARKINSONI;Other drug-induced secondary parkinsonism;G211;G
+OTHER_SYSTCON_FG;Other systemic involvement of connective tissue (FG);;
+P16_BACTERIAL_SEPSIS_NEWBO;Bacterial sepsis of newborn;P36;P
+P16_BIRTH_ASPHYXIA;Birth asphyxia;P21;P
+P16_BIRTH_TRAUMA;Birth trauma;P1[0-5];P
+P16_BIRTHINJY_PERIP_NERVOUS_SYSTEM;Birth injury to peripheral nervous system;P14;P
+P16_CARDIOV_DISORD_ORIGINA_PERINA_PERIOD;Cardiovascular disorders originating in the perinatal period;P29;P
+P16_CHRONIC_RESPI_DISEA_ORIGINA_PERINA_PERIOD;Chronic respiratory disease originating in the perinatal period;P27;P
+P16_DISORD_MUSCLE_TONE_NEWBO;Disorders of muscle tone of newborn;P94;P
+P16_DISORD_RELATED_GESTATION_LOW_BIRTHWGHTT_NECIFIED;Disorders related to short gestation and low birth weight, not elsewhere classified;P07;P
+P16_DISORD_RELATED_LONG_GESTATION_HIGH_BIRTHWGHTT;Disorders related to long gestation and high birth weight;P08;P
+P16_FEEDI_PROBL_NEWBO;Feeding problems of newborn;P92;P
+P16_FET_NEWB_COMPLICATIO_PLACEN_CORD_MEMBRANES;Fetus and newborn affected by complications of placenta, cord and membranes;P02;P
+P16_FET_NEWB_MATERN_COMPLICATIO_PREGNAC;Fetus and newborn affected by maternal complications of pregnancy;P01;P
+P16_FET_NEWB_MATERN_COND_UNREL_PRESENT_PREGNAC;Fetus and newborn affected by maternal conditions that may be unrelated to present pregnancy;P00;P
+P16_FET_NEWB_MATERN_FACTO_COMPLICATIO_PREGNAC_LABOUR_DELIV;Fetus and newborn affected by maternal factors and by complications of pregnancy, labour and delivery;P0[0-4];P
+P16_FET_NEWB_OTH_COMPLICATIO_LABOUR_DELIV;Fetus and newborn affected by other complications of labour and delivery;P03;P
+P16_FETAL_DEATH_UNSP_CAUSE;Fetal death of unspecified cause;P95;P
+P16_INFECTIONS_SPECIFIC_PERINA_PERIOD;Infections specific to the perinatal period;P3;P
+P16_INTERSTITIAL_EMPHY_RELATED_COND_ORIGINA_PERINA_PERIOD;Interstitial emphysema and related conditions originating in the perinatal period;P25;P
+P16_NEONTAL_JAUND_OTH_UNSP_CAUSES;Neonatal jaundice from other and unspecified causes;P59;P
+P16_OTH_DISORD_ORIGINA_PERINA_PERIOD;Other disorders originating in the perinatal period;P9;P
+P16_OTH_INFECTIONS_SPECIFIC_PERINA_PERIOD;Other infections specific to the perinatal period;P39;P
+P16_OTH_PERINA_HAEMATOL_DISORD;Other perinatal haematological disorders;P61;P
+P16_RESPI_CARDIOV_DISORD_SPECIFIC_PERINA_PERIOD;Respiratory and cardiovascular disorders specific to the perinatal period;P2;P
+P16_RESPI_DISTR_NEWBO;Respiratory distress of newborn;P22;P
+P16_SLOW_FETAL_GROWTH_FETAL_MALNUTRITION;Slow fetal growth and fetal malnutrition;P05;P
+P16_TRANSITO_DISORD_CARBOH_METABOLISM_SPECIFIC_FETUS_NEWBO;Transitory disorders of carbohydrate metabolism specific to fetus and newborn;P70;P
+PAIN;Pain (limb, back, neck, head abdominally);;
+PHANTOMLIMB;Phantom limb syndrome with pain;G546;G
+PHLEBI_THROMBOP_LOWER_EXTREMITI_UNSPE;Phlebitis and thrombophlebitis of lower extremities, unspecified, drug-induced;I803;I
+PHLEBI_THROMBOP_OTHER_DEEP_VESSE_LOWER_EXTREMITI;Phlebitis and thrombophlebitis of other deep vessels of lower extremities, drug-induced;I8029;I
+PHLEBI_THROMBOP_SUPERF_VESSE_LOWER_EXTREMITI;Phlebitis and thrombophlebitis of superficial vessels of lower extremities, drug-induced;I800;I
+PNEUMO_SEPTHICHE;Pneumococcal septicemia;A403;A
+POLLENALLERG;Pollen allergy;J301;J
+POLYCYTVERA;Polycythaemia vera;D45;D
+PRIM_COXARTHROSIS;Primary coxarthrosis, bilateral;M160;M
+PRIM_KNEEARTHROSIS;Primary gonarthrosis, bilateral;M170;M
+PSORI_STRICT;Psoriasis (vulgaris), strict definition;;
+PULM_INFECTIONS;COPD/asthma/ILD related infections;;
+Q17_ANKYLOGLOSSIA;Ankyloglossia;Q381;Q
+Q17_APVR;Abnormal pulmonary venous return;Q2112|Q262|Q263|Q264;Q
+Q17_ASD;Atrial septal defect;Q211;Q
+Q17_AVSD;Atrioventricular septal defect;Q212;Q
+Q17_BALANC_REARR_STRUCTURAL_MARKERS_NOT_ELSEW_CLASSIFIED;Balanced rearrangements and structural markers, not elsewhere classified;Q95;Q
+Q17_BICUSP_AORTIC_VALVE;Bicuspidal aortic valve syndrome;Q2311;Q
+Q17_CHROMOSOMAL_ABNORMALITI_NOT_ELSEW_CLASSIFIED;Chromosomal abnormalities, not elsewhere classified;Q9;Q
+Q17_CLEFT_AND_CARIES;Caries in Clefts patients;K02;K
+Q17_CLEFT_HARD_PALATE_NOS;Cleft hard palate NOS;Q351;Q
+Q17_CLEFT_LIP;Cleft lip;Q36;Q
+Q17_CLEFT_LIP_CLEFT_PALATE;Cleft lip, lip and palate or palate;Q3[5-7];Q
+Q17_CLEFT_LIP_OR_LIP_AND_PALATE;Cleft lip and cleft lip and palate;Q3[67];Q
+Q17_CLEFT_PALATE;Cleft palate;Q35;Q
+Q17_COMPLEX_CARD_DEFEC;Complex cardiac defects;Q2040|Q2041|Q2048|Q205|Q2060|Q2061|Q208|Q209|Q2115|Q2180|Q225|Q242|Q2521|Q2544;Q
+Q17_CONGEN_ABSENCE_ATRES_STENO_LARGE_INTESTINE;Congenital absence, atresia and stenosis of large intestine;Q42;Q
+Q17_CONGEN_DEFORMITI_FEET;Congenital deformities of feet;Q66;Q
+Q17_CONGEN_DEFORMITI_HIP;Congenital deformities of hip;Q65;Q
+Q17_CONGEN_HYDROCEPHALUS;Congenital hydrocephalus;Q03;Q
+Q17_CONGEN_ICHTHYOSIS;Congenital ichthyosis;Q80;Q
+Q17_CONGEN_LENS_MALFO;Congenital lens malformations;Q12;Q
+Q17_CONGEN_MALFO_ANTER_SEGMENT_EYE;Congenital malformations of anterior segment of eye;Q13;Q
+Q17_CONGEN_MALFO_BILI;Congenital malformation of biliary tract;Q44[0-5];Q
+Q17_CONGEN_MALFO_BREAST;Congenital malformations of breast;Q83;Q
+Q17_CONGEN_MALFO_CARDIAC_CHAMB_CONNECTIO;Congenital malformations of cardiac chambers and connections;Q20;Q
+Q17_CONGEN_MALFO_CIRCULATO_SYSTEM;Congenital malformations of the circulatory system;Q2;Q
+Q17_CONGEN_MALFO_DEFORMAT_MUSCULOS_SYSTEM;Congenital malformations and deformations of the musculoskeletal system;Q6[5-9]|Q7;Q
+Q17_CONGEN_MALFO_EAR_CAUSI_IMPAIRM_HEARING;Congenital malformations of ear causing impairment of hearing;Q16;Q
+Q17_CONGEN_MALFO_EYE_EAR_FACE_NECK;Congenital malformations of eye, ear, face and neck;Q1;Q
+Q17_CONGEN_MALFO_EYELID_LACRIMAL_APPARA_ORBIT;Congenital malformations of eyelid, lacrimal apparatus and orbit;Q10;Q
+Q17_CONGEN_MALFO_GALLB_BILE_DUCTS_LIVER;Congenital malformations of gallbladder, bile ducts and liver;Q44;Q
+Q17_CONGEN_MALFO_GENITAL_ORGANS;Congenital malformations of genital organs;Q5;Q
+Q17_CONGEN_MALFO_GREAT_ARTERIES;Congenital malformations of great arteries;Q25;Q
+Q17_CONGEN_MALFO_GREAT_VEINS;Congenital malformations of great veins;Q26;Q
+Q17_CONGEN_MALFO_LARYNX;Congenital malformations of larynx;Q31;Q
+Q17_CONGEN_MALFO_LUNG;Congenital malformations of lung;Q33;Q
+Q17_CONGEN_MALFO_MUSCULOS_SYSTEM_NOT_ELSEW_CLASSIFIED;Congenital malformations of the musculoskeletal system, not elsewhere classified;Q79;Q
+Q17_CONGEN_MALFO_NERVOUS_SYSTEM;Congenital malformations of the nervous system;Q0;Q
+Q17_CONGEN_MALFO_NOSE;Congenital malformations of nose;Q30;Q
+Q17_CONGEN_MALFO_OESOPHAGUS;Congenital malformations of oesophagus;Q39;Q
+Q17_CONGEN_MALFO_OVARIES_FALLOP_TUBES_BROAD_LIGAM;Congenital malformations of ovaries, fallopian tubes and broad ligaments;Q50;Q
+Q17_CONGEN_MALFO_POSTERI_SEGMENT_EYE;Congenital malformations of posterior segment of eye;Q14;Q
+Q17_CONGEN_MALFO_PULMONARY_TRICU_VALVES;Congenital malformations of pulmonary and tricuspid valves;Q22;Q
+Q17_CONGEN_MALFO_RESPI_SYSTEM;Congenital malformations of the respiratory system;Q3[0-4];Q
+Q17_CONGEN_MALFO_RETI;Congenital retinoschisis;Q141;Q
+Q17_CONGEN_MALFO_SPINE_BONY_THORAX;Congenital malformations of spine and bony thorax;Q76;Q
+Q17_CONGEN_MALFO_TRACHEA_BRONCHUS;Congenital malformations of trachea and bronchus;Q32;Q
+Q17_CONGEN_MALFO_URINARY_SYSTEM;Congenital malformations of the urinary system;Q6[0-4];Q
+Q17_CONGEN_MALFO_UTERUS_CERVIX;Congenital malformations of uterus and cervix;Q51;Q
+Q17_CONGEN_MUSCULOS_DEFORMITI_HEAD_FACE_SPINE_CHEST;Congenital musculoskeletal deformities of head, face, spine and chest;Q67;Q
+Q17_CONGEN_OBSTRUCTIVE_DEFECTS_RENAL_PELVIS_CONGEN_MALFO_URETER;Congenital obstructive defects of renal pelvis and congenital malformations of ureter;Q62;Q
+Q17_CONOTR_DEFEC;Conotruncal defects;Q2000|Q2001|Q201|Q202|Q203|Q2130|Q2131|Q2132|Q2133|Q214|Q220|Q221|Q2571|Q2573|Q2578;Q
+Q17_CRANIOSYNOSTOSIS;Craniosynostosis EXCLUDE syndromes;Q750;Q
+Q17_CYSTIC_KIDNEY_DISEA;Cystic kidney disease;Q61;Q
+Q17_DOWNS_SYNDR;Down's syndrome;Q90;Q
+Q17_EHLER_SYNDR;Ehlers-Danlos syndrome;Q796;Q
+Q17_EPIDERMOL_BULLOSA;Epidermolysis bullosa;Q81;Q
+Q17_HYPOSPADIAS;Hypospadias;Q54;Q
+Q17_LVOTO_BROAD;Left ventricular outflow tract obstruction (LVOTO), broad definition;Q244|Q251|Q2520|Q253|Q2540;Q
+Q17_LVOTO_NARROW;Left ventricular outflow tract obstruction, narrow definition;Q230|Q2310|Q2311|Q2320|Q2321|Q233|Q234|Q238|Q239|Q244|Q251|Q2520|Q253|Q2540;Q
+Q17_MARFAN;Marfan's syndrome;Q874;Q
+Q17_MASTOCYTOSIS;Mastocytosis;Q822;Q
+Q17_MONOSOMI_DELET_AUTOSOMES_NOT_ELSEW_CLASSIFIED;Monosomies and deletions from the autosomes, not elsewhere classified;Q93;Q
+Q17_NEUROFIBROMATOSIS_1;Neurofibromatosis, type 1;Q8500;Q
+Q17_NEUROFIBROMATOSIS_2;Neurofibromatosis, type 2;Q8501;Q
+Q17_OSTEOCHONDROD_W_DEFECTS_GROWTH_TUBULAR_BONES_SPINE;Osteochondrodysplasia with defects of growth of tubular bones and spine;Q77;Q
+Q17_OSTEOGEN_IMPERFECTA;Osteogenesis imperfecta;Q7800;Q
+Q17_OTHER_CHROMOSOME_ABNORMALITI_NOT_ELSEW_CLASSIFIED;Other chromosome abnormalities, not elsewhere classified;Q99;Q
+Q17_OTHER_CONGEN_MALFO;Other congenital malformations;Q8;Q
+Q17_OTHER_CONGEN_MALFO_BRAIN;Other congenital malformations of brain;Q04;Q
+Q17_OTHER_CONGEN_MALFO_CIRCULATO_SYSTEM;Other congenital malformations of circulatory system;Q28;Q
+Q17_OTHER_CONGEN_MALFO_DIGES_SYSTEM1;Other congenital malformations of the digestive system;Q3[8-9]|Q4[0-5];Q
+Q17_OTHER_CONGEN_MALFO_DIGES_SYSTEM2;Other congenital malformations of digestive system;Q45;Q
+Q17_OTHER_CONGEN_MALFO_EAR;Other congenital malformations of ear;Q17;Q
+Q17_OTHER_CONGEN_MALFO_FACE_NECK;Other congenital malformations of face and neck;Q18;Q
+Q17_OTHER_CONGEN_MALFO_FEMALE_GENITALIA;Other congenital malformations of female genitalia;Q52;Q
+Q17_OTHER_CONGEN_MALFO_HEART;Other congenital malformations of heart;Q24;Q
+Q17_OTHER_CONGEN_MALFO_INTESTINE;Other congenital malformations of intestine;Q43;Q
+Q17_OTHER_CONGEN_MALFO_KIDNEY;Other congenital malformations of kidney;Q63;Q
+Q17_OTHER_CONGEN_MALFO_LIMBS;Other congenital malformations of limb(s);Q74;Q
+Q17_OTHER_CONGEN_MALFO_MALE_GENITAL_ORGANS;Other congenital malformations of male genital organs;Q55;Q
+Q17_OTHER_CONGEN_MALFO_NERVOUS_SYSTEM;Other congenital malformations of nervous system;Q07;Q
+Q17_OTHER_CONGEN_MALFO_NOT_ELSEW_CLASSIFIED;Other congenital malformations, not elsewhere classified;Q89;Q
+Q17_OTHER_CONGEN_MALFO_PERIP_VASCULAR_SYSTEM;Other congenital malformations of peripheral vascular system;Q27;Q
+Q17_OTHER_CONGEN_MALFO_RESPI_SYSTEM;Other congenital malformations of respiratory system;Q34;Q
+Q17_OTHER_CONGEN_MALFO_SKIN;Other congenital malformations of skin;Q82;Q
+Q17_OTHER_CONGEN_MALFO_SKULL_FACE_BONES;Other congenital malformations of skull and face bones;Q75;Q
+Q17_OTHER_CONGEN_MALFO_TONGUE_MOUTH_PHARYNX;Other congenital malformations of tongue, mouth and pharynx;Q38;Q
+Q17_OTHER_CONGEN_MALFO_UPPER_ALIME_TRACT;Other congenital malformations of upper alimentary tract;Q40;Q
+Q17_OTHER_CONGEN_MALFO_URINARY_SYSTEM;Other congenital malformations of urinary system;Q64;Q
+Q17_OTHER_CONGEN_MUSCULOS_DEFORMITI;Other congenital musculoskeletal deformities;Q68;Q
+Q17_OTHER_OSTEOCHONDROD;Other osteochondrodysplasias;Q78;Q
+Q17_OTHER_SEX_CHROMOSOME_ABNORMALITI_MALE_PHENOT_NOT_ELSEW_CLASSIFIED;Other sex chromosome abnormalities, male phenotype, not elsewhere classified;Q98;Q
+Q17_OTHER_SPECIFE_CONGEN_MALFO_SYNDR_AFFECTING_MULTIPLE_SYSTEMS;Other specified congenital malformation syndromes affecting multiple systems;Q87;Q
+Q17_PDA;Isolated patent ductus arteriosus;Q250;Q
+Q17_PHAKOMATOSES_NOT_ELSEW_CLASSIFIED;Phakomatoses, not elsewhere classified;Q85;Q
+Q17_REDUCT_DEFECTS_LOWER_LIMB;Reduction defects of lower limb;Q72;Q
+Q17_REDUCT_DEFECTS_UPPER_LIMB;Reduction defects of upper limb;Q71;Q
+Q17_RENAL_AGENE_OTHER_REDUCT_DEFECTS_KIDNEY;Renal agenesis and other reduction defects of kidney;Q60;Q
+Q17_RVOTO;Right ventricular outflow tract obstruction;Q220|Q221|Q222|Q223|Q2240|Q2241|Q226|Q228|Q229|Q243|Q255|Q256;Q
+Q17_SEPTA_DEFEC;Septal defects;Q2100|Q2108|Q2109|Q2110|Q2111|Q2112|Q2113|Q2118|Q2119|Q2188|Q219;Q
+Q17_SPINA_BIFIDA;Spina bifida;Q05;Q
+Q17_SYNDACTYLY;Syndactyly;Q70;Q
+Q17_TUBEROUS_SCLEROSIS;Tuberous sclerosis 1;Q851;Q
+Q17_UNDES_TESTICLE;Undescended testicle;Q53;Q
+Q17_VACTREL;Vertebral, anorectal, cardiavascular, thracheoesophagial, renal and limb anomaly;Q8726|Q76|Q675|Q42|Q43[5-9]|Q20|Q21|Q22|Q23|Q24|Q25|Q26[1-4]|Q39|Q6[0-4]|Q69[0-1]|Q70[014]|Q71;Q
+R18_ANOREXIA;Anorexia;R630;R
+R18_RETEN_URINE;Retention of urine;R33;R
+REITER;Reiter disease;M023;M
+RESP_ILL_DIS_CLASS_ELSEWHERE;Respiratory disorders in diseases classified elsewhere;J99;J
+RHEU_ARTHRITIS_OTH;Other arthritis (FG);;
+RHEUMA_ARHTROPAT_REACTIVE;Reactive arthropathies, FINNGEN;;
+RHEUMA_NOS;Other/unspecified rheumatoid arthritis;M06[8-9];M
+RHEUMA_OTHER_WIDE;Other (seronegative) rheumatoid arthritis, wide;M06;M
+RHEUMA_SERONEG;Seronegative rheumatoid arthritis;M060;M
+RHEUMA_SEROPOS_STRICT;Seropositive rheumatoid arthritis, strict definition;;
+RHEUMA_SEROPOS_WIDE;Seropositive rheumatoid arthritis, wide;M05;M
+RHEUMAT_LUNG;Rheumatoid lung disease;M051|J990;M
+RHINITIS_VASOMOTOR;Vasomotor rhinitis (mode);%J300;J
+SCND_OTH_COXARTHROSIS;Other secondary coxarthrosis;M167;M
+SCND_OTH_KNEEARTHROSIS;Other secondary gonarthrosis;M175;M
+SFN;Small fibre neuropathy;G608|G628|G633;G
+SLE_FG;SLE (Finngen);;
+SLE_OTH;Other forms of systemic lupus erythematosus;M328;M
+SLEEP;Sleep disorders (combined);;
+SMOKING_DEPEND;Smoking dependency;F17;F
+SPONDYLOARTHRITIS;Spondyloarthritis;M4[5-6];M
+SPONDYLOPATHY_FG;Spondylopathies (FG);;
+ST19_FRACT_FEMUR;Fracture of femur;S72;S
+ST19_FRACT_FOOT_ANKLE;Fracture of foot, except ankle;S92;S
+ST19_FRACT_FOREA;Fracture of forearm;S52;S
+ST19_FRACT_INVOLVI_MULTIPLE_BODY_REGIONS;Fractures involving multiple body regions;T02;T
+ST19_FRACT_LOWER_LEG_INCLU_ANKLE;Fracture of lower leg, including ankle;S82;S
+ST19_FRACT_LUMBAR_SPINE_PELVIS;Fracture of lumbar spine and pelvis;S32;S
+ST19_FRACT_NECK;Fracture of neck;S12;S
+ST19_FRACT_RIBS_STERNUM_THORACIC_SPINE;Fracture of rib(s), sternum and thoracic spine;S22;S
+ST19_FRACT_SHOUL_UPPER_ARM;Fracture of shoulder and upper arm;S42;S
+ST19_FRACT_SKULL_FACIAL_BONES;Fracture of skull and facial bones;S02;S
+ST19_FRACT_SPINE_LEVEL_UNSPE;Fracture of spine, level unspecified;T08;T
+ST19_FRACT_WRIST_HAND_LEVEL;Fracture at wrist and hand level;S62;S
+ST19_TOXIC_EFFECT_ALCOHOL;Toxic effect of alcohol;T51;T
+ST19_TOXIC_EFFECT_ETHAN;Toxic effect of ethanol;T510;T
+STILL_ADULT;Adult-onset Still disease;M061;M
+SYSTINOTH_FG;Systemic disorders of connective tissue in diseases classified elsewhere (FG);;
+SYSTSCLE_STRICT;Systemic sclerosis,strict definition;;
+T1D;Type 1 diabetes, definitions combined;;
+T1D_EARLY;Type1 diabetes, definitions combined, early onset;;
+T1D_STRICT2;Type 1 diabetes, strict definition, subgroup 2;;
+T2D;Type 2 diabetes, definitions combined;;
+T2D_WIDE;Type 2 diabetes, wide definition;E11;E
+TBC_RESP;Respiratory tuberculosis;;
+TEMPOROMANDIB;Temporomandibular joint disorders;K076;K
+TEMPOROMANDIB_INCLAVO;Temporomandibular joint disorders, including avohilmo;;
+THROMBOCYTAEMIA;Essential (haemorrhagic) thrombocythaemia;D473;D
+THYROIDITIS;Thyroiditis;;
+THYROTOXICOSIS;Thyrotoxicosis;;
+TONGUEABNORMALITY;Tongue abnormality;K14;K
+TRACHEOBRONCHOMAL;Tracheo-bronchomalasia;J398;J
+TRAUMBRAIN_NONCONCUS;severe traumatic brain injury, does not include concussion;S06[2-7];S
+U22_COVID19_CONFIRMED;Covid-19 confirmed case;U071;U
+U22_COVID19_SUSPECTED;Covid-19 suspected case;U072;U
+ULCER_ARTHR;Arthropathy in ulcerative colitis;M075;M
+ULCERENTER;Ulcerative enterocolitis;K510;K
+ULCERILEO;Ulcerative ileocolitis;K511;K
+ULCERNAS;Ulcerative colitis, NAS;K519;K
+ULCEROTH;Other ulcerative colitis;K518;K
+ULCERPROCT;Ulcerative proctitis;K512;K
+ULCERRECT;Ulcerative rectosigmoiditis;K513;K
+VAGINAL_LICHEN_PLANUS;Vaginal lichen planus;N778&L439;N
+VD_MI;Vascular dementia (multiple infarctions);F011;F
+VD_MX;Vascular dementia (mixed);F013;F
+VD_O;Vascular dementia (other);F018;F
+VD_SC;Vascular dementia (subcortical);F012;F
+VD_SO;Vascular dementia (sudden onset);F010;F
+VD_U;Vascular dementia (undefined);F019;F
+VIRALPNEUMOKNOWN;Viral pneumonia (known virus, not influenza);B012|B052|B206|B250|J12[0-2]|J171;B
+VIRALPNEUMONAS;Viral pneumonia (unknown virus, not influenza);J128|J129;J
+VIT_DEF;Vitamin deficiency, wide;;
+VOCALCORDDYS;Vocal cord dysfunction;J38;J
+VWXY20_SUICI_OTHER_INTENTI_SELF_H;Suicide or other Intentional self-harm;X[6-7]|X8[0-4];X
+WET_AMD;Wet age-related macular degeneration;H3531;H
+YERSINIAENTERITIS;Enteritis due to Yersinia enterocolitica;A046;A
+Z21_ASYMP_HUMAN_IMMUNODEFICIENCY_VIRUS_HIV_INFECTION_STATUS;Asymptomatic human immunodeficiency virus [HIV] infection status;Z21;Z
+Z21_KIDNEY_TRANSPLANT_STATUS;Kidney transplant status;Z940;Z
+Z21_LUNG_TRANSPLANT_STATUS;Lung transplant status;Z942;Z
+Z21_PREVIOUS_SUICIDE_ATTEMPT;Previous suicide attempt;Z915;Z
+Z21_PROBL_RELATED_MEDICAL_FACILITI_OTH_HEALTH_CARE;Problems related to medical facilities and other health care;Z75;Z
+Z21_PROCREATIVE_MANAG;Procreative management;Z31;Z
+Z21_TOBAC_USE;Tobacco use;Z720;Z
+AD_AM_EXMORE;Alzheimer’s disease (Atypical or mixed), excluding more controls;F0024|G308;F
+AD_EO_EXMORE;Alzheimer’s disease (Early onset), excluding more controls;F000|G300;F
+AD_LO_EXMORE;Alzheimer’s disease (Late onset), excluding more controls;F001|G301;F
+AD_U_EXMORE;Alzheimer’s disease (undefined), excluding more controls;F009&G309;F
+ASTHMA_CHILD_EXMORE;Childhood asthma (age<16), excluding more controls;J45|J46;J
+ASTHMA_MIXED_EXMORE;Asthma mixed form (mode), excluding more controls;%J458;J
+CD2_EYE_NOS_EXALLC;Benign neoplasm: Eye, unspecified;D319;D
+CD2_FOLLICULAR_LYMPHOMA_EXALLC;Follicular lymphoma;C82;C
+CD2_HODGKIN_LYMPHOMA_EXALLC;Hodgkin lymphoma;C81;C
+CD2_IMMUNOPROLIFERATIVE_EXALLC;Malignant immunoproliferative diseases;C88;C
+CD2_INSITU_BLADDER_EXALLC;Carcinoma in situ, bladder;D090;D
+CD2_INSITU_BREAST_EXALLC;Carcinoma in situ of breast;D05;D
+CD2_INSITU_BREAST_INTRADUCTAL_EXALLC;Carcinoma in situ of breast, intraductal;D051;D
+CD2_INSITU_BREAST_LOBULAR_EXALLC;Carcinoma in situ of breast, lobular;D050;D
+CD2_INSITU_CERVIX_UTERI_EXALLC;Carcinoma in situ of cervix uteri;D06;D
+CD2_INSITU_COLON_EXALLC;Carcinoma in situ of colon;D010;D
+CD2_INSITU_ENDOMETRIUM_EXALLC;Carcinoma in situ of endometrium;D070;D
+CD2_INSITU_LARYNX_EXALLC;Carcinoma in situ of larynx;D020;D
+CD2_INSITU_MELANOMA_EXALLC;Melanoma in situ;D03;D
+CD2_INSITU_ORALCAVITY_EXALLC;Carcinoma in situ of oral cavity;;
+CD2_INSITU_OROPHARYNX_EXALLC;Carcinoma in situ of oropharynx, excluding all cancers;D000[1-7];D
+CD2_INSITU_PENIS_EXALLC;Carcinoma in situ of penis;D074;D
+CD2_INSITU_PROSTATE_EXALLC;Carcinoma in situ of prostate;D075;D
+CD2_INSITU_RECTUM_EXALLC;Carcinoma in situ of rectum;D012;D
+CD2_INSITU_SKIN_EXALLC;Carcinoma in situ of skin;D04;D
+CD2_INSITU_VAGINA_EXALLC;Carcinoma in situ of vagina;D072;D
+CD2_INSITU_VULVA_EXALLC;Carcinoma in situ of vulva;D071;D
+CD2_LEIOMYOMA_ENDOMETRIOSIS_EXALLC;Benign leiomyoma with endometriosis;$!$;$
+CD2_LEUKAEMIA_NAS_EXALLC;Leukaemia of unspecified cell type;C95;C
+CD2_LYMPHOID_LEUKAEMIA_EXALLC;Lymphoid leukaemia;C91;C
+CD2_MONOCYTIC_LEUKAEMIA_EXALLC;Monocytic leukaemia;C93;C
+CD2_MULTIPLE_MYELOMA_PLASMA_CELL_EXALLC;Multiple myeloma and malignant plasma cell neoplasms;C90;C
+CD2_MYELOID_LEUKAEMIA_EXALLC;Myeloid leukaemia;C92;C
+CD2_NONFOLLICULAR_LYMPHOMA_EXALLC;Non-follicular lymphoma, hilmo, excluding all cancers;C83;C
+CD2_NONHODGKIN_NAS_EXALLC;Other and unspecified types of non-Hodgkin lymphoma, hilmo, excluding all cancers;C85;C
+CD2_OTHER_LEUKAEMIA_SPECIFIED_EXALLC;Other leukaemias of specified cell type;C94;C
+CD2_PRIMARY_LYMPHOID_HEMATOPOIETIC_EXALLC;Primary_lymphoid and hematopoietic malignant neoplasms;;
+CD2_PRIMARY_LYMPHOID_HEMATOPOIETIC_NAS_EXALLC;Other and unspecified malignant neoplasms of lymphoid, haematopoietic and related tissue;C96;C
+CD2_TNK_LYMPHOMA_EXALLC;Mature T/NK-cell lymphomas, hilmo, excluding all cancers;C84;C
+CD2_UVEAMELANOMA_EXALLC;Melanoma of uvea;C69[34];C
+DM_NEPHROPATHY_EXMORE;Diabetic nephropathy, excluding more controls;N083;N
+DM_RETINOPATHY_EXMORE;Diabetic retinopathy, excluding more controls;;
+J10_ASTHMA_EXMORE;Asthma, excluding more controls;J45|J46;J
+J10_ASTHMA_MAIN_EXMORE;Asthma (only as main-diagnosis), excluding more controls;J45|J46;J
+KELA_DIAB_INSUL_EXMORE;Diabetes, insuline treatment (Kela reimbursement), excluding more controls;;
+KRA_PSY_ALCOH_EXMORE;Alcohol abuse, main dg, excluding more controls;F100;F
+KRA_PSY_ANXIETY_EXMORE;Anxiety disorders, excluding more controls;F4;F
+KRA_PSY_ANYMENTAL_SUICID_PREG_NERV_EXMORE;Any mental disorder, or suicide (or attempt), or psychic disorders complicating pregnancy, partum or puerperum or nerve system disorders, excluding more controls;O993;O
+KRA_PSY_AUTISM_EXMORE;Autism spe, excluding more controls;F84[0|5];F
+KRA_PSY_BEHAV_EXMORE;Behavioural disorders, excluding more controls;F91;F
+KRA_PSY_CHILDEMOT_EXMORE;Emotional disorders starting during childhood or adolecense, excluding more controls;F93;F
+KRA_PSY_CHILDOTH_EXMORE;Other disorders starting during childhood or adolecense, excluding more controls;F98;F
+KRA_PSY_CHILDSOC_EXMORE;Social disorders starting during childhood or adolecense, excluding more controls;F94;F
+KRA_PSY_CODUCTEMOT_EXMORE;Mixed disorders of conduct and emotions, excluding more controls;F92;F
+KRA_PSY_DEMENTIA_EXMORE;Any dementia, excluding more controls;F0[0-3]|F051|G30;F
+KRA_PSY_DEVWIDE_EXMORE;Wide developmental disorders, excluding more controls;F84;F
+KRA_PSY_EATING_EXMORE;KRA_PSY_EATING, excluding more controls;F50;F
+KRA_PSY_HYPERKIN_EXMORE;Hyperkinetic disorders, excluding more controls;F90;F
+KRA_PSY_MENTALRET_EXMORE;Mental retardation, excluding more controls;F7;F
+KRA_PSY_MOTOR_EXMORE;Motor disorders, excluding more controls;F82;F
+KRA_PSY_PERSON_EXMORE;Personality disorders, excluding more controls;F6[0-1];F
+KRA_PSY_PUERPER_EXMORE;Mental and behabioural disorders of puerperum, not classified elsewhere, excluding more controls;F53;F
+KRA_PSY_SCHIZODEL_EXMORE;Schizophrenia or delusion, excluding more controls;F2;F
+KRA_PSY_SLEEP_NONORG_EXMORE;Nonorganic sleeping disorders, excluding more controls;F51;F
+KRA_PSY_SPEELING_EXMORE;Speech and linguistic disorders, excluding more controls;F8[0-1];F
+KRA_PSY_SUBSTANCE_EXMORE;Substance abuse, excluding more controls;F1;F
+KRA_PSY_TIC_EXMORE;Tic and related disorders;F95;F
+NONALLERG_ASTHMA_EXMORE;Non-allergic asthma (mode), excluding more controls;J451;J
+O15_ICP_EXMORE;Intrahepatic Cholestasis of Pregnancy (ICP) , excluding more controls;O266;O
+O15_ICP_WIDE_EXMORE;Intrahepatic Cholestasis of Pregnancy (ICP) , incl. ICD-8, excluding more controls;O266;O
+O15_POSTPART_HEAMORRH_ALLW;Postpartum hemorraghe, all women as controls;O72;O
+PD_DEMENTIA_EXMORE;Dementia due to Parkinsons disease, excluding more controls;F023;F
+PD2ND_EXMORE;Secondary parkinsonism, excluding more controls;G21;G
