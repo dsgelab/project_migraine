@@ -4,8 +4,9 @@ source('/data/projects/project_mferro/project_migraine/file_paths.R')
 cohort <- fread(study_population_file) %>% 
   arrange(FINREGISTRYID, EVENT_AGE) %>% 
   mutate(year_purch=as.numeric(format(as.Date(DATE_FIRST_PURCH, format="%d/%m/%Y"),"%Y")),
-         year_birth=as.numeric(format(as.Date(BIRTH_DATE, format="%Y-%m-%d"),"%Y"))) %>%  
-  select(FINREGISTRYID, SWITCH_1,SWITCH_2,SWITCH_3,NO_SWITCH, DATE_FIRST_PURCH, EVENT_AGE, SEX, year_birth,year_purch, ATC_CODE, EVENT_DAY, EVENT_AGE, AGE_FIRST_PURCH) 
+         year_birth=as.numeric(format(as.Date(BIRTH_DATE, format="%Y-%m-%d"),"%Y")), 
+         OTHER=as.integer(!(cohort$SWITCH_1 | cohort$SWITCH_2 | cohort$SWITCH_3 | cohort$NO_SWITCH))) %>%  
+  select(FINREGISTRYID, SWITCH_1,SWITCH_2,SWITCH_3,NO_SWITCH, OTHER, DATE_FIRST_PURCH, EVENT_AGE, SEX, year_birth,year_purch, ATC_CODE, EVENT_DAY, EVENT_AGE, AGE_FIRST_PURCH) 
 
 follow_up_duration <- cohort %>%
   group_by(FINREGISTRYID) %>%
@@ -15,7 +16,6 @@ follow_up_duration <- cohort %>%
     FollowUpDuration = as.numeric(difftime(max(EVENT_DAY), min(EVENT_DAY), units = "days")/365.25),
     TOT_TRPT_PURCH=  n()
   )
-
 
 cohort <- cohort %>% left_join(follow_up_duration, by = "FINREGISTRYID") %>% 
   arrange(FINREGISTRYID, EVENT_AGE) %>% 
@@ -27,7 +27,8 @@ cohort <- cohort %>% left_join(follow_up_duration, by = "FINREGISTRYID") %>%
 my_db <- transform(cohort, switch_type = ifelse(SWITCH_1 == 1, "F1",
                                                 ifelse(SWITCH_2 == 1, "F2",
                                                        ifelse(SWITCH_3 == 1, "F3",
-                                                              ifelse(NO_SWITCH == 1, "CTRL", "NA"))))) %>% mutate(switch_type=as.factor(switch_type))
+                                                              ifelse(NO_SWITCH == 1, "CTRL", 
+                                                                     ifelse(OTHER == 1, "OTHER","NA")))))) %>% mutate(switch_type=as.factor(switch_type))
 
 
 sum_stats_quant <- function(dataset, type_switch) {
@@ -90,18 +91,18 @@ db_quant <- my_db %>% select(FINREGISTRYID, switch_type, all_of(data_list_quant)
 sum_stats_quant(db_quant, db_quant$switch_type)
 
 #Categorical
-endpoint_baseline  = fread("/data/projects/project_mferro/project_migraine/data/MakeEndPtFile/results_summary_stats.EndPt")  #modify this path 
+endpoint_baseline = fread("/data/projects/project_mferro/project_migraine/output/results_summary_stats_v2")  #modify this path 
 endpoint  = fread(endpoint_file) 
 drugs= fread(medication_file) 
 SES_data= fread(SES_file) 
 
-var_endpoint <- c( "T2D", "F5_PSYCH", "G6_NEURO", "G6_MIGRAINE", "I9_CVD", "F5_DEPRESSIO" )
+var_endpoint <- colnames(endpoint_baseline)[5:length(colnames(endpoint_baseline))]
 var_drugs <- c("C02", "N02", "A02", "J02",  "N05", "M01", "N06")
 
 data_list_char <- c("FINREGISTRYID", "SEX","age_cat","ATC_CODE", var_endpoint, var_drugs )
 
 db_char <- my_db %>%
-  left_join(endpoint, by = "FINREGISTRYID") %>% select(-date_of_birth, -start_of_followup, -end_of_followup, -DATE_FIRST_PURCH)  %>%  
+  left_join(endpoint_baseline, by = "FINREGISTRYID") %>% select(-date_of_birth, -start_of_followup, -end_of_followup, -DATE_FIRST_PURCH)  %>%  
   left_join(drugs, by = "FINREGISTRYID") %>% select(-date_of_birth, -start_of_followup, -end_of_followup) %>%
   select( switch_type, any_of(data_list_char)) %>% mutate(SEX=as.factor(SEX))
 
