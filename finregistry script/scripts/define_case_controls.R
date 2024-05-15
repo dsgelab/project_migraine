@@ -44,32 +44,40 @@ cohort <- cohort %>%
   mutate(VISIT_NUMBER = row_number()) %>%  
   mutate(SWITCH_1 = ifelse((
     row_number() == 1 & 
-    ATC_CODE != lead(ATC_CODE) & 
-    lead(ATC_CODE) == lead(ATC_CODE,2) & 
-    lead(ATC_CODE,2) == lead(ATC_CODE,3)),
+      ATC_CODE != lead(ATC_CODE) & 
+      lead(ATC_CODE) == lead(ATC_CODE,2) & 
+      lead(ATC_CODE,2) == lead(ATC_CODE,3)),
     1, 0)
   )  %>% 
   mutate(SWITCH_2 = ifelse((
     row_number() == 1 & 
-    ATC_CODE != lead(ATC_CODE) &
-    lead(ATC_CODE) != lead(ATC_CODE,2) & 
-    lead(ATC_CODE,2) == lead(ATC_CODE,3) & 
-    lead(ATC_CODE,3) == lead(ATC_CODE,4)),
+      ATC_CODE != lead(ATC_CODE) &
+      lead(ATC_CODE) != lead(ATC_CODE,2) & 
+      lead(ATC_CODE,2) == lead(ATC_CODE,3) & 
+      lead(ATC_CODE,3) == lead(ATC_CODE,4)),
     1, 0)
   ) %>%
   #NB: switch 3 or more times
   mutate(SWITCH_3 = ifelse((
     row_number() == 1 &
-    ATC_CODE != lead(ATC_CODE) &
-    lead(ATC_CODE) != lead(ATC_CODE,2) &
-    lead(ATC_CODE,2) != lead(ATC_CODE,3)),
+      ATC_CODE != lead(ATC_CODE) &
+      lead(ATC_CODE) != lead(ATC_CODE,2) &
+      lead(ATC_CODE,2) != lead(ATC_CODE,3)),
     1, 0)
   ) %>%  
   mutate(NO_SWITCH = ifelse((
     row_number() == 1 &
-    ATC_CODE == lead(ATC_CODE) &
-    ATC_CODE == lead(ATC_CODE,2) &
-    ATC_CODE == lead(ATC_CODE,3)), 
+      ATC_CODE == lead(ATC_CODE) &
+      ATC_CODE == lead(ATC_CODE,2) &
+      ATC_CODE == lead(ATC_CODE,3)), 
+    1, 0)
+  ) %>%
+  mutate(OTHER = ifelse(
+    row_number() == 1 &
+      SWITCH_1 == 0 &
+      SWITCH_2 == 0 &
+      SWITCH_3 == 0 &
+      NO_SWITCH == 0 , 
     1, 0)
   )
 
@@ -125,18 +133,22 @@ if( nrow(cohort) != SC ){
   print('failed sanity check: something is wrong!') 
 }
 
-# keep only official definition
-to_keep<- cohort %>% 
-  filter(SWITCH_1==1 | SWITCH_2==1 | SWITCH_3==1 | NO_SWITCH==1) %>% 
-  pull(FINREGISTRYID) %>% 
-  unique()
-cohort <- cohort %>% filter(FINREGISTRYID %in% to_keep)
-N = length(unique(cohort$FINREGISTRYID))
-cat(paste0(
-  'starting with a total of ',ORIGINAL_N,' patient purchase trajectories','\n',
-  'finishing with a total of ',N,' patients','\n',
-  'removing ',(ORIGINAL_N-N),' trajectories non compliant to the definition'
-))
+# use the following code to keep only official definition and procede with main analysis, 
+# comment in order to extract descriptive statistics for everything
+
+# to_keep<- cohort %>% 
+#   filter(SWITCH_1==1 | SWITCH_2==1 | SWITCH_3==1 | NO_SWITCH==1) %>% 
+#   pull(FINREGISTRYID) %>% 
+#   unique()
+# cohort <- cohort %>% filter(FINREGISTRYID %in% to_keep)
+# 
+# 
+# N = length(unique(cohort$FINREGISTRYID))
+# cat(paste0(
+#   'starting with a total of ',ORIGINAL_N,' patient purchase trajectories','\n',
+#   'finishing with a total of ',N,' patients','\n',
+#   'removing ',(ORIGINAL_N-N),' trajectories non compliant to the definition'
+# ))
 
 
 # overwrite the file to add the case-control results

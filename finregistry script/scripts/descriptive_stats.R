@@ -4,8 +4,7 @@ source('/data/projects/project_mferro/project_migraine/file_paths.R')
 cohort <- fread(study_population_file) %>% 
   arrange(FINREGISTRYID, EVENT_AGE) %>% 
   mutate(year_purch=as.numeric(format(as.Date(DATE_FIRST_PURCH, format="%d/%m/%Y"),"%Y")),
-         year_birth=as.numeric(format(as.Date(BIRTH_DATE, format="%Y-%m-%d"),"%Y")), 
-         OTHER=as.integer(!(cohort$SWITCH_1 | cohort$SWITCH_2 | cohort$SWITCH_3 | cohort$NO_SWITCH))) %>%  
+         year_birth=as.numeric(format(as.Date(BIRTH_DATE, format="%Y-%m-%d"),"%Y"))) %>%  
   select(FINREGISTRYID, SWITCH_1,SWITCH_2,SWITCH_3,NO_SWITCH, OTHER, DATE_FIRST_PURCH, EVENT_AGE, SEX, year_birth,year_purch, ATC_CODE, EVENT_DAY, EVENT_AGE, AGE_FIRST_PURCH) 
 
 follow_up_duration <- cohort %>%
@@ -22,7 +21,6 @@ cohort <- cohort %>% left_join(follow_up_duration, by = "FINREGISTRYID") %>%
   group_by(FINREGISTRYID) %>% 
   slice(1) %>% 
   mutate(age_cat = cut(AGE_FIRST_PURCH, breaks = c(18, 30, 50, Inf), labels = c("18-29", "30-49", "50+"), right= FALSE))
-
 
 my_db <- transform(cohort, switch_type = ifelse(SWITCH_1 == 1, "F1",
                                                 ifelse(SWITCH_2 == 1, "F2",
@@ -86,9 +84,9 @@ sum_stats_quant <- function(dataset, type_switch) {
 
 
 
-data_list_quant <- c("EVENT_AGE","FollowUpDuration")
-db_quant <- my_db %>% select(FINREGISTRYID, switch_type, all_of(data_list_quant))
-sum_stats_quant(db_quant, db_quant$switch_type)
+# data_list_quant <- c("EVENT_AGE","FollowUpDuration")
+# db_quant <- my_db %>% select(FINREGISTRYID, switch_type, all_of(data_list_quant))
+# sum_stats_quant(db_quant, db_quant$switch_type)
 
 #Categorical
 endpoint_baseline = fread("/data/projects/project_mferro/project_migraine/output/results_summary_stats_v2")  #modify this path 
